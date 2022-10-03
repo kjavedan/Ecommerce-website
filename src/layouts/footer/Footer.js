@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {StyledFooter, Container} from './components/styles/Footer.styled'
+import {StyledFooter, Container} from './styles/Footer.styled'
 import FooterMenu from './components/FooterMenu'
 import { Context } from '../../context/themeContext'
 import Logo from '../header/components/Logo'

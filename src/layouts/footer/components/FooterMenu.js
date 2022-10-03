@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import StyledMenu from './styles/FooterMenu.styled'
+import StyledMenu from '../styles/FooterMenu.styled'
 import { Context } from '../../../context/themeContext'
 import {HiOutlineHome, HiHome} from 'react-icons/hi'
 import {BiCategoryAlt} from 'react-icons/bi'

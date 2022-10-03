@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
 background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};
-height: 450px;
+height: 400px;
 width: 100vw;
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 z-index: 2;
@@ -14,8 +14,12 @@ padding: 1rem;
 
 @media (min-width: 800px){
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 13%;
+    padding: 1rem 8%;
     height: 250px;
+}
+@media (min-width: 900px){
+    width: 80%;
+    margin-left: auto;
 }
 `
 
@@ -27,6 +31,11 @@ h3{
 }
 p{
     margin-top: .5rem;
+    cursor: pointer;
+
+    &:hover{
+        font-weight: bold;
+    }
 }
 input{
     margin-bottom: .7rem;

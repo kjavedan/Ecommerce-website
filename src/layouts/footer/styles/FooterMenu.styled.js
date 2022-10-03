@@ -13,6 +13,10 @@ justify-content: space-around;
 font-size: 1.5rem;
 color: #898989;
 z-index: 10;
+
+@media (min-width: 900px){
+    display: none;
+}
 `
 
 export default StyledMenu
