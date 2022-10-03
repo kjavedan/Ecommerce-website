@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import { Context } from '../../context/themeContext'
+import { Context } from '../../context/uiContext'
 import StyledHeader from './styles/Header.styled'
 import Logo from './components/Logo'
 import SearchBar from './components/SearchBar'

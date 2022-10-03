@@ -1,17 +1,17 @@
 import React, { useContext } from 'react'
 import {StyledFooter, Container} from './styles/Footer.styled'
 import FooterMenu from './components/FooterMenu'
-import { Context } from '../../context/themeContext'
+import { Context } from '../../context/uiContext'
 import Logo from '../header/components/Logo'
 import StyledButton from '../../components/styles/Button.styled'
 
 const Footer = () => {
 
-  const {theme} = useContext(Context)
+  const {theme, displaySidebar} = useContext(Context)
 
   return (
     <>
-    <StyledFooter theme={theme}>
+    <StyledFooter theme={theme} displaySidebar={displaySidebar}>
         <Container>
             <h3>Customer Service</h3>
             <p>Common questions</p>

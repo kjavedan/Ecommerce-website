@@ -3,6 +3,9 @@ import styled from 'styled-components'
 const StyledHeader = styled.header`
 width: 100%;
 height: 100px;
+position: fixed;
+top: 0;
+left: 0;
 display: flex;
 justify-content: space-between;
 padding: 0 .5rem;

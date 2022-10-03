@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
 import StyledMenu from '../styles/FooterMenu.styled'
-import { Context } from '../../../context/themeContext'
+import { Context } from '../../../context/uiContext'
 import {HiOutlineHome, HiHome} from 'react-icons/hi'
 import {BiCategoryAlt} from 'react-icons/bi'
 import {BsPerson, BsFillPersonFill, BsHandbag, BsHandbagFill} from 'react-icons/bs'
 
 const FooterMenu = () => {
 
-    const {theme} = useContext(Context)
+    const {theme, toggleSidebar} = useContext(Context)
 
     const styles ={
         cursor :'pointer',
@@ -15,7 +15,7 @@ const FooterMenu = () => {
 
   return (
     <StyledMenu theme={theme}>
-        <BiCategoryAlt style={styles} />
+        <BiCategoryAlt onClick={toggleSidebar} style={styles} />
         <HiOutlineHome style={styles} />
         <BsHandbag style={styles} />
         <BsPerson style={styles} />

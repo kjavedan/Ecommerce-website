@@ -11,15 +11,19 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 10px;
 padding: 1rem;
+margin-bottom: 80px;
 
 @media (min-width: 800px){
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 1rem 8%;
+    padding: 1rem ${({displaySidebar})=> displaySidebar ? '8%' : '13%'};
     height: 250px;
 }
 @media (min-width: 900px){
-    width: 80%;
+    width:${({displaySidebar})=> displaySidebar ? '80%' : '100%'};
+    transition: width linear .2s;
     margin-left: auto;
+    margin-bottom: 0px;
+
 }
 `
 
