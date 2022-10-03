@@ -11,11 +11,16 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 10px;
 padding: 1rem;
+
+@media (min-width: 800px){
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 13%;
+    height: 250px;
+}
 `
 
 const Container = styled.div`
 padding: 1rem;
-height: 200px;
 min-width: 150px;
 h3{
     margin-bottom: 1rem;

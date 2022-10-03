@@ -56,23 +56,23 @@ const GlobalStyles = createGlobalStyle`
   
   @media (min-width: 600px) {
     h1{
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: ${({theme}) => theme === '#fff' ? '#000' : '#D9D9D9'};
   }
     h2{
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
     h3,h4{
-      font-size: 1.4rem;
-    }
-    h5{
-      font-size: 1.3rem;
-    }
-    h6{
       font-size: .9rem;
     }
+    h5{
+      font-size: 1rem;
+    }
+    h6{
+      font-size: 1rem;
+    }
     p{
-      font-size: 1.1rem;
+      font-size: .8rem;
     }
   }
 }
