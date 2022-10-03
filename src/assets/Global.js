@@ -29,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme === '#fff' ? '#171616' : '#D9D9D9'};
   }
   h3{
-    font-size: 1.2rem;
+    font-size: .8rem;
     color: ${({theme}) => theme === '#fff' ? '#373636' : '#D9D9D9'};
   }
   h4{
@@ -46,7 +46,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme === '#fff' ? '#171616' : '#D9D9D9'};
   }
   p{
-    font-size: .9rem;
+    font-size: .7rem;
     color: #969494;
   }
 
