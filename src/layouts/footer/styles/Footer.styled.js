@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const StyledFooter = styled.footer`
 background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};
 height: 400px;
-width: 100vw;
+width: 100%;
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 z-index: 2;
 position: relative;

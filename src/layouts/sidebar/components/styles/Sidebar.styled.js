@@ -5,11 +5,20 @@ background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
 height: 100vh;
 width: 100%;
 position: fixed;
+overflow-y: scroll;
+overflow-x: ${({displaySidebar})=> displaySidebar ? 'hidden' : 'visible'};
 top: 0;
 z-index: 3;
 transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
 border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
-overflow: ${({displaySidebar})=> displaySidebar ? 'hidden' : 'visible'};
+
+&::-webkit-scrollbar {
+        width: 3px;
+    }
+&::-webkit-scrollbar-thumb{
+    background: ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
+    height: 10px;
+}
 
 @media (min-width: 900px){
     top:100px;
@@ -17,26 +26,10 @@ overflow: ${({displaySidebar})=> displaySidebar ? 'hidden' : 'visible'};
     transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
     transition: width linear .2s;
 }
-`
+/* @media (min-width:1100px){
+    width: 18%;
+} */
 
-export const SidebarToggler = styled.div`
-width: 70px;
-height: 70px;
-border-radius: 50%;
-background-color: ${({theme})=> theme === '#fff' ? '#EAE6FC' : '#2E2E2E'};
-position: absolute;
-right: -35px;
-top: 50px;
-cursor: pointer;
-display: none;
-
-
-@media (min-width: 900px){
-    display: flex;
-    align-items: center;
-    font-size: 2.5rem;
-    color: #7B6AB7;
-}
 `
 
 export default StyledSidebar
