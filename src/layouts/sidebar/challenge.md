@@ -27,3 +27,13 @@ parent container will display its child block and none
 1 div for the parent
 1 div for all children
 1 div for each children
+
+components
+ 1 wrapper  
+    2 categoryWrapper -> wrapper - toggle height
+        3 categoryTitle -> different text 
+        4 categoryItems -> wrapper
+            5 categoryItemParent -> wrapper
+                6 categoryItemParentTitile -> different text & icon
+                7 categoryItemChildren  -> wrapper
+                    8 categoryItemChild -> different text & icon
