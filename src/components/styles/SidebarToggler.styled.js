@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const SidebarTogglerClose = styled.div`
-width: 60px;
-height: 60px;
+width: 50px;
+height: 50px;
 border-radius: 50%;
 background-color: ${({theme})=> theme === '#fff' ? '#EAE6FC' : '#2E2E2E'};
 position: fixed;
-top: 120px;
+top: 110px;
 transform: translateX(-50%);
 cursor: pointer;
 display: none;

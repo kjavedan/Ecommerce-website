@@ -11,7 +11,7 @@ const Main = () => {
     <StyledMain theme={theme} displaySidebar={displaySidebar}>
         {displaySidebar ? 
         <SidebarTogglerClose onClick={toggleSidebar}  theme={theme} >
-        <BiChevronLeft style={{position: 'fixed', left:'8'}} />
+        <BiChevronLeft style={{position: 'fixed', left:'5'}} />
         </SidebarTogglerClose> :
         <SidebarTogglerOpen onClick={toggleSidebar}  theme={theme} >
         <BiChevronRight style={{position: 'fixed', left:'26'}}/>
