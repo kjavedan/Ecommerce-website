@@ -1,9 +1,10 @@
 import React , {useContext, useState} from 'react'
-import {Items, Parent, Children, Child} from './styles/CategoryItems.styled'
+import {Items, Parent, Children} from './styles/CategoryItems.styled'
 import {HiOutlineDeviceMobile} from 'react-icons/hi'
 import {BiChevronRight} from 'react-icons/bi'
 import { ParentTitle } from './styles/Titiles.styled'
 import {Context} from '../../../context/uiContext'
+import CategoryItem from './CategoryItem'
 
 
 const CategoryItems = () => {
@@ -11,7 +12,7 @@ const CategoryItems = () => {
   const {theme} = useContext(Context)
   const children = ['apple', 'samsung', 'sony', 'nokia']
   
-  const childrenElement = children.map(item =><Child>{item}</Child>)
+  const childElements = children.map(item =><CategoryItem data={item} />)
   
   const [displayChildElements, setDisplayChildElements] = useState(false)
   
@@ -23,20 +24,20 @@ const CategoryItems = () => {
   
   return (
     <Items>
-           <Parent>
+           <Parent theme={theme}>
                 <ParentTitle onClick={toggleChilds} theme={theme}>
-                  <HiOutlineDeviceMobile /><h4>Mobile</h4> <BiChevronRight /> 
+                  <HiOutlineDeviceMobile /><h5>Mobile</h5> <BiChevronRight /> 
                 </ParentTitle>
                 <Children display={displayChildElements}>
-                  {childrenElement}
+                  {childElements}
                 </Children>
               </Parent>
-           <Parent>
-                <ParentTitle onClick={toggleChilds}>
-                  <HiOutlineDeviceMobile /><h4>Laptop</h4> <BiChevronRight /> 
+           <Parent theme={theme}>
+                <ParentTitle onClick={toggleChilds} theme={theme}>
+                  <HiOutlineDeviceMobile /><h5>Laptop</h5> <BiChevronRight /> 
                 </ParentTitle>
                 <Children>
-                  {childrenElement}
+                  {childElements}
                 </Children>
               </Parent>
     </Items>

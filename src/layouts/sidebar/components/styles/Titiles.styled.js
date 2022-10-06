@@ -5,17 +5,22 @@ export const StyledCategoryTitle = styled.div`
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    color: ${({theme}) => theme === '#fff' ? '#000' : '#D9D9D9'};
 ` 
 export const ParentTitle = styled.div`
     display: flex;
     align-items: center;
     font-size: 14px;
     cursor: pointer;
-    color: ${({theme}) => theme === '#fff' ? '#969494' : '#969494'};
+    color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
 
-    h4{
-        margin-left: .3rem;
+    h5{
+        margin-left: .2rem;
         margin-right: auto;
         font-size: .9rem;
+        
+        &:hover{
+            text-decoration: underline;
+        }
     }
 `

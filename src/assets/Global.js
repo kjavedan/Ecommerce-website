@@ -38,7 +38,7 @@ const GlobalStyles = createGlobalStyle`
   }
   h5{
     font-size: .6rem;
-    color: ${({theme}) => theme === '#fff' ? '#171616' : '#D9D9D9'};
+    color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
   }
   h6{
     font-size: .5rem;
