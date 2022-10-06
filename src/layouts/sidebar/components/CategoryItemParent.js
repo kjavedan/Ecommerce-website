@@ -2,7 +2,7 @@ import React, {useState, useContext} from 'react'
 import { Context } from '../../../context/uiContext'
 import { StyledParent } from './styles/CategoryItem.styled'
 import { Children } from './styles/CategoryItems.styled'
-import {BiChevronRight} from 'react-icons/bi'
+import {BiChevronRight, BiChevronDown} from 'react-icons/bi'
 import {HiOutlineDeviceMobile} from 'react-icons/hi'
 import CategoryItemChild from './CategoryItemChild'
 
@@ -24,7 +24,7 @@ const Parent = () => {
   return (
     <>
         <StyledParent onClick={toggleChilds} theme={theme}>
-            <HiOutlineDeviceMobile /><h5>Mobile</h5> <BiChevronRight /> 
+            <HiOutlineDeviceMobile /><h5>Mobile</h5> {displayChildElements ? <BiChevronDown /> :<BiChevronRight /> }
         </StyledParent>
         <Children display={displayChildElements}>
             {childElements}

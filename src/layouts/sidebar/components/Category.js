@@ -11,7 +11,7 @@ const Category = ({title, items}) => {
 
   return (
     <StyledCategory display={displayCategoryItems}>
-        <CategoryTitle toggleChilds={toggleChilds} title={title}/>
+        <CategoryTitle display={displayCategoryItems} toggleChilds={toggleChilds} title={title}/>
         <CategoryItems items={items}/>
     </StyledCategory>
   )

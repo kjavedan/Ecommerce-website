@@ -10,6 +10,7 @@ export const StyledParent = styled.div`
 display: flex;
 align-items: center;
 font-size: 14px;
+height: 2rem;
 cursor: pointer;
 color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
 
