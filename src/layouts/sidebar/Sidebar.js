@@ -6,6 +6,7 @@ import {Wrapper, CategoryWrapper} from './components/styles/Wrappers.styled'
 import {HiOutlineDeviceMobile} from 'react-icons/hi'
 import '../../assets/App.css'
 import CategoryTitle from './components/CategoryTitle'
+import CategoryItems from './components/CategoryItems'
 
 const Sidebar = () => {
 
@@ -19,8 +20,9 @@ const Sidebar = () => {
     <StyledSidebar theme={theme} displaySidebar={displaySidebar}>
       <Wrapper theme={theme}>
           <CategoryWrapper display={displayCategoryItems}>    
-            <CategoryTitle toggleChilds={toggleChilds} />
-            <div className="category_items">
+            <CategoryTitle toggleChilds={toggleChilds} title={'Category'}/>
+            <CategoryItems />
+            {/* <div className="category_items">
               <div className="category_item_parent">
                 <div className="category_item_parent_title">
                   <HiOutlineDeviceMobile /><span>Mobile</span> <BiChevronRight /> 
@@ -43,7 +45,7 @@ const Sidebar = () => {
                   <div className="category_item_child"><HiOutlineDeviceMobile /><span>Soney</span></div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </CategoryWrapper>
           <div className="category_wrapper">
           <div className="category_title">

@@ -1,6 +1,6 @@
 .category_wrapper{
     margin-top: 1rem;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     /* height: 2rem; */
     overflow: hidden;
 }
@@ -14,7 +14,7 @@
     margin-top: .5rem;
     display: flex;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
 }
 .category_item_parent{
     padding-bottom: .5rem;
@@ -25,12 +25,13 @@
     display: flex;
     align-items: center;
     height: 2rem;
-    background-color: yellow;
+    /* background-color: yellow; */
     font-size: .8rem;
     font-weight: 600;
 }
 .category_item_children{
-    width: 100%;
+    /* width: 100%; */
+    /* background-color: blue; */
 }
 .category_item_child{
     height: 36px;
