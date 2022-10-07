@@ -10,8 +10,8 @@ const Category = ({title, items}) => {
     const toggleChilds = () => {setDisplayCategoryItems(prevState=> !prevState)}
 
   return (
-    <StyledCategory display={displayCategoryItems}>
-        <CategoryTitle display={displayCategoryItems} toggleChilds={toggleChilds} title={title}/>
+    <StyledCategory display={displayCategoryItems ? 1 : 0}>
+        <CategoryTitle display={displayCategoryItems ? 1 : 0} toggleChilds={toggleChilds} title={title}/>
         <CategoryItems items={items}/>
     </StyledCategory>
   )

@@ -9,28 +9,29 @@ const Sidebar = () => {
 
   const items = [
     {
-      name: 'mobile',
+      title: 'mobile',
       icons: '',
-      childes: ['apple', 'samsung', 'sony', 'nokia']
+      children: ['apple', 'samsung', 'sony', 'nokia']
     },
     {
-      name: 'Laptop',
+      title: 'Laptop',
       icons: '',
-      childes: ['apple', 'microsoft', 'dell', 'hp']
+      children: ['apple', 'microsoft', 'dell', 'hp']
     },
     {
-      name: 'headset',
+      title: 'headset',
       icons: '',
-      childes: ['apple', 'samsung', 'sony', 'lenovo']
+      children: ['apple', 'samsung', 'sony', 'lenovo']
     },
     {
-      name: 'keboard',
+      title: 'keboard',
       icons: '',
-      childes: ['apple', 'lenovo', 'shiami', 'other']
+      children: ['apple', 'lenovo', 'shiami', 'other']
     },
     {
-      name: 'other',
+      title: 'other',
       icons: '',
+      children: []
       }
   ]
 
@@ -41,7 +42,6 @@ const Sidebar = () => {
     <StyledSidebar theme={theme} displaySidebar={displaySidebar}>
       <Wrapper theme={theme}>
          <Category title={'Category'} items={items} />
-         <Category title={'Take a look at'} />
       </Wrapper>
     </StyledSidebar>
   )

@@ -9,14 +9,14 @@ const CategoryItems = ({items}) => {
   const {theme} = useContext(Context)
 
   console.log(items)
+  const ParentElements = items.map((item, index) => <Parent key={index} title={item.title} icon={item.icon} children={item.children} />)
   
   return (
     <Items>
            <Item theme={theme}>
-                <Parent />
-                <Parent />
+                {ParentElements}
             </Item>
-    </Items>
+    </Items> 
   )
 }
 
