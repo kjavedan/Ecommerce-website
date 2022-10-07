@@ -12,10 +12,10 @@ const GlobalStyles = createGlobalStyle`
   h1,h2,h3,h4,h5,h6,p{
     font-family: 'Poppins';
   }
-  h1,h4,p{
+  h1,h4,h5,p{
     font-weight: 500;
   }
-  h2,h3,h5{
+  h2,h3{
     font-weight: 600;
   }
 

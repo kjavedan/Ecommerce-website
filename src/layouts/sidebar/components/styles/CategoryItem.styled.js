@@ -8,18 +8,24 @@ export const Item = styled.div`
 export const StyledParent = styled.div`
 display: flex;
 align-items: center;
-font-size: 14px;
-height: 2rem;
+font-size: 13px;
+height: 3rem;
 cursor: pointer;
 color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
 border-bottom: 1px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 
+@media (min-width: 500px ){
+    height: 2.5rem;
+}
+@media (min-width: 700px){
+    height: 2rem;
+}
 
 h5{
-    margin-left: .2rem;
+    margin-left: .4rem;
     margin-right: auto;
     font-size: .9rem;
-    
+    font-weight: 400;
     &:hover{
         text-decoration: underline;
     }
