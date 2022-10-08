@@ -3,7 +3,11 @@
     align-items: center;
     height: 100%;
     padding-left: .8rem;
+    color: #706F6F;
+
 }
 .root span{
+    font-size: .8rem;
+    font-family: 'Poppins';
     padding-left: .4rem;
 }
