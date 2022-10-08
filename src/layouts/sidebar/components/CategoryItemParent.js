@@ -15,13 +15,18 @@ const Parent = ({title, icon, children}) => {
 
     const [displayChildElements, setDisplayChildElements] = useState(false)
     
+    const commonIcon = displayChildElements ? <BiChevronDown /> : <BiChevronRight />;
+
     const toggleChilds = () => {
       setDisplayChildElements(prevState => !prevState)
     }
+    const openRoute = () => {
+
+    }
   return (
     <>
-        <StyledParent onClick={ children.length ? toggleChilds : ''} theme={theme}>
-            {icon}<h5>{title}</h5> { displayChildElements ? <BiChevronDown /> : <BiChevronRight /> }
+        <StyledParent onClick={ children.length ? toggleChilds : openRoute} theme={theme}>
+            {icon}<h5>{title}</h5> {children.length ? commonIcon : ''}
         </StyledParent>
         <Children display={displayChildElements ? 1 : 0}>
             {childElements}

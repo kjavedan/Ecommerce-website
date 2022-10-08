@@ -1,15 +1,15 @@
 import React, {useContext} from 'react'
-import StyledMain from './components/styles/Main.styled'
-import {Context} from '../../context/uiContext'
-import {SidebarTogglerOpen, SidebarTogglerClose} from '../../components/styles/SidebarToggler.styled'
 import {BiChevronLeft, BiChevronRight} from 'react-icons/bi'
+import { SidebarTogglerOpen, SidebarTogglerClose } from './styles/SidebarToggler.styled'
+import { Context } from '../../../context/uiContext'
 
-const Main = () => {
-  
-  const {theme, displaySidebar, toggleSidebar} = useContext(Context)
+const SidebarToggler = () => {
+
+    const {theme, displaySidebar, toggleSidebar} = useContext(Context)
+
   return (
-    <StyledMain theme={theme} displaySidebar={displaySidebar}>
-        {displaySidebar ? 
+    <>
+    {displaySidebar ? 
         <SidebarTogglerClose onClick={toggleSidebar}  theme={theme} >
         <BiChevronLeft style={{position: 'fixed', left:'5'}} />
         </SidebarTogglerClose> :
@@ -17,8 +17,8 @@ const Main = () => {
         <BiChevronRight style={{position: 'fixed', left:'26'}}/>
         </SidebarTogglerOpen>
       }
-    </StyledMain>
+    </>
   )
 }
 
-export default Main
+export default SidebarToggler

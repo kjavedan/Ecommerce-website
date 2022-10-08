@@ -6,7 +6,7 @@ const ContextProvider = props => {
 
     const [theme, setTheme] = useState('#fff')
     
-    const [displaySidebar, setDisplaySidebar] = useState(true)
+    const [displaySidebar, setDisplaySidebar] = useState(false)
 
     const switchTheme = () => {
         setTheme(prevTheme => prevTheme === '#fff' ? '#212121' : '#fff')

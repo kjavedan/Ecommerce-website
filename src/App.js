@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import GlobalStyles from './assets/Global'
 import {Context} from './context/uiContext'
-import Home from './pages/Home' 
+import Home from './pages/home/Home' 
 
 const App = () => {
 

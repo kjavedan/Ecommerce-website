@@ -6,7 +6,7 @@ height: 50px;
 border-radius: 50%;
 background-color: ${({theme})=> theme === '#fff' ? '#EAE6FC' : '#2E2E2E'};
 position: fixed;
-top: 110px;
+top: 126px;
 transform: translateX(-50%);
 cursor: pointer;
 display: none;
