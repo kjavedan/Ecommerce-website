@@ -3,14 +3,12 @@ import styled from 'styled-components'
 export const StyledProduct = styled.div`
 height: 100%;
 width: 200px;
-background-color: lightcoral;
-margin-right: 1rem;
 display: inline-block;
 `
 
 export const Card = styled.div`
-width: 180px;
-height: 160px;
+width: 170px;
+height: 170px;
 margin: 0 auto;
 border-radius: 8px;
 background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};

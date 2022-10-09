@@ -2,22 +2,26 @@ import styled from 'styled-components'
 
 export const StyledSlider = styled.div`
 width: 100%;
-height: 300px;
-border: 1px solid red;
+height: 320px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-
+position: relative;
 `
 
 export  const StyledTitle = styled.div`
 width: 100%;
-height: 20%;
+height: 15%;
 display: flex;
 justify-content: space-between;
-padding-left: .8rem;
-padding-right: .8rem;
+padding-left: 1rem;
+padding-right: 1rem;
 align-items: center;
+
+@media (min-width: 900px){
+    width: 90%;
+    margin: 0 auto;
+}
 
 h2{
     text-transform: capitalize;

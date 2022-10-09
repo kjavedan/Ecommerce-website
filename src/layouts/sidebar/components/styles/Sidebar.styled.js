@@ -8,7 +8,7 @@ position: fixed;
 overflow-y: scroll;
 overflow-x: ${({displaySidebar})=> displaySidebar ? 'hidden' : 'visible'};
 top: 0;
-z-index: 3;
+z-index: 11;
 transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
 border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 
@@ -22,13 +22,11 @@ border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 
 @media (min-width: 900px){
     top:100px;
-    width: 20%;
+    width: 240px;
     transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
     transition: width linear .2s;
 }
-/* @media (min-width:1100px){
-    width: 18%;
-} */
+
 
 `
 

@@ -49,8 +49,8 @@ const GlobalStyles = createGlobalStyle`
     color: #969494;
   }
 
-  button{
-  
+  span{
+    color: ${({theme}) => theme === '#fff' ? '#373636' : '#D9D9D9'};
   }
   
   @media (min-width: 600px) {

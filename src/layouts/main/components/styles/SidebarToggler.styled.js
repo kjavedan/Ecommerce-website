@@ -10,7 +10,7 @@ top: 126px;
 transform: translateX(-50%);
 cursor: pointer;
 display: none;
-z-index: 10;
+z-index: 12;
 
 
 

@@ -12,7 +12,7 @@ align-items: center;
 justify-content: space-around;
 font-size: 1.5rem;
 color: #898989;
-z-index: 10;
+z-index: 12;
 
 @media (min-width: 900px){
     display: none;

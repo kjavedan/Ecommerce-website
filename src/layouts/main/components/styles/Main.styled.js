@@ -4,7 +4,8 @@ const StyledMain = styled.main`
 min-height: 100vh;
 margin-top: 100px;
 margin-left: auto;
-width: ${({displaySidebar}) => displaySidebar ? '80%' : '100%'};
+background-color:red;
+width: ${({displaySidebar}) => displaySidebar ? 'calc(100% - 240px)' : '100%'};
 `
 
 export default StyledMain

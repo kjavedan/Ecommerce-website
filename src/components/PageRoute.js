@@ -1,7 +1,7 @@
 import React from 'react'
-import { StyledPageRoute } from './PageRoute.styled'
+import { StyledPageRoute } from './styles/PageRoute.styled'
 import {GoHome} from 'react-icons/go'
-import '../../assets/App.css'
+import '../assets/App.css'
 import {BiChevronRight} from 'react-icons/bi'
 
 const PageRoute = () => {
