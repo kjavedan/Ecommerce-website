@@ -1,9 +1,12 @@
 import React from 'react'
-import { StyledBrand } from '../styles/Brands.styled'
+import { StyledBrand, StyledCard } from '../styles/Brands.styled'
 
 const Brand = () => {
   return (
-    <StyledBrand></StyledBrand>
+    <StyledBrand>
+        <StyledCard></StyledCard>
+
+    </StyledBrand>
   )
 }
 

@@ -11,6 +11,8 @@ const Brands = () => {
         <Brand />
         <Brand />
         <Brand />
+        <Brand />
+        <Brand />
     </StyledBrands>
   )
 }
