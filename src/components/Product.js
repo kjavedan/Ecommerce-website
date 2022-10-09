@@ -29,7 +29,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
           <Rate><span>{rate}</span> <HiStar style={{color: '#FFD233'}} /></Rate>
           {discount ? 
             <h3>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
-            <h3>{price}</h3>
+            <h3>${price}</h3>
             }
         </ProductInfo>
     </StyledProduct>

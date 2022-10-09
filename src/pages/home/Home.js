@@ -10,7 +10,7 @@ import FastLinks from './components/FastLinks'
 import PageRoute from '../../components/PageRoute'
 import Slider from '../../layouts/slider/Slider'
 import { productsData } from '../../data/sliderData'
-
+import Brands from './components/Brands'
 const Home = () => {
 
     const {theme, displaySidebar} = useContext(Context)
@@ -25,6 +25,9 @@ const Home = () => {
           <FastLinks />
           <PageRoute />
           <Slider title={'hot sails'} data={productsData} />
+          <Brands />
+          <Slider title={'top rated'} data={productsData} />
+          
         
         </StyledMain>
         <Footer />
