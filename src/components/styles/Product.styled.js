@@ -26,7 +26,7 @@ height: 130px;
 z-index: 0;
 transform: translate(-50%, -50%);
 `
-export const Offer = styled.span`
+export const Discount = styled.span`
 position: absolute;
 top: 6px;
 left: 6px;
@@ -37,7 +37,7 @@ background-color: red;
 font: 500 .7rem 'Poppins';
 z-index:1;
 `
-export const FreeDilevery = styled(Offer)`
+export const FreeDilevery = styled(Discount)`
 top: 83%;
 background-color: black;
 `

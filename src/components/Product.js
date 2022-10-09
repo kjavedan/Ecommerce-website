@@ -1,26 +1,36 @@
 import React, { useContext } from 'react'
 import { Context } from '../context/uiContext'
-import { StyledProduct, Card, FreeDilevery, Offer, Image } from './styles/Product.styled'
-import { ProductInfo, Availability, Rate } from './styles/ProductInfo.styled'
+import { StyledProduct, Card, FreeDilevery, Discount, Image } from './styles/Product.styled'
+import { ProductInfo, Availability, Rate, BeforeDiscount } from './styles/ProductInfo.styled'
 import {HiStar} from 'react-icons/hi'
-const Product = () => {
+const Product = ({title, discount, isFreeDelivery, availability, rate, price, url}) => {
 
   const {theme} = useContext(Context)
-
+  
+  const getAfterDiscountPrice = () => {
+    const newPrice1 = price / 100;
+    const newPrice2 = newPrice1 * discount;
+    const newPrice3 = price - newPrice2;
+    return newPrice3.toFixed(2)
+    // (price - ((price / 100) * discount)).toFixed(2)
+  }
   return (
     <StyledProduct>
         <Card theme={theme}>
-          <Offer>%10 off</Offer>
+         {discount ? <Discount>%{discount} off</Discount> : ''}
           <Image>
-            <img src='' alt='image' />
+            <img src={url} alt='image' />
           </Image>
-          <FreeDilevery>free delivery</FreeDilevery>
+          {isFreeDelivery && <FreeDilevery>free delivery</FreeDilevery>}
         </Card>
         <ProductInfo>
-          <h3>Apple pro msx 13</h3>
-          <Availability>available</Availability>
-          <Rate><span>4.5</span> <HiStar style={{color: '#FFD233'}} /></Rate>
-          <h3>$1099</h3>
+          <h3>{title}</h3>
+          <Availability>{availability}</Availability>
+          <Rate><span>{rate}</span> <HiStar style={{color: '#FFD233'}} /></Rate>
+          {discount ? 
+            <h3>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
+            <h3>{price}</h3>
+            }
         </ProductInfo>
     </StyledProduct>
   )

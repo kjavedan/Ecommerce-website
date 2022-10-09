@@ -25,3 +25,7 @@ span{
 }
 
 `
+export const BeforeDiscount = styled.span`
+text-decoration: line-through;
+color: #969494;
+`

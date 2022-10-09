@@ -11,18 +11,28 @@ const Slider = ({title, data}) => {
 
   const {theme} = useContext(Context)
 
+  const productElements = data.map(product => {
+    return (
+      <Product 
+      title={product.title} 
+      discount={product.discount} 
+      isFreeDelivery={product.isFreeDelivery} 
+      availability={product.availability} 
+      rate={product.rate} 
+      price={product.price} 
+      url={product.url} />)
+  })
+ 
+
+  console.log(productElements)
+  
   return (
     <StyledSlider>
         <StyledTitle><h2>{title}</h2> <p>see all</p></StyledTitle>
         <Wrapper>
           <PrevBtn theme={theme}><BiChevronLeft /></PrevBtn>
           <NextBtn theme={theme}><BiChevronRight /></NextBtn>
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-            <Product />
+          {productElements}
         </Wrapper>
     </StyledSlider>
   )

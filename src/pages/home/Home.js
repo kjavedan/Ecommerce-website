@@ -9,6 +9,7 @@ import SidebarToggler from '../../layouts/main/components/SidebarToggler'
 import FastLinks from './components/FastLinks'
 import PageRoute from '../../components/PageRoute'
 import Slider from '../../layouts/slider/Slider'
+import { productsData } from '../../data/sliderData'
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
           <SidebarToggler /> 
           <FastLinks />
           <PageRoute />
-          <Slider title={'hot sails'} data={'data'} />
+          <Slider title={'hot sails'} data={productsData} />
         
         </StyledMain>
         <Footer />
