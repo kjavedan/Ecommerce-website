@@ -5,7 +5,6 @@ width: 40px;
 height: 40px;
 border-radius: 50%;
 background-color: ${({theme})=> theme === '#fff' ? '#EAE6FC' : '#2E2E2E'};
-box-shadow: 0px 2px 2px rgba(0, 0, 0, .25);
 font-size: 2rem;
 display: flex;
 align-items: center;

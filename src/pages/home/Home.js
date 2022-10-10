@@ -9,7 +9,7 @@ import SidebarToggler from '../../layouts/main/components/SidebarToggler'
 import FastLinks from './components/FastLinks'
 import PageRoute from '../../components/PageRoute'
 import Slider from '../../layouts/slider/Slider'
-import { productsData } from '../../data/sliderData'
+import { productsData, productsData2 } from '../../data/sliderData'
 import Brands from './components/Brands'
 const Home = () => {
 
@@ -26,9 +26,10 @@ const Home = () => {
           <PageRoute />
           <Slider title={'hot sails'} data={productsData} />
           <Brands />
-          <Slider title={'top rated'} data={productsData} />
-          
-        
+          <Slider title={'newest products'} data={productsData2} />
+          <Slider title={'populary products'} data={productsData} />
+          <Slider title={'top rated'} data={productsData2} />
+          <Slider title={'heighest off'} data={productsData} />             
         </StyledMain>
         <Footer />
     </StyledContainer>

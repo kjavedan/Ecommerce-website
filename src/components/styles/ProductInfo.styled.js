@@ -7,7 +7,7 @@ padding: .5rem 1rem;
 `
 
 export const Availability = styled.p`
-color: red;
+color: #E02B2B;
 font: 500 .7rem 'Roboto';
 display: inline-flex;
 width: 80%;
@@ -20,7 +20,7 @@ margin-left: auto;
 margin-bottom: .5rem;
 
 span{
-    font: 500 .8rem 'Roboto';
+    font: 500 .7rem 'Roboto';
     margin-right: .2rem;
 }
 

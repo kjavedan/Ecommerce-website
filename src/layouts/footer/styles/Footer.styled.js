@@ -19,7 +19,7 @@ margin-bottom: 80px;
     height: 250px;
 }
 @media (min-width: 900px){
-    width:${({displaySidebar})=> displaySidebar ? '80%' : '100%'};
+    width:${({displaySidebar})=> displaySidebar ? 'calc(100% - 240px)' : '100%'};
     transition: width linear .2s;
     margin-left: auto;
     margin-bottom: 0px;

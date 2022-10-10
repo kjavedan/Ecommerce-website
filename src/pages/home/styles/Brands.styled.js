@@ -13,12 +13,14 @@ text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+cursor: pointer;
+text-transform: capitalize;
 `
 export const StyledCard = styled.div`
 width: 100px;
 height: 100px;
 border-radius: 8px;
-background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};
+background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;display: flex;
 align-items: center;
 justify-content: center;

@@ -28,15 +28,15 @@ const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme === '#fff' ? '#171616' : '#D9D9D9'};
   }
   h3{
-    font-size: .8rem;
+    font-size: .7rem;
     color: ${({theme}) => theme === '#fff' ? '#373636' : '#D9D9D9'};
   }
   h4{
-    font-size: 1.2rem;
+    font-size: .8rem;
     color: ${({theme}) => theme === '#fff' ? '#969494' : '#969494'};
   }
   h5{
-    font-size: .6rem;
+    font-size: .5rem;
     color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
   }
   h6{
@@ -62,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1rem;
     }
     h3,h4{
-      font-size: .9rem;
+      font-size: .8rem;
     }
     h5{
       font-size: 1rem;

@@ -11,13 +11,12 @@ width: 170px;
 height: 170px;
 margin: 0 auto;
 border-radius: 8px;
-background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};
+background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 box-shadow: 0px 2px 2px  rgba(0, 0, 0, .25) ;
 position: relative;
 `
 
 export const Image = styled.div`
-background-color: blue;
 position: absolute;
 left: 50%;
 top: 50%;
@@ -33,13 +32,13 @@ left: 6px;
 color: #D9D9D9;
 padding: .1rem .3rem;
 border-radius: 4px;
-background-color: red;
+background-color: #E02B2B;
 font: 500 .7rem 'Poppins';
 z-index:1;
 `
 export const FreeDilevery = styled(Discount)`
 top: 83%;
-background-color: black;
+background-color: #171616;
 `
 
 
