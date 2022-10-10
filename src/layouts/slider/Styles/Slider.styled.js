@@ -7,6 +7,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 position: relative;
+margin-bottom: 3rem;
 `
 
 export  const StyledTitle = styled.div`

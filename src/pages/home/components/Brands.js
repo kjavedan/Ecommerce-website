@@ -1,19 +1,22 @@
 import React from 'react'
-import { StyledBrands } from '../styles/Brands.styled'
+import { StyledBrands, Title } from '../styles/Brands.styled'
 import Brand from './Brand'
 
 const Brands = () => {
   return (
-    <StyledBrands>
-        <Brand />
-        <Brand />
-        <Brand />
-        <Brand />
-        <Brand />
-        <Brand />
-        <Brand />
-        <Brand />
-    </StyledBrands>
+    <>
+      <Title>Popular brands</Title>
+      <StyledBrands>
+          <Brand />
+          <Brand />
+          <Brand />
+          <Brand />
+          <Brand />
+          <Brand />
+          <Brand />
+          <Brand />
+      </StyledBrands>
+    </>
   )
 }
 
