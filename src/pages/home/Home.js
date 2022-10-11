@@ -11,6 +11,8 @@ import PageRoute from '../../components/PageRoute'
 import Slider from '../../layouts/slider/Slider'
 import { productsData, productsData2 } from '../../data/sliderData'
 import Brands from './components/Brands'
+import { sidebarDataHome } from '../../data/sidebarData'
+
 const Home = () => {
 
     const {theme, displaySidebar} = useContext(Context)
@@ -19,7 +21,7 @@ const Home = () => {
     <>
      <StyledContainer theme={theme}>
         <Header />
-        <Sidebar />
+        <Sidebar category={sidebarDataHome} displayPriceFilter={false}/>
         <StyledMain theme={theme} displaySidebar={displaySidebar}>
           <SidebarToggler /> 
           <FastLinks />

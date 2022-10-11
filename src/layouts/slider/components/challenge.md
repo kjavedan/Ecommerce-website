@@ -50,3 +50,11 @@ build an acount page
 
 ---------------------------------------------------------------------------
 - revise the solution
+
+---------------------------------------------------------------------------
+
+solving one pece of the puzzle at the time
+
+productCategory layout :
+
+header(same) - sidebar will has its own data & a plus section for price filter - page route the same with a plus filter button at the top - footer(same) - main(different)

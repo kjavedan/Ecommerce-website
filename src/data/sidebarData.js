@@ -6,62 +6,108 @@ import {FiHeadphones, FiCpu} from 'react-icons/fi'
 import {AiFillHeart, AiFillFire} from 'react-icons/ai'
 import {MdShoppingCart, MdLocalOffer} from 'react-icons/md'
 
-export const items1 = [
+export const sidebarDataHome = [
     {
-      title: 'mobile',
-      icon: <HiOutlineDeviceMobile />,
-      children: ['all', 'apple', 'samsung', 'sony', 'nokia']
+      title: 'Category',
+      data: [
+      {
+        title: 'mobile',
+        icon: <HiOutlineDeviceMobile />,
+        children: ['all', 'apple', 'samsung', 'sony', 'nokia']
+      },
+      {
+        title: 'Laptop',
+        icon: <BsLaptop />,
+        children: ['all', 'apple', 'microsoft', 'dell', 'hp']
+      },
+      {
+        title: 'headset',
+        icon: <FiHeadphones />,
+        children: ['all', 'apple', 'samsung', 'sony', 'lenovo']
+      },
+      {
+        title: 'keboard',
+        icon: <FaRegKeyboard />,
+        children: ['apple', 'lenovo', 'shiami', 'other']
+      },
+      {
+        title: 'mouse',
+        icon: <CgMouse />,
+        children: ['all', 'apple', 'microsoft', 'other']
+      },
+      {
+        title: 'other',
+        icon: <FiCpu />,
+        children: []
+        }
+      ]
     },
     {
-      title: 'Laptop',
-      icon: <BsLaptop />,
-      children: ['all', 'apple', 'microsoft', 'dell', 'hp']
-    },
-    {
-      title: 'headset',
-      icon: <FiHeadphones />,
-      children: ['all', 'apple', 'samsung', 'sony', 'lenovo']
-    },
-    {
-      title: 'keboard',
-      icon: <FaRegKeyboard />,
-      children: ['apple', 'lenovo', 'shiami', 'other']
-    },
-    {
-      title: 'mouse',
-      icon: <CgMouse />,
-      children: ['all', 'apple', 'microsoft', 'other']
-    },
-    {
-      title: 'other',
-      icon: <FiCpu />,
-      children: []
-      }
+      title: 'Take a look at',
+      data: [
+        {
+          title: 'hot sails',
+          icon: <AiFillFire  style={{color: '#FF7A00'}}/>,
+          children: []
+        },
+        {
+          title: 'newest products',
+          icon: <MdShoppingCart style={{color: '#8D74EE'}}/>,
+          children: []
+        },
+        {
+          title: 'popular products',
+          icon: <AiFillHeart style={{color: '#FF0000'}}/>,
+          children: []
+        },
+        {
+          title: 'top rated',
+          icon: <HiStar style={{color: '#FFD233'}}/>,
+          children: []
+        },
+        {
+          title: 'higehst off',
+          icon: <MdLocalOffer style={{color: '#D8D7D7'}}/>,
+          children: []
+          }
+      ]
+    }  
   ]
-  export const items2 = [
+ 
+export const sidebarDataMobile = [
     {
-      title: 'hot sails',
-      icon: <AiFillFire  style={{color: '#FF7A00'}}/>,
-      children: []
-    },
-    {
-      title: 'newest products',
-      icon: <MdShoppingCart style={{color: '#8D74EE'}}/>,
-      children: []
-    },
-    {
-      title: 'popular products',
-      icon: <AiFillHeart style={{color: '#FF0000'}}/>,
-      children: []
-    },
-    {
-      title: 'top rated',
-      icon: <HiStar style={{color: '#FFD233'}}/>,
-      children: []
-    },
-    {
-      title: 'higehst off',
-      icon: <MdLocalOffer style={{color: '#D8D7D7'}}/>,
-      children: []
-      }
+      title: 'Brands',
+        data: [
+        {
+          title: 'All',
+          icon: '',
+          children: []
+        },
+        {
+          title: 'apple',
+          icon: '',
+          children: []
+        },
+        {
+          title: 'samsung',
+          icon: '',
+          children: []
+        },
+        {
+          title: 'sony',
+          icon: '',
+          children: []
+        },
+        {
+          title: 'howavei',
+          icon: '',
+          children: []
+        },
+        {
+          title: 'shiami',
+          icon: '',
+          children: []
+          }
+        ]
+    }
   ]
