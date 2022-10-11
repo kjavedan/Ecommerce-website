@@ -2,6 +2,7 @@ import React, {useContext} from 'react'
 import GlobalStyles from './assets/Global'
 import {Context} from './context/uiContext'
 import Home from './pages/home/Home' 
+import ProductCategory from './pages/productCategory/ProductCategory'
 
 const App = () => {
 
@@ -10,7 +11,8 @@ const App = () => {
   return (
     <>
     <GlobalStyles theme={theme}/>
-    <Home />
+    {/* <Home /> */}
+    <ProductCategory category={'mobile'}/>
     </>
   )
 }
