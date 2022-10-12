@@ -12,7 +12,7 @@ const App = () => {
     <>
     <GlobalStyles theme={theme}/>
     {/* <Home /> */}
-    <ProductCategory category={'mobile'}/>
+    <ProductCategory />
     </>
   )
 }

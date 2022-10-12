@@ -1,10 +1,11 @@
 import { HiOutlineDeviceMobile, HiStar } from 'react-icons/hi'
-import {BsLaptop} from 'react-icons/bs'
+import {BsLaptop, BsApple} from 'react-icons/bs'
 import {CgMouse} from 'react-icons/cg'
-import {FaRegKeyboard} from 'react-icons/fa'
+import {FaRegKeyboard, FaRegMoneyBillAlt} from 'react-icons/fa'
 import {FiHeadphones, FiCpu} from 'react-icons/fi'
 import {AiFillHeart, AiFillFire} from 'react-icons/ai'
 import {MdShoppingCart, MdLocalOffer} from 'react-icons/md'
+import {GiMoneyStack} from 'react-icons/gi'
 
 export const sidebarDataHome = [
     {
@@ -76,36 +77,41 @@ export const sidebarDataHome = [
  
 export const sidebarDataMobile = [
     {
-      title: 'Brands',
+      title: 'Filters',
         data: [
         {
-          title: 'All',
-          icon: '',
+          title: 'Brands',
+          icon: <BsApple styled={{color: 'grey'} } />,
+          children: ['all', 'apple', 'samsung', 'sony', 'howavei', 'shiami']
+        },
+        {
+          title: 'most sailed',
+          icon: <AiFillFire  style={{color: '#FF7A00'}} />,
           children: []
         },
         {
-          title: 'apple',
-          icon: '',
+          title: 'newest ',
+          icon: <MdShoppingCart style={{color: '#8D74EE'}} />,
           children: []
         },
         {
-          title: 'samsung',
-          icon: '',
+          title: 'top rated',
+          icon: <HiStar style={{color: '#FFD233'}} />,
           children: []
         },
         {
-          title: 'sony',
-          icon: '',
+          title: 'heighest off',
+          icon: <MdLocalOffer style={{color: 'red'}}/>,
           children: []
         },
         {
-          title: 'howavei',
-          icon: '',
+          title: 'cheapest',
+          icon: <FaRegMoneyBillAlt style={{color: 'lightgreen'}} />,
           children: []
-        },
+          },
         {
-          title: 'shiami',
-          icon: '',
+          title: 'most expensive',
+          icon: <GiMoneyStack style={{color: 'green'}} />,
           children: []
           }
         ]

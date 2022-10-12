@@ -15,11 +15,11 @@ const ProductCategory = () => {
     return (
         <StyledContainer theme={theme}>
             <Header />
-            <Sidebar category={sidebarDataMobile} displayPriceFilter={true}/>
+            <Sidebar category={sidebarDataMobile} isProductCategory={true}/>
             <StyledMain theme={theme} displaySidebar={displaySidebar}>
                 <SidebarToggler />
             </StyledMain>
-            <Footer />
+            <Footer /> 
         </StyledContainer>
     )
 }

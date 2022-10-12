@@ -3,7 +3,7 @@ import { StyledCategory } from './styles/Category.styled'
 import CategoryTitle from './CategoryTitle'
 import CategoryItems from './CategoryItems'
 
-const Category = ({title, items}) => {
+const Category = ({title, items, isProductCategory}) => {
 
     const [displayCategoryItems, setDisplayCategoryItems] = useState(true)
 
@@ -12,7 +12,7 @@ const Category = ({title, items}) => {
   return (
     <StyledCategory display={displayCategoryItems ? 1 : 0}>
         <CategoryTitle display={displayCategoryItems ? 1 : 0} toggleChilds={toggleChilds} title={title}/>
-        <CategoryItems items={items}/>
+        <CategoryItems items={items} isProductCategory={isProductCategory} />
     </StyledCategory>
   )
 }

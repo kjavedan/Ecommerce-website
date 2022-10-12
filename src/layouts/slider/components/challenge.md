@@ -58,3 +58,15 @@ solving one pece of the puzzle at the time
 productCategory layout :
 
 header(same) - sidebar will has its own data & a plus section for price filter - page route the same with a plus filter button at the top - footer(same) - main(different)
+
+header -> done
+footer -> done
+
+sidebar ->
+* chanlleng conditionally render the check box in the product list page 
+again I believe that we have many options but the ones that came to my mind are these two
+1- by checking the page route
+2- by adding another props to the data which is called isFilter and this props basically is responsible for deciding wheather the check box should be displayed or not
+
+pros & cons of solution 2
+--pros:
