@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { StyledCategory } from './styles/Category.styled'
+import { StyledCategory } from '../styles/Category.styled'
 import CategoryTitle from './CategoryTitle'
 import CategoryItems from './CategoryItems'
 

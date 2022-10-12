@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledPriceFilter } from './styles/PriceFilter.styled'
+import { StyledPriceFilter } from '../styles/PriceFilter.styled'
 
 const PriceFilter = () => {
   return (

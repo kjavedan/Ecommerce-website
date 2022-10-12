@@ -64,9 +64,10 @@ footer -> done
 
 sidebar ->
 * chanlleng conditionally render the check box in the product list page 
-again I believe that we have many options but the ones that came to my mind are these two
-1- by checking the page route
-2- by adding another props to the data which is called isFilter and this props basically is responsible for deciding wheather the check box should be displayed or not
+process:
+1- creating a category item that has a label and a costum checkbox
+2- when we are at productCategory page we need to use that item and when we are at other paegs we need to use the current item which has icon and text
 
-pros & cons of solution 2
---pros:
+question: should I build two seperate items || make the current item responssive
+
+

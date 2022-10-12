@@ -14,6 +14,10 @@ cursor: pointer;
 color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
 border-bottom: 1px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 
+input{
+accent-color: #7B6AB7;
+}
+
 &:hover{
     background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};
     }

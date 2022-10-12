@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
-import { StyledChild } from './styles/CategoryItem.styled'
+import { StyledChild } from '../styles/CategoryItem.styled'
 import { Context } from '../../../context/uiContext'
+import Checkbox from './Checkbox'
 
 const CategoryItemChild = ({data, isProductCategory}) => {
 
   const {theme} = useContext(Context)
 
   return (
-    <StyledChild theme={theme}>{data}  {isProductCategory && <input type='checkbox' />} </StyledChild>
+    <StyledChild theme={theme}>{isProductCategory ? <Checkbox /> : data} </StyledChild>
   )
 }
 
