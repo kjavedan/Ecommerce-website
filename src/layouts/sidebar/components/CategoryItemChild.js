@@ -3,12 +3,12 @@ import { StyledChild } from '../styles/CategoryItem.styled'
 import { Context } from '../../../context/uiContext'
 import Checkbox from './Checkbox'
 
-const CategoryItemChild = ({data, isProductCategory}) => {
+const CategoryItemChild = ({title, isProductCategory}) => {
 
   const {theme} = useContext(Context)
 
   return (
-    <StyledChild theme={theme}>{isProductCategory ? <Checkbox /> : data} </StyledChild>
+    <StyledChild theme={theme}>{isProductCategory ? <Checkbox title={title}/> : title} </StyledChild>
   )
 }
 

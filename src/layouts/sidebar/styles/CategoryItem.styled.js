@@ -13,6 +13,7 @@ height: 3rem;
 cursor: pointer;
 color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
 border-bottom: 1px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
+overflow: hidden;
 
 input{
 accent-color: #7B6AB7;

@@ -14,7 +14,7 @@ const Parent = ({title, icon, children, isProductCategory}) => {
       return(
             <CategoryItemChild 
             key={index} 
-            data={item} 
+            title={item} 
             isProductCategory={isProductCategory}
             />
       )})
@@ -37,6 +37,7 @@ const Parent = ({title, icon, children, isProductCategory}) => {
           <StyledParent 
           onClick={children.length ? toggleChilds : openRoute} 
           theme={theme}
+          style={{cursor: 'default'}}
           > 
             {
               children.length ? 

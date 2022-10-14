@@ -7,7 +7,7 @@ export const Items = styled.div`
 `
 
 export const Children = styled.div`
-    height: ${({display}) => display ? 'auto' : 0};
+    display: ${({display}) => display ? 'block' : 'none'};
     transition: all linear .2s ;
     overflow: hidden;
 `
