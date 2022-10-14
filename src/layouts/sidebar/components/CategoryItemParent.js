@@ -28,14 +28,7 @@ const Parent = ({title, icon, children, isProductCategory}) => {
 
     }
 
-    const handleClick = () => {
-      if(isProductCategory){
-        return children.length ? toggleChilds : ''
-      }
-      else{
-        return children.length ? toggleChilds : openRoute
-      }
-    }
+    
   return (
     <>
         
@@ -53,7 +46,10 @@ const Parent = ({title, icon, children, isProductCategory}) => {
               displayChildElements={displayChildElements}
               children={children}
               />: 
-              <Checkbox />
+              <Checkbox
+              icon={icon}
+              title={title}
+              />
             }
           </StyledParent> :
           <StyledParent 

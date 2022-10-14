@@ -10,7 +10,7 @@ height: 2rem;
 export const Input = styled.input.attrs({type: "checkbox"})``
 
 export const Label = styled.label`
-width: 40px;
-height: 2rem;
-/* background-color : red; */
+margin-right: atuo;
+margin-left: .3rem;
+background-color : red;
 `
