@@ -18,3 +18,4 @@ font-weight: 500;
 `
 
 export default StyledButton
+
