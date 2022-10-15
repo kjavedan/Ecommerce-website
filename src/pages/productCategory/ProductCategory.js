@@ -9,7 +9,7 @@ import StyledMain from '../../layouts/main/components/styles/Main.styled'
 import SidebarToggler from '../../layouts/main/components/SidebarToggler'
 import PageRoute from '../../components/PageRoute'
 import FastLinks from '../../components/FastLinks'
-import { links } from '../../data/fastLinks'
+import { ProductCategorylinks } from '../../data/fastLinks'
 
 const ProductCategory = () => {
 
@@ -22,7 +22,7 @@ const ProductCategory = () => {
             <StyledMain theme={theme} displaySidebar={displaySidebar}>
                 <SidebarToggler />
                 <PageRoute />
-                <FastLinks links={links}/>
+                <FastLinks links={ProductCategorylinks}/>
             </StyledMain>
             <Footer /> 
         </StyledContainer>

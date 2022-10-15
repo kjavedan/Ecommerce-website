@@ -15,7 +15,7 @@ export const StyledLink = styled.div`
     }
 
     div{
-        width: 30px;
+        width: 40px;
         height: 100%;
         border-radius: 4px;
         background-color: #F1F1F1;
