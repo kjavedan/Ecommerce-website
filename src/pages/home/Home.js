@@ -6,12 +6,13 @@ import Sidebar from '../../layouts/sidebar/Sidebar'
 import Footer from '../../layouts/footer/Footer'
 import StyledMain from '../../layouts/main/components/styles/Main.styled'
 import SidebarToggler from '../../layouts/main/components/SidebarToggler'
-import FastLinks from './components/FastLinks'
+import FastLinks from '../../components/FastLinks'
 import PageRoute from '../../components/PageRoute'
 import Slider from '../../layouts/slider/Slider'
 import { productsData, productsData2 } from '../../data/sliderData'
 import Brands from './components/Brands'
 import { sidebarDataHome } from '../../data/sidebarData'
+import {links} from '../../data/fastLinks'
 
 const Home = () => {
 
@@ -24,8 +25,8 @@ const Home = () => {
         <Sidebar category={sidebarDataHome} displayPriceFilter={false}/>
         <StyledMain theme={theme} displaySidebar={displaySidebar}>
           <SidebarToggler /> 
-          <FastLinks />
           <PageRoute />
+          <FastLinks links={links}/>
           <Slider title={'hot sails'} data={productsData} />
           <Brands />
           <Slider title={'newest products'} data={productsData2} />

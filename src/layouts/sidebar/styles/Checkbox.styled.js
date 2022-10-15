@@ -11,6 +11,7 @@ align-items: center;
 export const Input = styled.input.attrs({type: "checkbox"})`
 cursor: pointer;
 opacity: 0;
+position: absolute;
 
 &:checked + Label::after {
     background-color: rgb(141, 116, 238);
@@ -29,9 +30,14 @@ export const Label = styled.label`
 display: flex;
 cursor: pointer;
 width: 100%;
+align-items: center;
 
 span{
+    color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
     margin-left: .3rem;
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: 'poppins'
 }
 
 &::after{

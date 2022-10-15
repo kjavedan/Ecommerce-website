@@ -20,7 +20,7 @@ const Parent = ({title, icon, children, isProductCategory}) => {
       )})
 
     const [displayChildElements, setDisplayChildElements] = useState(false)
-    
+
     const toggleChilds = () => {
       setDisplayChildElements(prevState => !prevState)
     }
@@ -46,7 +46,8 @@ const Parent = ({title, icon, children, isProductCategory}) => {
               title={title} 
               displayChildElements={displayChildElements}
               children={children}
-              />: 
+              />
+              : 
               <Checkbox
               icon={icon}
               title={title}
@@ -55,7 +56,8 @@ const Parent = ({title, icon, children, isProductCategory}) => {
           </StyledParent> :
           <StyledParent 
           onClick={ children.length ? toggleChilds : openRoute} 
-          theme={theme}> 
+          theme={theme}
+          > 
             <CategoryItemContent 
             icon={icon} 
             title={title} 
@@ -64,7 +66,6 @@ const Parent = ({title, icon, children, isProductCategory}) => {
             />
           </StyledParent>
         }
-
         <Children display={displayChildElements ? 1 : 0}>
             {childElements}
         </Children>

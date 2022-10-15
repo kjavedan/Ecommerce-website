@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import {StyledFastLinks, StyledFastLinksContainer} from '../styles/FastLinks.styled'
+import {StyledFastLinks, StyledFastLinksContainer} from './styles/FastLinks.styled'
 import {AiOutlineLink} from 'react-icons/ai'
 import Link from './Link'
-import {links} from '../../../data/fastLinks'
-import { Context } from '../../../context/uiContext'
-const FastLinks = () => {
+import { Context } from '../context/uiContext'
+const FastLinks = ({links}) => {
 
     const {theme} = useContext(Context)
 

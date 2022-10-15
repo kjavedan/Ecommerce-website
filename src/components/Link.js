@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { Context } from '../../../context/uiContext'
-import {StyledLink} from '../styles/Link.styled'
+import {Context} from '../context/uiContext'
+import {StyledLink} from './styles/Link.styled'
 
 const Link = ({title, icon}) => {
   

@@ -7,6 +7,9 @@ import Sidebar from '../../layouts/sidebar/Sidebar'
 import { sidebarDataMobile } from '../../data/sidebarData'
 import StyledMain from '../../layouts/main/components/styles/Main.styled'
 import SidebarToggler from '../../layouts/main/components/SidebarToggler'
+import PageRoute from '../../components/PageRoute'
+import FastLinks from '../../components/FastLinks'
+import { links } from '../../data/fastLinks'
 
 const ProductCategory = () => {
 
@@ -18,6 +21,8 @@ const ProductCategory = () => {
             <Sidebar category={sidebarDataMobile} isProductCategory={true}/>
             <StyledMain theme={theme} displaySidebar={displaySidebar}>
                 <SidebarToggler />
+                <PageRoute />
+                <FastLinks links={links}/>
             </StyledMain>
             <Footer /> 
         </StyledContainer>
