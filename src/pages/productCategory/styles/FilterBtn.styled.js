@@ -6,7 +6,7 @@ width: 85px;
 background-color: #2C00D5;
 color: white;
 border: none;
-border-radius: 5px;
+border-radius: 8px;
 font: 400 .8rem 'poppins';
 display: inline-flex;
 align-items: center;
