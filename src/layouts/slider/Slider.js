@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { StyledSlider, StyledTitle } from './styles/Slider.styled'
-import Wrapper from './styles/Wrapper.styled'
+import { StyledSlider, StyledTitle } from './Styles/Slider.styled'
+import Wrapper from './Styles/Wrapper.styled'
 import Product from '../../components/Product'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
-import {PrevBtn, NextBtn} from './styles/SliderBtns.styled'
+import {PrevBtn, NextBtn} from './Styles/SliderBtns.styled'
 import { Context } from '../../context/uiContext'
 
 
