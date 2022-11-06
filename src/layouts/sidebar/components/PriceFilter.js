@@ -7,6 +7,14 @@ const PriceFilter = () => {
 
   const {theme} = useContext(Context)
 
+
+  const handleChange = () => {
+    console.log('hello')
+  }
+  const valuetext = () => {
+    console.log('hello')
+  }
+
   return (
     <StyledPriceFilter>
         <h2>Price Range</h2>
@@ -17,7 +25,15 @@ const PriceFilter = () => {
           <Input theme={theme}>
             <span>To:</span> <input type='number' />
           </Input>
-          <Slider /> 
+          <Slider
+          
+          getAriaLabel={() => 'Temperature range'}
+          value={[20,80]}
+          onChange={handleChange}
+          valueLabelDisplay="auto"
+          getAriaValueText={valuetext}
+        />
+        
         </Container>
     </StyledPriceFilter>
   )
