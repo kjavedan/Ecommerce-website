@@ -37,4 +37,15 @@ input{
     border-bottom: 1px solid #706F6F;
     color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#B4B4B4'};
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 `
