@@ -25,13 +25,12 @@ const PriceFilter = () => {
           <Input theme={theme}>
             <span>To:</span> <input type='number' />
           </Input>
-          <Slider
-          
-          getAriaLabel={() => 'Temperature range'}
-          value={[20,80]}
+          <Slider    
+          defaultValue={[20,80]}
           onChange={handleChange}
           valueLabelDisplay="auto"
           getAriaValueText={valuetext}
+          color="secondary"
         />
         
         </Container>
