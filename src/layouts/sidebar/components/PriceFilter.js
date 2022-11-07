@@ -18,10 +18,7 @@ const PriceFilter = () => {
 
   const setVal1 = (e) => {
     let value;
-    if(e.target.value >= priceRange[1] + 10){
-      value = priceRange[1] - 10;
-    }
-    else if(e.target.value > 12000){
+     if(e.target.value > 12000){
       value = 12000;
     } 
     else if(e.target.value < 0){
