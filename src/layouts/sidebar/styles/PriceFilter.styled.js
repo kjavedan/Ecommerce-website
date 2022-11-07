@@ -30,6 +30,7 @@ input{
     width: 70%;
     outline: none;
     border: none;
+    text-align: center;
     font-size: 1rem;
     font-weight: bold;
     background-color: transparent;
