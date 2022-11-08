@@ -51,10 +51,10 @@ const PriceFilter = () => {
         <h2>Price Range</h2>
         <Container>
           <Input theme={theme}>
-            <span>From: </span> <input value={priceRange[0]} onChange={setVal1} min={'0'} max={'1199'} type='number' />
+            <span>From: </span> <input value={priceRange[0]} onChange={setVal1} min={'0'} max={'1199'} type='number' /> $
           </Input> 
           <Input theme={theme}>
-            <span>To: </span> <input value={priceRange[1]} onChange={setVal2} type='number' />
+            <span style={{width:'40px'}}>To: </span> <input value={priceRange[1]} onChange={setVal2} type='number' /> $
           </Input>
           <Slider    
           value={priceRange}
