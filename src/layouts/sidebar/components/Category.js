@@ -13,6 +13,7 @@ const Category = ({title, items, isProductCategory}) => {
     <StyledCategory display={displayCategoryItems ? 1 : 0}>
         <CategoryTitle display={displayCategoryItems ? 1 : 0} toggleChilds={toggleChilds} title={title}/>
         <CategoryItems items={items} isProductCategory={isProductCategory} />
+        <p>Delete all filters</p>
     </StyledCategory>
   )
 }
