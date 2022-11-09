@@ -11,7 +11,6 @@ import PageRoute from '../../components/PageRoute'
 import FastLinks from '../../components/FastLinks'
 import { ProductCategorylinks } from '../../data/fastLinks'
 import Container from './styles/Container.styled';
-import FilterBtn from './components/FilterBtn'
 
 const ProductCategory = () => {
 
@@ -25,10 +24,8 @@ const ProductCategory = () => {
                 <SidebarToggler />
                 <Container>
                     <PageRoute /> 
-                    
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
-                
             </StyledMain>
             <Footer /> 
         </StyledContainer>
