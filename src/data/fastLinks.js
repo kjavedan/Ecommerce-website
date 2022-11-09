@@ -1,4 +1,4 @@
-import {BsLaptop, BsPhone} from 'react-icons/bs'
+import {BsLaptop, BsPhone, BsFilterLeft} from 'react-icons/bs'
 import {FaRegKeyboard, FaStar, FaMoneyBillAlt} from 'react-icons/fa'
 import {CgMouse} from 'react-icons/cg'
 import {GrView} from 'react-icons/gr'
@@ -57,5 +57,9 @@ export const ProductCategorylinks = [
         title: 'most expensive',
         icon: <GiMoneyStack />
     },
+    {
+        title: 'Filters',
+        icon: <BsFilterLeft/>
+    }
 ]
 

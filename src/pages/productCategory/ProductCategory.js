@@ -25,9 +25,10 @@ const ProductCategory = () => {
                 <SidebarToggler />
                 <Container>
                     <PageRoute /> 
-                    <FilterBtn />
+                    
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
+                
             </StyledMain>
             <Footer /> 
         </StyledContainer>

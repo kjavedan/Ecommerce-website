@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { StyledPriceFilter, Container, Input } from '../styles/PriceFilter.styled'
 import Slider from '@mui/material/Slider';
 import { Context } from '../../../context/uiContext';
+import { PropTypes } from 'prop-types'
 
 const PriceFilter = () => {
 
@@ -14,7 +15,6 @@ const PriceFilter = () => {
   const handleChange = (e) => {
     setPriceRange(e.target.value)
   }
-  console.log(priceRange)
 
   const setVal1 = (e) => {
     let value;
@@ -42,9 +42,6 @@ const PriceFilter = () => {
     }
     setPriceRange(prevState => [prevState[0], value ])
   }
-  const valuetext = () => {
-    console.log('')
-  }
 
   return (
     <StyledPriceFilter>
@@ -61,7 +58,6 @@ const PriceFilter = () => {
           disableSwap
           onChange={handleChange}
           valueLabelDisplay="auto"
-          getAriaValueText={valuetext}
           color="secondary"
           max={12000}
         />
@@ -70,6 +66,7 @@ const PriceFilter = () => {
     </StyledPriceFilter>
   )
 }
+
 
 export default PriceFilter
 
@@ -92,5 +89,4 @@ if the user try to delete the input value set the value to 0
 challenge 3
 invalid proptype when I empty the input filed
 solution -> use propTypes checking
-
 */
