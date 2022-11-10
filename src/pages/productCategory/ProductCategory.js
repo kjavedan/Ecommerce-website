@@ -11,6 +11,7 @@ import PageRoute from '../../components/PageRoute'
 import FastLinks from '../../components/FastLinks'
 import { ProductCategorylinks } from '../../data/fastLinks'
 import Container from './styles/Container.styled';
+import Products from './components/Products'
 
 const ProductCategory = () => {
 
@@ -26,6 +27,7 @@ const ProductCategory = () => {
                     <PageRoute /> 
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
+                <Products />
             </StyledMain>
             <Footer /> 
         </StyledContainer>
