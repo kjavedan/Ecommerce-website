@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const StyledProduct = styled.div`
-height: auto;
+height: 170px;
 width: 100%;
 display: flex;
 padding: 1rem;
 border-bottom: solid 1px blue;
+cursor: pointer;
 `
 
 export const Card = styled.div`
-min-width: 140px;
-height: 140px;
+min-width: 120px;
+height: 120px;
 border-radius: 8px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 box-shadow: 0px 2px 2px  rgba(0, 0, 0, .25) ;

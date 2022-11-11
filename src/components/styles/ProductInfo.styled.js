@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const ProductInfo = styled.div`
 height: 100%;
 padding: .5rem 1rem;
+position: relative;
 `
 
 export const Availability = styled.p`

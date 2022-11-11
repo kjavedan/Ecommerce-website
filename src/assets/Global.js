@@ -28,7 +28,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${({theme}) => theme === '#fff' ? '#171616' : '#D9D9D9'};
   }
   h3{
-    font-size: .7rem;
+    font-size: .6rem;
     color: ${({theme}) => theme === '#fff' ? '#373636' : '#D9D9D9'};
   }
   h4{

@@ -3,9 +3,9 @@ import { Context } from '../../../context/uiContext'
 import { StyledProduct, Card, FreeDilevery, Discount, Image } from '../styles/Product.styled'
 import { ProductInfo, Availability, RateBlock, BeforeDiscount } from '../../../components/styles/ProductInfo.styled'
 import {HiStar} from 'react-icons/hi'
+import ProductColors from './ProductColors.styled'
 
-
-const Product = ({title, discount, isFreeDelivery, availability, rate, price, url}) => {
+const Product = ({title, discount, isFreeDelivery, availability, rate, price, url, colors}) => {
 
   const {theme} = useContext(Context)
   
@@ -16,21 +16,36 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
     return newPrice3.toFixed(2)
     // (price - ((price / 100) * discount)).toFixed(2)
   }
+
+
+  const productColors = colors.map(color => <span 
+    style={{
+      backgroundColor:color,
+      height:'10px', width:'10px',
+      borderRadius:'50%'}}
+    ></span>)
+
+  
   return (
     <StyledProduct>
-        <Card theme={theme}>
-         {discount ? <Discount>%{discount} off</Discount> : ''}
-          <Image>
-            <img src={url} alt='image' />
-          </Image>
-          {isFreeDelivery && <FreeDilevery>free delivery</FreeDilevery>}
-        </Card>
+        <div style={{height:'100%'}}>
+          <Card theme={theme}>
+          {discount ? <Discount>%{discount} off</Discount> : ''}
+            <Image>
+              <img src={url} alt='image' />
+            </Image>
+            {isFreeDelivery && <FreeDilevery>free delivery</FreeDilevery>}
+          </Card>
+          <ProductColors>
+            {productColors}
+          </ProductColors>
+        </div>
         <ProductInfo>
           <h3>{title}</h3>
           <Availability>{availability}</Availability>
           <RateBlock><span>{rate}</span> <HiStar style={{color: '#FFD233'}} /></RateBlock>
           {discount ? 
-            <h3 style={{float:"right"}}>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
+            <h3 style={{position:'absolute', bottom:'0', right:'0'}}>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
             <h3>${price}</h3>
             }
         </ProductInfo>

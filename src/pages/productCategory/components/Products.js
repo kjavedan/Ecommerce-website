@@ -11,12 +11,37 @@ const Products = () => {
         availability={'available'}
         discount={'5'}
         isFreeDelivery={true}
-        price={1099}/>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        price={1099}
+        colors={['red', 'black', 'blue']}
+        />
+        <Product 
+        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
+        rate={'4.5'}
+        availability={'available'}
+        discount={'5'}
+        isFreeDelivery={true}
+        price={1099}
+        colors={['red', 'black', 'blue']}
+        />
+        <Product 
+        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
+        rate={'4.5'}
+        availability={'available'}
+        discount={'5'}
+        isFreeDelivery={true}
+        price={1099}
+        colors={['red', 'black', 'blue']}
+        />
+        <Product 
+        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
+        rate={'4.5'}
+        availability={'available'}
+        discount={'5'}
+        isFreeDelivery={true}
+        price={1099}
+        colors={['red', 'black', 'blue']}
+        />
+       
     </ProductsContainer>
   )
 }
