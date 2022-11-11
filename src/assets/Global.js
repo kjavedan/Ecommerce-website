@@ -52,6 +52,12 @@ const GlobalStyles = createGlobalStyle`
   span{
     color: ${({theme}) => theme === '#fff' ? '#373636' : '#D9D9D9'};
   }
+
+  @media (min-width: 360px){
+    h3{
+      font-size: .8rem;
+    }
+  }
   
   @media (min-width: 600px) {
     h1{
@@ -62,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1rem;
     }
     h3,h4{
-      font-size: .8rem;
+      font-size: .9rem;
     }
     h5{
       font-size: 1rem;

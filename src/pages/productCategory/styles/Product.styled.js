@@ -5,11 +5,11 @@ height: auto;
 width: 100%;
 display: flex;
 padding: 1rem;
-border: solid 1px blue;
+border-bottom: solid 1px blue;
 `
 
 export const Card = styled.div`
-width: 140px;
+min-width: 140px;
 height: 140px;
 border-radius: 8px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};

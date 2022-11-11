@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ProductInfo = styled.div`
-width: 100%;
 height: 100%;
 padding: .5rem 1rem;
 `
@@ -23,7 +22,9 @@ span{
     font: 500 .7rem 'Roboto';
     margin-right: .2rem;
 }
-
+`
+export const RateBlock = styled(Rate)`
+display: block;
 `
 export const BeforeDiscount = styled.span`
 text-decoration: line-through;

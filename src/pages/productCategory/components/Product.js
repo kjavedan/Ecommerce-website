@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Context } from '../../../context/uiContext'
 import { StyledProduct, Card, FreeDilevery, Discount, Image } from '../styles/Product.styled'
-import { ProductInfo, Availability, Rate, BeforeDiscount } from '../../../components/styles/ProductInfo.styled'
+import { ProductInfo, Availability, RateBlock, BeforeDiscount } from '../../../components/styles/ProductInfo.styled'
 import {HiStar} from 'react-icons/hi'
 
 
@@ -28,9 +28,9 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
         <ProductInfo>
           <h3>{title}</h3>
           <Availability>{availability}</Availability>
-          <Rate><span>{rate}</span> <HiStar style={{color: '#FFD233'}} /></Rate>
+          <RateBlock><span>{rate}</span> <HiStar style={{color: '#FFD233'}} /></RateBlock>
           {discount ? 
-            <h3>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
+            <h3 style={{float:"right"}}>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
             <h3>${price}</h3>
             }
         </ProductInfo>

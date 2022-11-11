@@ -13,6 +13,10 @@ const Products = () => {
         isFreeDelivery={true}
         price={1099}/>
         <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
     </ProductsContainer>
   )
 }
