@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import {StyledFastLinks, StyledFastLinksContainer} from './styles/FastLinks.styled'
-import {AiOutlineLink} from 'react-icons/ai'
+import {BsFilterLeft} from 'react-icons/bs'
 import Link from './Link'
 import { Context } from '../context/uiContext'
 import {nanoid} from 'nanoid'
@@ -13,7 +13,7 @@ const FastLinks = ({links}) => {
     
   return (
     <StyledFastLinks theme={theme}>
-        <AiOutlineLink style={{fontSize: '1.5rem'}}/>
+        <BsFilterLeft style={{fontSize: '2.5rem', cursor:'pointer'}}/>
         <StyledFastLinksContainer>
             {linkElements}
         </StyledFastLinksContainer>

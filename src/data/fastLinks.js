@@ -56,10 +56,6 @@ export const ProductCategorylinks = [
     {
         title: 'most expensive',
         icon: <GiMoneyStack />
-    },
-    {
-        title: 'Filters',
-        icon: <BsFilterLeft/>
     }
 ]
 

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { Context } from '../context/uiContext'
-import { StyledProduct, Card, FreeDilevery, Discount, Image } from './styles/Product.styled'
-import { ProductInfo, Availability, Rate, BeforeDiscount } from './styles/ProductInfo.styled'
+import { Context } from '../../../context/uiContext'
+import { StyledProduct, Card, FreeDilevery, Discount, Image } from '../styles/Product.styled'
+import { ProductInfo, Availability, Rate, BeforeDiscount } from '../../../components/styles/ProductInfo.styled'
 import {HiStar} from 'react-icons/hi'
 
 
