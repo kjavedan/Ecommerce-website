@@ -28,7 +28,7 @@ const ProductCategory = () => {
                     <PageRoute /> 
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
-                <div style={{backgroundColor: theme === '#fff' ? '#dbdbdb' : '#2E2E2E'}}>
+                <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     <Products />
                 </div>
             </StyledMain>

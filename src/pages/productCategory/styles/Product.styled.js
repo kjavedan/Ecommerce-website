@@ -9,9 +9,7 @@ background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
 cursor: pointer;
 
 &:hover{
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-}
-`
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;`
 
 export const Card = styled.div`
 min-width: 120px;
