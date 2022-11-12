@@ -9,11 +9,11 @@ background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
 cursor: pointer;
 
 &:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: ${({theme})=> theme === '#fff' ? 'rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px' : 'rgba(78, 78, 78, 0.25) 0px 6px 12px -2px, rgba(81, 81, 81, 0.3) 0px 3px 7px -3px'};
 }
 
 @media (min-width: 900px){
-    height: 400px;
+    height: 370px;
     flex-direction: column;
 }
 `

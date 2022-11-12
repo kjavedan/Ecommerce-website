@@ -6,6 +6,8 @@ height: 50px;
 
 
 @media (min-width: 900px){
-    margin-left: 5%;
+    margin-left: 3%;
+    margin-top: 2rem;
+    font-size: 1.5rem;
 }
 `
