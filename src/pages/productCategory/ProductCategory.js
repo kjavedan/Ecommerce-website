@@ -17,6 +17,7 @@ const ProductCategory = () => {
 
     const {theme, displaySidebar} = useContext(Context)
 
+
     return (
         <StyledContainer theme={theme}>
             <Header />
@@ -27,7 +28,9 @@ const ProductCategory = () => {
                     <PageRoute /> 
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
-                <Products />
+                <div style={{backgroundColor: theme === '#fff' ? '#dbdbdb' : '#2E2E2E'}}>
+                    <Products />
+                </div>
             </StyledMain>
             <Footer /> 
         </StyledContainer>

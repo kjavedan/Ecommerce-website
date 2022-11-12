@@ -27,7 +27,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
 
   
   return (
-    <StyledProduct>
+    <StyledProduct theme={theme}>
         <div style={{height:'100%'}}>
           <Card theme={theme}>
           {discount ? <Discount>%{discount} off</Discount> : ''}
