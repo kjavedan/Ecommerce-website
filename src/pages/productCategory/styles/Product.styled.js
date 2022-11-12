@@ -9,7 +9,14 @@ background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
 cursor: pointer;
 
 &:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;`
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media (min-width: 900px){
+    height: 400px;
+    flex-direction: column;
+}
+`
 
 export const Card = styled.div`
 min-width: 120px;
@@ -18,6 +25,12 @@ border-radius: 8px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 box-shadow: 0px 2px 2px  rgba(0, 0, 0, .25) ;
 position: relative;
+
+@media (min-width: 900px){
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
 `
 
 export const Image = styled.div`

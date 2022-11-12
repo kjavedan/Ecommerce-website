@@ -4,6 +4,7 @@ import { StyledProduct, Card, FreeDilevery, Discount, Image } from '../styles/Pr
 import { ProductInfo, Availability, RateBlock, BeforeDiscount } from '../../../components/styles/ProductInfo.styled'
 import {HiStar} from 'react-icons/hi'
 import ProductColors from './ProductColors.styled'
+import CardContainer from '../styles/CardContainer.styled'
 
 const Product = ({title, discount, isFreeDelivery, availability, rate, price, url, colors}) => {
 
@@ -28,7 +29,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
   
   return (
     <StyledProduct theme={theme}>
-        <div style={{height:'100%'}}>
+        <CardContainer>
           <Card theme={theme}>
           {discount ? <Discount>%{discount} off</Discount> : ''}
             <Image>
@@ -39,7 +40,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
           <ProductColors>
             {productColors}
           </ProductColors>
-        </div>
+        </CardContainer>
         <ProductInfo>
           <h3>{title}</h3>
           <Availability>{availability}</Availability>
