@@ -8,7 +8,7 @@ const PageRoute = () => {
   return (
     <StyledPageRoute>
         <div className="root"> 
-        <GoHome /> <span>Home</span> <BiChevronRight /> <span>Mobile</span> <BiChevronRight /> <span>Apple</span>
+        <GoHome style={{fontSize:'1.2rem'}} /> <span>Home</span> <BiChevronRight /> <span>Mobile</span> <BiChevronRight /> <span>Apple</span>
         </div>
     </StyledPageRoute>
   )

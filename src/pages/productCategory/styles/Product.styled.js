@@ -13,7 +13,7 @@ cursor: pointer;
 }
 
 @media (min-width: 900px){
-    height: 370px;
+    height: 400px;
     flex-direction: column;
 }
 `
@@ -27,8 +27,8 @@ box-shadow: 0px 2px 2px  rgba(0, 0, 0, .25) ;
 position: relative;
 
 @media (min-width: 900px){
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     margin: 0 auto;
 }
 `
@@ -56,4 +56,8 @@ z-index:1;
 export const FreeDilevery = styled(Discount)`
 top: 83%;
 background-color: #171616;
+
+@media (min-width: 900px){
+    top: 90%;
+}
 `
