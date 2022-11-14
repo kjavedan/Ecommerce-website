@@ -35,6 +35,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, im
           {discount ? <Discount>%{discount} off</Discount> : ''}
             <Image>
               <img src={img} alt='image' />
+              
             </Image>
             {isFreeDelivery && <FreeDilevery>free delivery</FreeDilevery>}
           </Card>

@@ -37,10 +37,18 @@ export const Image = styled.div`
 position: absolute;
 left: 50%;
 top: 50%;
-width: 130px;
-height: 130px;
+height: 100%;
+width: 100%;
 z-index: 0;
 transform: translate(-50%, -50%);
+background-color: red;
+img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}
 `
 export const Discount = styled.span`
 position: absolute;
