@@ -6,7 +6,7 @@ import {HiStar} from 'react-icons/hi'
 import ProductColors from './ProductColors.styled'
 import CardContainer from '../styles/CardContainer.styled'
 
-const Product = ({title, discount, isFreeDelivery, availability, rate, price, url, colors}) => {
+const Product = ({title, discount, isFreeDelivery, availability, rate, price, img, colors}) => {
 
   const {theme} = useContext(Context)
   
@@ -19,7 +19,8 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
   }
 
 
-  const productColors = colors.map(color => <span 
+  const productColors = colors.map((color, index) => <span 
+    key={index}
     style={{
       backgroundColor:color,
       height:'10px', width:'10px',
@@ -33,7 +34,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
           <Card theme={theme}>
           {discount ? <Discount>%{discount} off</Discount> : ''}
             <Image>
-              <img src={url} alt='image' />
+              <img src={img} alt='image' />
             </Image>
             {isFreeDelivery && <FreeDilevery>free delivery</FreeDilevery>}
           </Card>

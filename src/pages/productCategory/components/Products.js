@@ -1,75 +1,26 @@
 import React from 'react'
 import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
+import {mobileProducts} from '../../../data/ProductsData'
 
 const Products = () => {
+
+  const products = mobileProducts.map(item => <Product 
+    key={item.id}
+    title={item.title} 
+    rate={item.rate} 
+    availability={item.availability} 
+    discount={item.discount} 
+    isFreeDelivery={item.isFreeDelivery} 
+    price={item.price} 
+    colors={item.colors} 
+    img={item.img}
+    />)
+    
   return (
+
     <ProductsContainer>
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-        <Product 
-        title={'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...'}
-        rate={'4.5'}
-        availability={'available'}
-        discount={'5'}
-        isFreeDelivery={true}
-        price={1099}
-        colors={['red', 'black', 'blue']}
-        />
-       
-       
+        {products}
     </ProductsContainer>
   )
 }
