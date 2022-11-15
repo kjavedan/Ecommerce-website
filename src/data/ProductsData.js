@@ -8,41 +8,41 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/107.jpg'
+        img: 'images/77.png'
     },
-    // {
-    //     id: 2,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: '../assets/images/105.jpg'
-    // },
-    // {
-    //     id: 3,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: '../assets/images/104.jpg'
-    // },
-    // {
-    //     id: 4,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: '../assets/images/104.jpg'
-    // },
+    {
+        id: 2,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/78.png'
+    },
+    {
+        id: 3,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/79.png'
+    },
+    {
+        id: 4,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/104.png'
+    },
     // {
     //     id: 5,
     //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',

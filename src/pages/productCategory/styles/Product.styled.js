@@ -41,13 +41,13 @@ height: 100%;
 width: 100%;
 z-index: 0;
 transform: translate(-50%, -50%);
-background-color: red;
 img{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 100%;
+    border-radius: 8px;
 }
 `
 export const Discount = styled.span`
