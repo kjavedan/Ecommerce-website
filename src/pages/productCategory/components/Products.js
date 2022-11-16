@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
 import {mobileProducts} from '../../../data/ProductsData'
 
-const Products = () => {
+const Products = ({setNumberOfPages}) => {
+
+  const countNumberOfPages = () => {
+    const numberOfProducts = mobileProducts.length
+    const numberOfPages = Math.ceil(numberOfProducts / 20)
+    setNumberOfPages(numberOfPages)
+  }
+  countNumberOfPages()
+  
+  
 
   const products = mobileProducts.map(item => <Product 
     key={item.id}

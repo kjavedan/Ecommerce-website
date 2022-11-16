@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import StyledContainer from '../../components/styles/Container.styled'
 import { Context } from '../../context/uiContext'
 import Header from '../../layouts/header/Header'
@@ -18,12 +18,19 @@ const ProductCategory = () => {
 
     const {theme, displaySidebar} = useContext(Context)
 
-    const styles = {
+    const [numberOfPages, setNumberOfPages] = useState()
+
+    console.log(numberOfPages)
+    
+    const paginaitonStyles = {
         margin: '4rem 0rem',
         display: 'flex',
         justifyContent: 'center',
         '& .MuiPaginationItem-text':{
             color: theme === '#fff' ? 'black' : 'white',
+        },
+        '& .Mui-selected':{
+            backgroundColor: theme === '#fff' ? '' : 'black'
         }
 
     }
@@ -39,9 +46,9 @@ const ProductCategory = () => {
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
-                    <Products />
+                    <Products setNumberOfPages={setNumberOfPages} />
                 </div>
-                <Pagination sx={styles} count={10} />
+                <Pagination sx={paginaitonStyles} count={numberOfPages} />
             </StyledMain>
             <Footer /> 
         </StyledContainer>
