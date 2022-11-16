@@ -20,8 +20,10 @@ const ProductCategory = () => {
 
     const [numberOfPages, setNumberOfPages] = useState()
 
+    const [selectedPage, setselectedPage] = useState(2)
+
     console.log(numberOfPages)
-    
+
     const paginaitonStyles = {
         margin: '4rem 0rem',
         display: 'flex',
@@ -46,7 +48,7 @@ const ProductCategory = () => {
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
-                    <Products setNumberOfPages={setNumberOfPages} />
+                    <Products setNumberOfPages={setNumberOfPages} selectedPage={selectedPage} />
                 </div>
                 <Pagination sx={paginaitonStyles} count={numberOfPages} />
             </StyledMain>
