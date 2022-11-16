@@ -12,11 +12,21 @@ import FastLinks from '../../components/FastLinks'
 import { ProductCategorylinks } from '../../data/fastLinks'
 import Container from './styles/Container.styled';
 import Products from './components/Products'
+import { Pagination } from '@mui/material'
 
 const ProductCategory = () => {
 
     const {theme, displaySidebar} = useContext(Context)
 
+    const styles = {
+        margin: '4rem 0rem',
+        display: 'flex',
+        justifyContent: 'center',
+        '& .MuiPaginationItem-text':{
+            color: theme === '#fff' ? 'black' : 'white',
+        }
+
+    }
 
     return (
         <StyledContainer theme={theme}>
@@ -31,6 +41,7 @@ const ProductCategory = () => {
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     <Products />
                 </div>
+                <Pagination sx={styles} count={10} />
             </StyledMain>
             <Footer /> 
         </StyledContainer>

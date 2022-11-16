@@ -19,7 +19,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/2.png'
+        img: 'images/3.png'
     },
     {
         id: 3,
@@ -185,5 +185,38 @@ export const mobileProducts = [
         price: 1099,
         colors: ['red', 'blue', 'black'],
         img: 'images/19.png'
+    },
+    {
+        id: 18,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/4.png'
+    },
+    {
+        id: 19,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/1.png'
+    },
+    {
+        id: 20,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/49.png'
     },
 ]
