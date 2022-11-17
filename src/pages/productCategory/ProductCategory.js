@@ -20,7 +20,7 @@ const ProductCategory = () => {
 
     const [numberOfPages, setNumberOfPages] = useState()
 
-    const [selectedPage, setselectedPage] = useState(2)
+    const [selectedPage, setselectedPage] = useState(1)
 
     console.log(numberOfPages)
 
