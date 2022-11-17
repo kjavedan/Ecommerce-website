@@ -1,10 +1,35 @@
 import React, { useEffect } from 'react'
 import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
-import {mobileProducts} from '../../../data/ProductsData'
+import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/ProductsData'
 
-const Products = ({selectedPage, setNumberOfPages}) => {
+const Products = ({category, selectedPage, setNumberOfPages}) => {
 
+  let data;
+
+  switch (category) {
+    case 'mobile':
+      data = mobile;
+      break;
+    case 'laptop':
+      data = laptop;
+      break;
+    case 'mouse':
+      data = mouse;
+      break;
+    case 'keyboard':
+      data = keyboard;
+      break;
+    case 'headset':
+      data = headset;
+      break;
+    case 'other':
+      data = other;
+      break;
+  
+    default:
+      break;
+  }
 
   let productsToDisplay = []
 
@@ -15,8 +40,8 @@ const Products = ({selectedPage, setNumberOfPages}) => {
     console.log(endAt)
 
     let i = startFrom;
-    while(mobileProducts[i] !== undefined && i < endAt){
-      productsToDisplay.push(mobileProducts[i])
+    while(data[i] !== undefined && i < endAt){
+      productsToDisplay.push(data[i])
       i++
     }
   }
@@ -36,7 +61,7 @@ const Products = ({selectedPage, setNumberOfPages}) => {
 
 
     useEffect(()=> {
-      const numberOfProducts = mobileProducts.length
+      const numberOfProducts = data.length
       const numberOfPages = Math.ceil(numberOfProducts / 20)
       setNumberOfPages(numberOfPages)
     })

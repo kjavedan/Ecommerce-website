@@ -79,7 +79,8 @@ build seperate product component one for home page and one for productCategory p
 1. pass props to products component props(category, selectedPage, fillters,...)
 
 2. products makes a call to the data base with these info
-
+selectedPage ✔
+category 
 
 3. display them in the main layout as a productCategory
 

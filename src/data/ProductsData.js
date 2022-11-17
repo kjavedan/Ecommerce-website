@@ -1,4 +1,4 @@
-export const mobileProducts = [
+export const mobile = [
     {
         id: 1,
         title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
@@ -19,7 +19,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/3.png'
+        img: 'images/77.png'
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/90.png'
+        img: 'images/77.png'
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/104.png'
+        img: 'images/77.png'
     },
     {
         id: 5,
@@ -52,7 +52,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/75.png'
+        img: 'images/77.png'
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/63.png'
+        img: 'images/77.png'
     },
     {
         id: 7,
@@ -74,7 +74,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/50.png'
+        img: 'images/77.png'
     },
     {
         id: 8,
@@ -85,7 +85,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/99.png'
+        img: 'images/77.png'
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/14.png'
+        img: 'images/77.png'
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/1.png'
+        img: 'images/77.png'
     },
     {
         id: 11,
@@ -118,7 +118,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/7.png'
+        img: 'images/77.png'
     },
     {
         id: 12,
@@ -129,7 +129,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/22.png'
+        img: 'images/77.png'
     },
     {
         id: 13,
@@ -140,7 +140,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/4.png'
+        img: 'images/77.png'
     },
     {
         id: 14,
@@ -151,7 +151,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/9.png'
+        img: 'images/77.png'
     },
     {
         id: 15,
@@ -162,7 +162,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/30.png'
+        img: 'images/77.png'
     },
     {
         id: 16,
@@ -173,7 +173,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/108.png'
+        img: 'images/77.png'
     },
     {
         id: 17,
@@ -184,7 +184,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/19.png'
+        img: 'images/77.png'
     },
     {
         id: 18,
@@ -195,7 +195,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/4.png'
+        img: 'images/77.png'
     },
     {
         id: 19,
@@ -206,7 +206,7 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/1.png'
+        img: 'images/77.png'
     },
     {
         id: 20,
@@ -217,116 +217,833 @@ export const mobileProducts = [
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/49.png'
+        img: 'images/77.png'
     },
     {
         id: 21,
         title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-        rate: '4.9',
+        rate: '4.5',
         availability: 'available',
         discount: '5',
         isFreeDelivery: true,
         price: 1099,
         colors: ['red', 'blue', 'black'],
-        img: 'images/1.png'
+        img: 'images/77.png'
     },
-    // {
-    //     id: 22,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/22.png'
-    // },
-    // {
-    //     id: 23,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/4.png'
-    // },
-    // {
-    //     id: 24,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/9.png'
-    // },
-    // {
-    //     id: 25,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/30.png'
-    // },
-    // {
-    //     id: 26,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/108.png'
-    // },
-    // {
-    //     id: 27,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/19.png'
-    // },
-    // {
-    //     id: 28,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/4.png'
-    // },
-    // {
-    //     id: 29,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/1.png'
-    // },
-    // {
-    //     id: 30,
-    //     title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
-    //     rate: '4.5',
-    //     availability: 'available',
-    //     discount: '5',
-    //     isFreeDelivery: true,
-    //     price: 1099,
-    //     colors: ['red', 'blue', 'black'],
-    //     img: 'images/49.png'
-    // },
+    {
+        id: 22,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 23,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 24,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 25,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 26,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 27,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 28,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 29,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 30,
+        title:'Samsung s22 Ultra Duel simcard 512GB Memory 16GB RAM 24MP Camera...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+]
+export const laptop = [
+    {
+        id: 1,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 2,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 3,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 4,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 5,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 6,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 7,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 8,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 9,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 10,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 11,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    {
+        id: 12,
+        title:'Mackbook M1 16Inch 16GB RAM 10CORE CPU 16CORE GPU 1TB SSD ...',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/3.png'
+    },
+    
+]
+export const keyboard = [
+    {
+        id: 1,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 2,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 3,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 4,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 5,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 6,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 7,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+    {
+        id: 8,
+        title:'Magic Keyboard Folio',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/65.png'
+    },
+]
+export const mouse = [
+    {
+        id: 1,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 2,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 3,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 4,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 5,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 6,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 7,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 8,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 9,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 10,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 11,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+    {
+        id: 12,
+        title:'Magic Mouse',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/63.png'
+    },
+]
+export const other = [
+    {
+        id: 1,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 2,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 3,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 4,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 5,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 6,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 7,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 8,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 9,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 10,
+        title:'cpu',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 11,
+        title:'Hard Disk',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 12,
+        title:'Hard Disk',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 13,
+        title:'Hard Disk',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 14,
+        title:'Hard Disk',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 15,
+        title:'Hard Disk',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 16,
+        title:'Hard Disk',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 17,
+        title:'Laptop Bag',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 18,
+        title:'Laptop Bag',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 19,
+        title:'Laptop Bag',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 20,
+        title:'Laptop Bag',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 21,
+        title:'Laptop Bag',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    {
+        id: 22,
+        title:'Laptop Bag',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/77.png'
+    },
+    
+]
+export const headset = [
+    {
+        id: 1,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 2,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 3,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 4,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 5,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 6,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 7,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 8,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 9,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+    {
+        id: 10,
+        title:'Headphone',
+        rate: '4.5',
+        availability: 'available',
+        discount: '5',
+        isFreeDelivery: true,
+        price: 1099,
+        colors: ['red', 'blue', 'black'],
+        img: 'images/19.png'
+    },
+
 ]

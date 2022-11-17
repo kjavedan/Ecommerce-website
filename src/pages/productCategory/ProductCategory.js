@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import StyledContainer from '../../components/styles/Container.styled'
 import { Context } from '../../context/uiContext'
 import Header from '../../layouts/header/Header'
@@ -36,13 +36,12 @@ const ProductCategory = () => {
 
     }
 
-    const handlePaginationChange = (e, value) => {
-        setselectedPage(value)
+    useEffect(()=>{
         window.scrollTo({
             top: 0,
             left: 0
         })
-    }
+    },[selectedPage])
 
     return (
         <StyledContainer theme={theme}>
@@ -56,6 +55,7 @@ const ProductCategory = () => {
                 <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     <Products 
+                    category={'mobile'}
                     selectedPage={selectedPage} 
                     setNumberOfPages={setNumberOfPages}
                     />
@@ -63,7 +63,7 @@ const ProductCategory = () => {
                 <Pagination 
                 sx={paginaitonStyles} 
                 count={numberOfPages} 
-                onChange={(e, value) => handlePaginationChange(e, value)}
+                onChange={(e, value) => setselectedPage(value)}
                 />
             </StyledMain>
             <Footer /> 
