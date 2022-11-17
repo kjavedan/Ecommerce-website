@@ -22,7 +22,6 @@ const ProductCategory = () => {
 
     const [selectedPage, setselectedPage] = useState(1)
 
-    console.log(numberOfPages)
 
     const paginaitonStyles = {
         margin: '4rem 0rem',
@@ -35,6 +34,11 @@ const ProductCategory = () => {
             backgroundColor: theme === '#fff' ? '' : 'black'
         }
 
+    }
+
+    const handlePaginationChange = (e, value) => {
+        setselectedPage(value)
+        
     }
 
     return (
@@ -56,7 +60,7 @@ const ProductCategory = () => {
                 <Pagination 
                 sx={paginaitonStyles} 
                 count={numberOfPages} 
-                onChange={(e, value) => setselectedPage(value)}
+                onChange={(e, value) => handlePaginationChange(e, value)}
                 />
             </StyledMain>
             <Footer /> 

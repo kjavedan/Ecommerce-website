@@ -11,9 +11,11 @@ const Products = ({selectedPage, setNumberOfPages}) => {
   const getProductsToDisplay = () => {
     const numOfProductsPerPage = 20;
     const startFrom = (selectedPage * numOfProductsPerPage) - numOfProductsPerPage;
-    // const endAt = selectedPage * numOfProductsPerPage;
+    const endAt = selectedPage * numOfProductsPerPage;
+    console.log(endAt)
+
     let i = startFrom;
-    while(mobileProducts[i] !== undefined){
+    while(mobileProducts[i] !== undefined && i < endAt){
       productsToDisplay.push(mobileProducts[i])
       i++
     }

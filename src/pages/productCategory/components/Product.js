@@ -46,7 +46,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, im
         <ProductInfo>
           <h3>{title}</h3>
           <Availability>{availability}</Availability>
-          <RateBlock><span>{rate}</span> <HiStar style={{color: '#FFD233'}} /></RateBlock>
+          <RateBlock><span>{rate}</span> <HiStar style={{color: '#FFD233', marginLeft:'.4rem'}} /></RateBlock>
           {discount ? 
             <h3 style={{position:'absolute', bottom:'0', right:'0'}}>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
             <h3>${price}</h3>

@@ -76,9 +76,12 @@ build seperate product component one for home page and one for productCategory p
 * problem? (level 2)
 -how to display each category items when they are called?
 * answer:
--pass props to products component props(category, selectedPage, fillters,...)
--products makes a call to the data base with these info
--display them in the main layout as a productCategory
+1. pass props to products component props(category, selectedPage, fillters,...)
+
+2. products makes a call to the data base with these info
+
+
+3. display them in the main layout as a productCategory
 
 *problem? (level 3)
 

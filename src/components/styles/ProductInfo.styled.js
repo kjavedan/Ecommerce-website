@@ -25,7 +25,7 @@ span{
 }
 `
 export const RateBlock = styled(Rate)`
-display: block;
+display: flex;
 `
 export const BeforeDiscount = styled.span`
 text-decoration: line-through;
