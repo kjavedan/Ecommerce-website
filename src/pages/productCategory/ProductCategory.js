@@ -48,9 +48,16 @@ const ProductCategory = () => {
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
-                    <Products setNumberOfPages={setNumberOfPages} selectedPage={selectedPage} />
+                    <Products 
+                    selectedPage={selectedPage} 
+                    setNumberOfPages={setNumberOfPages}
+                    />
                 </div>
-                <Pagination sx={paginaitonStyles} count={numberOfPages} />
+                <Pagination 
+                sx={paginaitonStyles} 
+                count={numberOfPages} 
+                onChange={(e, value) => setselectedPage(value)}
+                />
             </StyledMain>
             <Footer /> 
         </StyledContainer>
