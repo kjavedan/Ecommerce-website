@@ -38,7 +38,10 @@ const ProductCategory = () => {
 
     const handlePaginationChange = (e, value) => {
         setselectedPage(value)
-        
+        window.scrollTo({
+            top: 0,
+            left: 0
+        })
     }
 
     return (
