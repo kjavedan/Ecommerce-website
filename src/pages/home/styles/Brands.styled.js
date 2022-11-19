@@ -35,6 +35,8 @@ margin-left: 1rem;
 margin-bottom: 1rem;
 
 @media (min-width: 900px){
-    margin-left: 6%;
+    width: 92%;
+    margin: 0 auto;
+    padding: 1rem;
 }
 `

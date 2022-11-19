@@ -57,7 +57,7 @@ header(same) - footer(same) - sidebar will has its own data & a plus section for
 (header) -> ✔
 (footer) -> ✔
 (sidebar)-> ✔
-(main)   ->
+(main)   -> ✔
 ---------------------------------------------
 (sidebar) ->
 * chanlleng conditionally render the check box in the product list page 
@@ -83,7 +83,19 @@ selectedPage ✔
 category ✔
 
 3. display them in the main layout as a productCategory ✔
+---------------------------------------------------
 
+* challenge
+
+* question?
+how to shift the products right and left on clicking the right and left btns at home page?
+
+* condition? 
+when there is no more products left in one side make the btn on that side disappear. and smooth animation.
+
+* data:
+we have certain number of that in our array for each category slider.
+Ex: Hot Sails -> gets data from ProductsData -> [item1, item2, item3, ...]
 
 
 

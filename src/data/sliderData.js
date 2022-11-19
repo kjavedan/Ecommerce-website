@@ -72,7 +72,7 @@ export const productsData2 = [
         availability: 'onley 2 remained in stock',
         rate: 5,
         price : 1599,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
     {
         title: 'Dell xps 14 inch',
@@ -81,7 +81,7 @@ export const productsData2 = [
         availability: 'available',
         rate: 4.9,
         price : 1700,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
     {
         title: 'surface book',
@@ -90,7 +90,7 @@ export const productsData2 = [
         availability: 'available',
         rate: 5,
         price : 1599,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
     {
         title: 'sone Z5',
@@ -99,7 +99,7 @@ export const productsData2 = [
         availability: 'only 1 remained in stack',
         rate: 4.4,
         price : 299,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
     {
         title: 'nokia',
@@ -108,7 +108,7 @@ export const productsData2 = [
         availability: 'out of stack',
         rate: 4.7,
         price : 199,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
     {
         title: 'pixel 5',
@@ -117,7 +117,7 @@ export const productsData2 = [
         availability: 'available',
         rate: 4.6,
         price : 1199,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
     {
         title: 'iphone pro max 13',
@@ -126,6 +126,6 @@ export const productsData2 = [
         availability: 'available',
         rate: 4.7,
         price : 1099,
-        url: 'images/77.png'
+        url: 'images/4.png'
     },
 ]

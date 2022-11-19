@@ -20,7 +20,7 @@ padding-right: 1rem;
 align-items: center;
 
 @media (min-width: 900px){
-    width: 90%;
+    width: 92%;
     margin: 0 auto;
 }
 

@@ -24,13 +24,13 @@ const Slider = ({title, data}) => {
   })
  
 
-  console.log(productElements)
+  const leftItems = true
   
   return (
     <StyledSlider>
         <StyledTitle><h2>{title}</h2> <p>see all</p></StyledTitle>
         <Wrapper>
-          <PrevBtn theme={theme}><BiChevronLeft /></PrevBtn>
+          {leftItems && <PrevBtn theme={theme}><BiChevronLeft /></PrevBtn>}
           <NextBtn theme={theme}><BiChevronRight /></NextBtn>
           {productElements}
         </Wrapper>
