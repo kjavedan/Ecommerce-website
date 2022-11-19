@@ -25,6 +25,10 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;dis
 align-items: center;
 justify-content: center;
 margin: 0 auto;
+
+img{
+    height: 80%;
+}
 `
 export const Title = styled.h2`
 margin-left: 1rem;

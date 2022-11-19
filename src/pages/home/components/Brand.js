@@ -7,7 +7,7 @@ const Brand = ({title, img}) => {
   return (
     <StyledBrand theme={theme}>
         <StyledCard theme={theme}>
-          <img src="" alt="" />
+          <img src={img} alt="" />
         </StyledCard>
         <h4>{title}</h4>
     </StyledBrand>

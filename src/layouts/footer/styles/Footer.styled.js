@@ -38,7 +38,7 @@ p{
     cursor: pointer;
 
     &:hover{
-        font-weight: bold;
+        text-decoration: underline;
     }
 }
 input{

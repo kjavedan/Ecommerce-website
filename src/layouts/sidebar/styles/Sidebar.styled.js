@@ -21,12 +21,11 @@ border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 }
 
 @media (min-width: 900px){
-    top:100px;
+    top:80px;
     width: 240px;
     transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
     transition: width linear .2s;
 }
-
 
 `
 

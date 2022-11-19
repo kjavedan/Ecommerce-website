@@ -20,10 +20,14 @@ export const Image = styled.div`
 position: absolute;
 left: 50%;
 top: 50%;
-width: 130px;
-height: 130px;
+width: 160px;
+height: 160px;
 z-index: 0;
 transform: translate(-50%, -50%);
+
+img{
+    height: 100%;
+}
 `
 export const Discount = styled.span`
 position: absolute;

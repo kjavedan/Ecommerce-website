@@ -2,34 +2,34 @@
 export const brandsData = [
     {
         title : 'apple',
-        img : ''
+        img : 'images/apple.png'
     },
     {
         title : 'microsoft',
-        img : ''
+        img : 'images/microsoft.png'
     },
     {
         title : 'dell',
-        img : ''
+        img : 'images/dell.png'
     },
     {
         title : 'hp',
-        img : ''
+        img : 'images/hp.png'
     },
     {
         title : 'samsung',
-        img : ''
+        img : 'images/samsung.png'
     },
     {
         title : 'sony',
-        img : ''
+        img : 'images/sony.png'
     },
     {
         title : 'lenovo',
-        img : ''
+        img : 'images/lenovo.png'
     },
     {
-        title : 'hovawei',
-        img : ''
+        title : 'huawei',
+        img : 'images/huawei.png'
     },
 ]

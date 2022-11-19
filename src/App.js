@@ -11,8 +11,8 @@ const App = () => {
   return (
     <>
     <GlobalStyles theme={theme}/>
-    {/* <Home /> */}
-    <ProductCategory />
+    <Home />
+    {/* <ProductCategory /> */}
     </>
   )
 }

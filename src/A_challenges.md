@@ -80,11 +80,11 @@ build seperate product component one for home page and one for productCategory p
 
 2. products makes a call to the data base with these info
 selectedPage ✔
-category 
+category ✔
 
-3. display them in the main layout as a productCategory
+3. display them in the main layout as a productCategory ✔
 
-*problem? (level 3)
+
 
 
 
