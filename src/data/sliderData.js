@@ -63,6 +63,60 @@ export const productsData = [
         price : 1099,
         url: 'images/77.png'
     },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: false,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/77.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: false,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/77.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: false,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/77.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: false,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/77.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: false,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/77.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: false,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/77.png'
+    },
 ]
 export const productsData2 = [
     {
@@ -117,6 +171,42 @@ export const productsData2 = [
         availability: 'available',
         rate: 4.6,
         price : 1199,
+        url: 'images/4.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: true,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/4.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: true,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/4.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: true,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
+        url: 'images/4.png'
+    },
+    {
+        title: 'iphone pro max 13',
+        discount: 0,
+        isFreeDelivery: true,
+        availability: 'available',
+        rate: 4.7,
+        price : 1099,
         url: 'images/4.png'
     },
     {

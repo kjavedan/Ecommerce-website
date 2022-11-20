@@ -66,9 +66,7 @@ const GlobalStyles = createGlobalStyle`
     font-size: 1.2rem;
     color: ${({theme}) => theme === '#fff' ? '#000' : '#D9D9D9'};
   }
-    h2{
-      font-size: 1rem;
-    }
+   
     h3,h4{
       font-size: .9rem;
     }

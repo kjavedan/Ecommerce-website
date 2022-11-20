@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { StyledSlider, StyledTitle } from './Styles/Slider.styled'
 import Wrapper from './Styles/Wrapper.styled'
 import Product from '../../components/Product'
@@ -10,6 +10,13 @@ import { Context } from '../../context/uiContext'
 const Slider = ({title, data}) => {
 
   const {theme} = useContext(Context)
+
+  const [leftItems, setLeftItems] = useState(false)
+
+  const ref = useRef(null)
+
+  const [scrollPosition, setScrollPosition] = useState(0)
+
 
   const productElements = data.map(product => {
     return (
@@ -24,14 +31,34 @@ const Slider = ({title, data}) => {
   })
  
 
-  const leftItems = true
+
+  const scroll = scrollOffset => {
+    ref.current.scrollLeft += scrollOffset;
+    setScrollPosition(ref.current.scrollLeft)
+  }
+
+  useEffect(()=> {
+    console.log(ref.current.clientWidth)
+    if(scrollPosition){
+      setLeftItems(true)
+    }else{
+      setLeftItems(false)
+    }
+  })
   
   return (
     <StyledSlider>
         <StyledTitle><h2>{title}</h2> <p>see all</p></StyledTitle>
-        <Wrapper>
-          {leftItems && <PrevBtn theme={theme}><BiChevronLeft /></PrevBtn>}
-          <NextBtn theme={theme}><BiChevronRight /></NextBtn>
+        <Wrapper ref={ref}>
+          {leftItems &&
+           <PrevBtn 
+           theme={theme}
+           onClick={() => scroll(-700)}
+           ><BiChevronLeft /></PrevBtn>}
+          <NextBtn 
+          theme={theme}
+          onClick={() => scroll(700)}
+          ><BiChevronRight /></NextBtn>
           {productElements}
         </Wrapper>
     </StyledSlider>

@@ -96,6 +96,19 @@ when there is no more products left in one side make the btn on that side disapp
 * data:
 we have certain number of that in our array for each category slider.
 Ex: Hot Sails -> gets data from ProductsData -> [item1, item2, item3, ...]
+each product card has a certain width
+
+* question? 
+how to only shift the products in the screen area
+
+* data:
+the screen screen size changes from divice to divice, therefore we need write an algorithm that respons to each screen 
+
+* requirement:
+1. calculating the width of the wrapper base on screen size
+2. getting the array length to hide the control btns
+
+
 
 
 
