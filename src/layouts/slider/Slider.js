@@ -13,10 +13,15 @@ const Slider = ({title, data}) => {
 
   const [leftItems, setLeftItems] = useState(false)
 
-  const ref = useRef(null)
+  const [rightItems, setRightItems] = useState(true)
 
+  const [count, setCount] = useState(0)
+
+  const ref = useRef(null)
+  
   const [scrollPosition, setScrollPosition] = useState(0)
 
+  const [sliderWidth, setSliderWidth] = useState(0)
 
   const productElements = data.map(product => {
     return (
@@ -29,36 +34,44 @@ const Slider = ({title, data}) => {
       price={product.price} 
       url={product.url} />)
   })
- 
+  
+  const scroll = directions => {
+    setCount(prevCount => prevCount + 1)
+    if(directions === 'left'){
+      setScrollPosition(ref.current.scrollLeft -= (sliderWidth - 200))
 
-
-  const scroll = scrollOffset => {
-    ref.current.scrollLeft += scrollOffset;
-    setScrollPosition(ref.current.scrollLeft)
+    }else{
+      setScrollPosition(ref.current.scrollLeft += (sliderWidth -200))
+    }
   }
 
   useEffect(()=> {
-    console.log(ref.current.clientWidth)
-    if(scrollPosition){
-      setLeftItems(true)
-    }else{
-      setLeftItems(false)
-    }
-  })
+    
+    {scrollPosition <=0  ? setLeftItems(false) : setLeftItems(true)}
+    {scrollPosition >= 200 * data.length  - sliderWidth ? setRightItems(false) : setRightItems(true)}
+
+    setSliderWidth(ref.current.clientWidth)
+    
+  },[count])
   
   return (
     <StyledSlider>
         <StyledTitle><h2>{title}</h2> <p>see all</p></StyledTitle>
         <Wrapper ref={ref}>
-          {leftItems &&
+          {/* left button */}
+           {leftItems &&
            <PrevBtn 
            theme={theme}
-           onClick={() => scroll(-700)}
+           onClick={() => scroll('left')}
            ><BiChevronLeft /></PrevBtn>}
+           
+          {/* right button */}
+          {rightItems &&
           <NextBtn 
           theme={theme}
-          onClick={() => scroll(700)}
-          ><BiChevronRight /></NextBtn>
+          onClick={() => scroll('right')}
+          ><BiChevronRight /></NextBtn>}
+          
           {productElements}
         </Wrapper>
     </StyledSlider>

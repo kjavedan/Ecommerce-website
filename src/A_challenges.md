@@ -108,7 +108,8 @@ the screen screen size changes from divice to divice, therefore we need write an
 1. calculating the width of the wrapper base on screen size
 2. getting the array length to hide the control btns
 
-
+* challeng
+how to check scrollPosition befre clicking the btn
 
 
 
