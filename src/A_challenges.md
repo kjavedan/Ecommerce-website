@@ -111,6 +111,8 @@ the screen screen size changes from divice to divice, therefore we need write an
 * challeng
 how to check scrollPosition befre clicking the btn
 
+slider sliding -> ✔
+---------------------------------------------------
 
 
 
