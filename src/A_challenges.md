@@ -113,7 +113,17 @@ how to check scrollPosition befre clicking the btn
 
 slider sliding -> ✔
 ---------------------------------------------------
+* challenge
+how set the routing structure
 
+* condition
+1. on clicking each link we need to direct the user to that specefic page
+2. by writing the path in the browser search bar we should be able to browse to that page
+
+* data
+- we have the links in the sidebar
+- first we load the home page "/" then by clicking any category link we go to "/category" in the category we need to recive the clicked link data and create path with it:
+EX: "/category/mobile
 
 
 

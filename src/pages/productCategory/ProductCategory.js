@@ -55,7 +55,7 @@ const ProductCategory = () => {
                 <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     <Products 
-                    category={'mobile'}
+                    category={'laptop'}
                     selectedPage={selectedPage} 
                     setNumberOfPages={setNumberOfPages}
                     />
