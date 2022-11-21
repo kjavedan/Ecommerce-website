@@ -15,6 +15,8 @@ background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
 h1{
     font-size: 1.7rem;
     font-family: 'Roboto';
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media (min-width: 800px){
