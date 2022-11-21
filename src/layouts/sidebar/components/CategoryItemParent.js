@@ -71,7 +71,7 @@ const Parent = ({title, icon, children, isProductCategory}) => {
               />
             </StyledParent>
             : 
-            <Link to={`/category/${title}`} > 
+            <Link style={{textDecoration: 'none'}} to={`/${title}`} > 
             <StyledParent 
               theme={theme}
               > 

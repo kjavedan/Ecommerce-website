@@ -13,7 +13,11 @@ const CategoryItemChild = ({title, parentTitle, isProductCategory}) => {
       {isProductCategory ?
       <StyledChild theme={theme}> <Checkbox title={title}/> </StyledChild>
       :
-      <Link to={`/${parentTitle}${title == 'all' ? '':'/'+title}`} ><StyledChild theme={theme}> {title} </StyledChild></Link>
+      <Link 
+      style={{textDecoration: 'none'}} 
+      to={`/${parentTitle}${title == 'all' ? '':'/'+title}`} >
+      <StyledChild theme={theme}> {title} </StyledChild>
+      </Link>
     }
     </>
   )
