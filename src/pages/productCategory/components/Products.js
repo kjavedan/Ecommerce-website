@@ -31,6 +31,9 @@ const Products = ({category, selectedPage, setNumberOfPages}) => {
       break;
   }
 
+  console.log(data)
+  console.log(category)
+
   let productsToDisplay = []
 
   const getProductsToDisplay = () => {
@@ -40,6 +43,7 @@ const Products = ({category, selectedPage, setNumberOfPages}) => {
     console.log(endAt)
 
     let i = startFrom;
+
     while(data[i] !== undefined && i < endAt){
       productsToDisplay.push(data[i])
       i++

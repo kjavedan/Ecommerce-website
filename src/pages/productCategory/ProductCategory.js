@@ -13,14 +13,16 @@ import { ProductCategorylinks } from '../../data/fastLinks'
 import Container from './styles/Container.styled';
 import Products from './components/Products'
 import { Pagination } from '@mui/material'
+import { Routes, Route } from 'react-router-dom'
 
-const ProductCategory = () => {
+const ProductCategory = ({category}) => {
 
     const {theme, displaySidebar} = useContext(Context)
 
     const [numberOfPages, setNumberOfPages] = useState()
 
     const [selectedPage, setselectedPage] = useState(1)
+
 
 
     const paginaitonStyles = {
@@ -54,11 +56,13 @@ const ProductCategory = () => {
                 </Container>
                 <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
+                    
                     <Products 
-                    category={'laptop'}
+                    category={category}
                     selectedPage={selectedPage} 
                     setNumberOfPages={setNumberOfPages}
                     />
+                    
                 </div>
                 <Pagination 
                 sx={paginaitonStyles} 

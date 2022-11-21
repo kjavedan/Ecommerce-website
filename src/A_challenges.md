@@ -123,7 +123,20 @@ how set the routing structure
 * data
 - we have the links in the sidebar
 - first we load the home page "/" then by clicking any category link we go to "/category" in the category we need to recive the clicked link data and create path with it:
-EX: "/category/mobile
+EX: "/category/mobile/apple
+
+* challenge
+how to open the link route
+
+* condition 
+user click the link and now we have this in our browser search bar -> /category/mobile/apple
+how to open this specefic page
+
+* data
+I have product category which renders products base on the passed category name
+
+* problem
+how to pass the link root to product category
 
 
 

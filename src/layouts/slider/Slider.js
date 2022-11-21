@@ -5,7 +5,7 @@ import Product from '../../components/Product'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import {PrevBtn, NextBtn} from './Styles/SliderBtns.styled'
 import { Context } from '../../context/uiContext'
-
+import { nanoid } from 'nanoid'
 
 const Slider = ({title, data}) => {
 
@@ -26,6 +26,7 @@ const Slider = ({title, data}) => {
   const productElements = data.map(product => {
     return (
       <Product 
+      key={nanoid()}
       title={product.title} 
       discount={product.discount} 
       isFreeDelivery={product.isFreeDelivery} 

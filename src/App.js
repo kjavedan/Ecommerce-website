@@ -15,7 +15,12 @@ const App = () => {
       <GlobalStyles theme={theme}/>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/category' element={<ProductCategory />} />
+        <Route path='/mobile' element={<ProductCategory category={'mobile'} />} />
+        <Route path='/laptop' element={<ProductCategory category={'laptop'} />} />
+        <Route path='/headset' element={<ProductCategory category={'headset'} />} />
+        <Route path='/keyboard' element={<ProductCategory category={'keyboard'} />} />
+        <Route path='/mouse' element={<ProductCategory category={'mouse'} />} />
+        <Route path='/other' element={<ProductCategory category={'other'} />} />
       </Routes>
     </>
   )

@@ -4,7 +4,7 @@ import { Context } from '../../../context/uiContext'
 import Checkbox from './Checkbox'
 import { Link } from 'react-router-dom'
 
-const CategoryItemChild = ({title, isProductCategory}) => {
+const CategoryItemChild = ({title, parentTitle, isProductCategory}) => {
 
   const {theme} = useContext(Context)
 
@@ -13,7 +13,7 @@ const CategoryItemChild = ({title, isProductCategory}) => {
       {isProductCategory ?
       <StyledChild theme={theme}> <Checkbox title={title}/> </StyledChild>
       :
-      <Link to={`/category/${title}`} ><StyledChild theme={theme}> {title} </StyledChild></Link>
+      <Link to={`/${parentTitle}${title == 'all' ? '':'/'+title}`} ><StyledChild theme={theme}> {title} </StyledChild></Link>
     }
     </>
   )

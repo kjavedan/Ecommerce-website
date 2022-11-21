@@ -1,4 +1,5 @@
 import React, {useState, useContext} from 'react'
+import { Link } from 'react-router-dom'
 import { Context } from '../../../context/uiContext'
 import { StyledParent } from '../styles/CategoryItem.styled'
 import { Children } from '../styles/CategoryItems.styled'
@@ -15,6 +16,7 @@ const Parent = ({title, icon, children, isProductCategory}) => {
             <CategoryItemChild 
             key={index} 
             title={item} 
+            parentTitle={title}
             isProductCategory={isProductCategory}
             />
       )})
@@ -25,7 +27,9 @@ const Parent = ({title, icon, children, isProductCategory}) => {
       setDisplayChildElements(prevState => !prevState)
     }
     const openRoute = () => {
-
+      
+      
+      
     }
 
     
@@ -54,17 +58,31 @@ const Parent = ({title, icon, children, isProductCategory}) => {
               />
             }
           </StyledParent> :
+          children.length ? 
           <StyledParent 
-          onClick={ children.length ? toggleChilds : openRoute} 
-          theme={theme}
-          > 
-            <CategoryItemContent 
-            icon={icon} 
-            title={title} 
-            displayChildElements={displayChildElements} 
-            children={children}
-            />
-          </StyledParent>
+            theme={theme}
+            onClick={toggleChilds}
+            > 
+              <CategoryItemContent 
+              icon={icon} 
+              title={title} 
+              displayChildElements={displayChildElements} 
+              children={children}
+              />
+            </StyledParent>
+            : 
+            <Link to={`/category/${title}`} > 
+            <StyledParent 
+              theme={theme}
+              > 
+                <CategoryItemContent 
+                icon={icon} 
+                title={title} 
+                displayChildElements={displayChildElements} 
+                children={children}
+                />
+              </StyledParent>
+            </Link>
         }
         <Children display={displayChildElements ? 1 : 0}>
             {childElements}
