@@ -27,7 +27,7 @@ justify-content: center;
 margin: 0 auto;
 
 img{
-    height: 80%;
+    height: 60%;
 }
 `
 export const Title = styled.h2`
