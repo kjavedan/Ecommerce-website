@@ -1,11 +1,10 @@
-import { HiOutlineDeviceMobile, HiStar } from 'react-icons/hi'
+import { HiOutlineDeviceMobile, HiStar, HiArrowSmDown, HiArrowSmUp } from 'react-icons/hi'
 import {BsLaptop, BsApple} from 'react-icons/bs'
 import {CgMouse} from 'react-icons/cg'
-import {FaRegKeyboard, FaRegMoneyBillAlt} from 'react-icons/fa'
+import {FaRegKeyboard} from 'react-icons/fa'
 import {FiHeadphones, FiCpu} from 'react-icons/fi'
 import {AiFillHeart, AiFillFire} from 'react-icons/ai'
 import {MdShoppingCart, MdLocalOffer} from 'react-icons/md'
-import {GiMoneyStack} from 'react-icons/gi'
 
 export const sidebarDataHome = [
     {
@@ -48,27 +47,27 @@ export const sidebarDataHome = [
       data: [
         {
           title: 'hot sails',
-          icon: <AiFillFire  style={{color: '#FF7A00'}}/>,
+          icon: <AiFillFire  />,
           children: []
         },
         {
           title: 'newest products',
-          icon: <MdShoppingCart style={{color: '#8D74EE'}}/>,
+          icon: <MdShoppingCart />,
           children: []
         },
         {
           title: 'popular products',
-          icon: <AiFillHeart style={{color: '#FF0000'}}/>,
+          icon: <AiFillHeart />,
           children: []
         },
         {
           title: 'top rated',
-          icon: <HiStar style={{color: '#FFD233'}}/>,
+          icon: <HiStar />,
           children: []
         },
         {
           title: 'higehst off',
-          icon: <MdLocalOffer style={{color: '#D8D7D7'}}/>,
+          icon: <MdLocalOffer />,
           children: []
           }
       ]
@@ -84,36 +83,36 @@ export const sidebarDataMobile = [
           icon: <BsApple styled={{color: 'grey'} } />,
           children: ['all', 'apple', 'samsung', 'sony', 'howavei', 'shiami']
         },
-        {
-          title: 'most sailed',
-          icon: <AiFillFire  style={{color: '#FF7A00'}} />,
-          children: []
-        },
-        {
-          title: 'newest ',
-          icon: <MdShoppingCart style={{color: '#8D74EE'}} />,
-          children: []
-        },
-        {
-          title: 'top rated',
-          icon: <HiStar style={{color: '#FFD233'}} />,
-          children: []
-        },
-        {
-          title: 'heighest off',
-          icon: <MdLocalOffer style={{color: 'red'}}/>,
-          children: []
-        },
-        {
-          title: 'cheapest',
-          icon: <FaRegMoneyBillAlt style={{color: 'lightgreen'}} />,
-          children: []
-          },
-        {
-          title: 'most expensive',
-          icon: <GiMoneyStack style={{color: 'green'}} />,
-          children: []
-          }
+        // {
+        //   title: 'most sailed',
+        //   icon: <AiFillFire   />,
+        //   children: []
+        // },
+        // {
+        //   title: 'newest ',
+        //   icon: <MdShoppingCart  />,
+        //   children: []
+        // },
+        // {
+        //   title: 'top rated',
+        //   icon: <HiStar  />,
+        //   children: []
+        // },
+        // {
+        //   title: 'heighest off',
+        //   icon: <MdLocalOffer />,
+        //   children: []
+        // },
+        // {
+        //   title: 'cheapest',
+        //   icon: <HiArrowSmDown />,
+        //   children: []
+        //   },
+        // {
+        //   title: 'most expensive',
+        //   icon: <HiArrowSmUp />,
+        //   children: []
+        //   }
         ]
     }
   ]
