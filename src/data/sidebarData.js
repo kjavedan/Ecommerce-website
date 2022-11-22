@@ -4,10 +4,11 @@ import {CgMouse, CgSmartphoneRam} from 'react-icons/cg'
 import {FaRegKeyboard} from 'react-icons/fa'
 import {FiHeadphones, FiCpu} from 'react-icons/fi'
 import {AiFillHeart, AiFillFire, AiOutlineFullscreen} from 'react-icons/ai'
-import {MdShoppingCart, MdLocalOffer, MdColorLens} from 'react-icons/md'
+import {MdShoppingCart, MdLocalOffer, MdColorLens, MdEventAvailable} from 'react-icons/md'
 import {VscColorMode} from 'react-icons/vsc'
-import {RiCameraLensFill} from 'react-icons/ri'
+import {RiCameraLensFill, RiCpuLine} from 'react-icons/ri'
 import { BiMemoryCard } from 'react-icons/bi'
+import { TiVendorMicrosoft } from 'react-icons/ti'
 
 export const sidebarDataHome = [
     {
@@ -84,7 +85,7 @@ export const sidebarDataMobile = [
         {
           title: 'Brands',
           icon: <BsApple />,
-          children: ['all', 'apple', 'samsung', 'sony', 'howavei', 'shiami']
+          children: ['apple', 'samsung', 'sony', 'howavei', 'shiami']
         },
         {
           title: 'Colors',
@@ -107,6 +108,11 @@ export const sidebarDataMobile = [
           children: ['2GB', '4GB', '6GB', '8GB', '16GB', '32GB']
         },
         {
+          title: 'CPU',
+          icon: <RiCpuLine  />,
+          children: ['3 core', '5 core', '7 core', '9 core', 'm1 chip', 'm2 chip']
+        },
+        {
           title: 'Memory',
           icon: <BiMemoryCard  />,
           children: ['8GB', '16GB', '32GB', '64GB', '256GB', '512GB', '1TB']
@@ -116,36 +122,16 @@ export const sidebarDataMobile = [
           icon: <AiOutlineFullscreen  />,
           children: ['3 to 4 inch', '3 to 5 inch', '5 to 6 inch', '6 to 7 inch', '13 to 14 inch', '14 to 17 inch', '> 17 inch']
         },
-        // {
-        //   title: 'most sailed',
-        //   icon: <AiFillFire   />,
-        //   children: []
-        // },
-        // {
-        //   title: 'newest ',
-        //   icon: <MdShoppingCart  />,
-        //   children: []
-        // },
-        // {
-        //   title: 'top rated',
-        //   icon: <HiStar  />,
-        //   children: []
-        // },
-        // {
-        //   title: 'heighest off',
-        //   icon: <MdLocalOffer />,
-        //   children: []
-        // },
-        // {
-        //   title: 'cheapest',
-        //   icon: <HiArrowSmDown />,
-        //   children: []
-        //   },
-        // {
-        //   title: 'most expensive',
-        //   icon: <HiArrowSmUp />,
-        //   children: []
-        //   }
+        {
+          title: 'Operation system',
+          icon: <TiVendorMicrosoft  />,
+          children: ['ios','android','mac', 'windows', 'linux']
+        },
+        {
+          title: 'Only available',
+          icon: <MdEventAvailable  />,
+          children: []
+        },
         ]
     }
   ]

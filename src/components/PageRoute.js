@@ -1,15 +1,13 @@
 import React from 'react'
 import { StyledPageRoute } from './styles/PageRoute.styled'
-import {GoHome} from 'react-icons/go'
 import '../assets/App.css'
 import {BiChevronRight} from 'react-icons/bi'
+import { AiFillHome } from 'react-icons/ai'
 
 const PageRoute = () => {
   return (
     <StyledPageRoute>
-        <div className="root"> 
-        <GoHome style={{fontSize:'1.2rem'}} /> <span>Home</span> <BiChevronRight /> <span>Mobile</span> <BiChevronRight /> <span>Apple</span>
-        </div>
+        <AiFillHome style={{fontSize:'1rem'}} /> <span>Home</span> <BiChevronRight /> <span>Mobile</span> <BiChevronRight /> <span>Apple</span>
     </StyledPageRoute>
   )
 }

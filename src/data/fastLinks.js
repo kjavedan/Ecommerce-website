@@ -1,10 +1,11 @@
-import {BsLaptop, BsPhone, BsFilterLeft} from 'react-icons/bs'
+import {BsLaptop, BsPhone, BsFilterLeft, BsEyeFill} from 'react-icons/bs'
 import {FaRegKeyboard, FaStar, FaMoneyBillAlt} from 'react-icons/fa'
 import {CgMouse} from 'react-icons/cg'
 import {GrView} from 'react-icons/gr'
 import {TbShoppingCartDiscount} from 'react-icons/tb'
 import {GiCardboardBoxClosed, GiMoneyStack} from 'react-icons/gi'
 import {FiHeadphones, FiCpu} from 'react-icons/fi'
+import {HiArrowSmDown, HiArrowSmUp} from 'react-icons/hi'
 
 export const links = [
     {
@@ -39,7 +40,7 @@ export const ProductCategorylinks = [
     },
     {
         title: 'most viewed',
-        icon: <GrView />
+        icon: <BsEyeFill />
     },
     {
         title: 'top rated',
@@ -51,11 +52,11 @@ export const ProductCategorylinks = [
     },
     {
         title: 'cheapest',
-        icon: <FaMoneyBillAlt />
+        icon: <HiArrowSmDown />
     },
     {
         title: 'most expensive',
-        icon: <GiMoneyStack />
+        icon: <HiArrowSmUp />
     }
 ]
 

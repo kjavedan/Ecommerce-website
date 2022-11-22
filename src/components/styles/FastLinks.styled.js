@@ -8,7 +8,8 @@ export const StyledFastLinks = styled.div`
     color: ${({theme}) => theme === '#fff' ? '#000' : '#B4B4B4'};
     
     @media (min-width: 900px){
-        display: none;
+        margin-left: 2%;
+        padding-left: 0.8rem;
     }
 `
 
