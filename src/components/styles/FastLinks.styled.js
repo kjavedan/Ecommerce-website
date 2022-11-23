@@ -10,7 +10,6 @@ export const StyledFastLinks = styled.div`
 
     h4{
         width: 80px;
-        background-color: red;
     }
     
     @media (min-width: 900px){

@@ -6,7 +6,7 @@ height: 50px;
 border-radius: 50%;
 background-color: ${({theme})=> theme === '#fff' ? '#EAE6FC' : '#2E2E2E'};
 position: fixed;
-top: 126px;
+top: 128px;
 transform: translateX(-50%);
 cursor: pointer;
 display: none;
@@ -25,5 +25,6 @@ export const SidebarTogglerOpen = styled(SidebarTogglerClose)`
 left: -35px;
 width: 70px;
 height: 70px;
+top: 118px;
 transform:translateX(0);
 `
