@@ -1,13 +1,17 @@
 import React from 'react'
-import { StyledPageRoute } from './styles/PageRoute.styled'
+import { StyledPageRoute, LinkStyles } from './styles/PageRoute.styled'
 import '../assets/App.css'
 import {BiChevronRight} from 'react-icons/bi'
 import { AiFillHome } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
+
 
 const PageRoute = () => {
+
+  
   return (
     <StyledPageRoute>
-        <AiFillHome style={{fontSize:'1rem'}} /> <span>Home</span> <BiChevronRight /> <span>Mobile</span> <BiChevronRight /> <span>Apple</span>
+        <Link style={LinkStyles} to={'/'}><AiFillHome style={{color:'gray'}} /> Home</Link>
     </StyledPageRoute>
   )
 }

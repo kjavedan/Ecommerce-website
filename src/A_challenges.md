@@ -150,7 +150,7 @@ how to pass the link root to product category
 1. add take a look at categories pages
 2. link side bar btns and see all tag to them
 3. make page route dynamic
-4. add sorted by before sorting in product category pages
+4. add sorted by before sorting in product category pages ✔
 5. create page for brands
 6. create page for card
 7. create page for product
