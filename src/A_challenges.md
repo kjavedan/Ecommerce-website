@@ -143,7 +143,7 @@ how to pass the link root to product category
 2. take the sorting method and bring them in the fast links and delete them from the side bar in product category ✔
 3. add other filltering method to the sidebar ✔
 4. show number of products top right ✔
-5. delete all fillters from the side bar in the home page
+5. delete all fillters from the side bar in the home page ✔
 
 -----------------------------------------------------
 * features to add

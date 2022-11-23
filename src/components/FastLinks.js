@@ -13,7 +13,8 @@ const FastLinks = ({links, isHomePage}) => {
     
   return (
     <StyledFastLinks theme={theme} isHomePage={isHomePage}>
-        <BsFilterLeft style={{fontSize: '2.5rem'}}/>
+        {/* <BsFilterLeft style={{fontSize: '2.5rem'}}/> */}
+           <h4>Sorted by:</h4>
         <StyledFastLinksContainer>
             {linkElements}
         </StyledFastLinksContainer>

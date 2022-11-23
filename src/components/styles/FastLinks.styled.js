@@ -4,12 +4,12 @@ export const StyledFastLinks = styled.div`
     display: flex;
     align-items: center;
     height: 50px;
-    padding-left: .6rem;
+    padding-left: 1rem;
     color: ${({theme}) => theme === '#fff' ? '#000' : '#B4B4B4'};
     margin-bottom: .7rem;
     
     @media (min-width: 900px){
-        padding-left: 2.9rem;
+        padding-left: 3.3rem;
         display: ${({isHomePage}) => isHomePage ? 'none': 'flex'};
     }
 `
