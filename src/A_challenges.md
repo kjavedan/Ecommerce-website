@@ -149,7 +149,7 @@ how to pass the link root to product category
 * features to add
 1. add take a look at categories pages
 2. link side bar btns and see all tag to them
-3. make page route dynamic
+3. make page route dynamic ✔
 4. add sorted by before sorting in product category pages ✔
 5. create page for brands
 6. create page for card
@@ -157,5 +157,12 @@ how to pass the link root to product category
 8. create login page
 9. create admin dashboard page
 
+--------------------------------------------
+* challenge
+how to go the clicked link route in the page route
 
+* data
+we have the final page location EX: /mobile , /mobile/apple, /mobile/apple/14pro
+
+we want to redirect to the specefic page on clicking
 

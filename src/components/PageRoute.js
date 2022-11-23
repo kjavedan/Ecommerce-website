@@ -7,18 +7,21 @@ import { useLocation } from 'react-router-dom'
 
 
 const PageRoute = () => {
-
+  
   let fullPath = [];
 
-  const usePath = () => {
-    const location = useLocation()
-    console.log(location.pathname)
-    fullPath = location.pathname.split('/')
-  }
-  usePath()
+  const location = useLocation()
 
-  const route = fullPath.map( item => item !== '' && <><BiChevronRight /><Link  to={''}> {item}</Link> </>)
-    
+  const getPath = () => {
+    const array = location.pathname.split('/')
+    console.log(array)
+    return location.pathname
+  }
+  console.log(getPath())
+
+  const route = fullPath.map( item => item !== '' && <><BiChevronRight /><Link  to={getPath()}> {item}</Link> </>)
+  
+  console.log(route)
 
   return (
     <StyledPageRoute>

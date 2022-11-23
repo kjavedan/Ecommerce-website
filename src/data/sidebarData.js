@@ -17,7 +17,7 @@ export const sidebarDataHome = [
       {
         title: 'mobile',
         icon: <HiOutlineDeviceMobile />,
-        children: ['all', 'apple', 'samsung', 'sony', 'nokia']
+        children: ['all', 'apple', 'samsung', 'sony', 'nokia' ,'huawei', 'xiaomi']
       },
       {
         title: 'Laptop',
@@ -27,17 +27,17 @@ export const sidebarDataHome = [
       {
         title: 'headset',
         icon: <FiHeadphones />,
-        children: ['all', 'apple', 'samsung', 'sony', 'lenovo']
+        children: ['all', 'beats', 'apple', 'samsung', 'huawei', 'xiaomi']
       },
       {
         title: 'keboard',
         icon: <FaRegKeyboard />,
-        children: ['apple', 'lenovo', 'shiami', 'other']
+        children: ['all', 'apple', 'microsoft']
       },
       {
         title: 'mouse',
         icon: <CgMouse />,
-        children: ['all', 'apple', 'microsoft', 'other']
+        children: ['all', 'apple', 'microsoft']
       },
       {
         title: 'other',
@@ -70,7 +70,7 @@ export const sidebarDataHome = [
           children: []
         },
         {
-          title: 'higehst off',
+          title: 'highest off',
           icon: <MdLocalOffer />,
           children: []
           }
