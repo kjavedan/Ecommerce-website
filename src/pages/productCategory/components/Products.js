@@ -3,7 +3,7 @@ import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
 import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/ProductsData'
 
-const Products = ({category, selectedPage, setNumberOfPages}) => {
+const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts}) => {
 
   let data;
 
@@ -68,6 +68,7 @@ const Products = ({category, selectedPage, setNumberOfPages}) => {
       const numberOfProducts = data.length
       const numberOfPages = Math.ceil(numberOfProducts / 20)
       setNumberOfPages(numberOfPages)
+      setNumberOfProducts(data.length)
     })
     
   return (

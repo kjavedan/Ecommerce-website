@@ -139,10 +139,23 @@ I have product category which renders products base on the passed category name
 how to pass the link root to product category
 ------------------------------------------------------
 * changes
-1. sidebar icons color and cheapest most expensive icon
-2. take the sorting method and bring them in the fast links and delete them from the side bar in product category
-3. add other filltering method to the sidebar
-4. show number of products top right
+1. sidebar icons color and cheapest most expensive icon ✔
+2. take the sorting method and bring them in the fast links and delete them from the side bar in product category ✔
+3. add other filltering method to the sidebar ✔
+4. show number of products top right ✔
+5. delete all fillters from the side bar in the home page
+
+-----------------------------------------------------
+* features to add
+1. add take a look at categories pages
+2. link side bar btns and see all tag to them
+3. make page route dynamic
+4. add sorted by before sorting in product category pages
+5. create page for brands
+6. create page for card
+7. create page for product
+8. create login page
+9. create admin dashboard page
 
 
 

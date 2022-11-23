@@ -42,11 +42,11 @@ span{
 
 &::after{
     content: '';
-    width: 14px;
-    height: 14px;
-    border-radius: 5px;
+    width: 11px;
+    height: 11px;
+    border-radius: 3px;
     margin-left: auto;
-    font-size: .8rem;
+    font-size: .7rem;
     border: 2px solid #969494;
 }
 

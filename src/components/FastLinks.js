@@ -5,14 +5,14 @@ import Link from './Link'
 import { Context } from '../context/uiContext'
 import {nanoid} from 'nanoid'
 
-const FastLinks = ({links}) => {
+const FastLinks = ({links, isHomePage}) => {
 
     const {theme} = useContext(Context)
 
     const linkElements = links.map(link => <Link key={nanoid()} title={link.title} icon={link.icon} />) 
     
   return (
-    <StyledFastLinks theme={theme}>
+    <StyledFastLinks theme={theme} isHomePage={isHomePage}>
         <BsFilterLeft style={{fontSize: '2.5rem'}}/>
         <StyledFastLinksContainer>
             {linkElements}

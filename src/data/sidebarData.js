@@ -108,15 +108,16 @@ export const sidebarDataMobile = [
           children: ['2GB', '4GB', '6GB', '8GB', '16GB', '32GB']
         },
         {
+          title: 'Memory',
+          icon: <BiMemoryCard  />,
+          children: ['64GB', '256GB', '512GB', '1TB']
+        },
+        {
           title: 'CPU',
           icon: <RiCpuLine  />,
           children: ['3 core', '5 core', '7 core', '9 core', 'm1 chip', 'm2 chip']
         },
-        {
-          title: 'Memory',
-          icon: <BiMemoryCard  />,
-          children: ['8GB', '16GB', '32GB', '64GB', '256GB', '512GB', '1TB']
-        },
+        
         {
           title: 'Screen Size',
           icon: <AiOutlineFullscreen  />,

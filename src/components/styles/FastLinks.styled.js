@@ -6,10 +6,11 @@ export const StyledFastLinks = styled.div`
     height: 50px;
     padding-left: .6rem;
     color: ${({theme}) => theme === '#fff' ? '#000' : '#B4B4B4'};
+    margin-bottom: .7rem;
     
     @media (min-width: 900px){
-        margin-left: 2%;
-        padding-left: 0.8rem;
+        padding-left: 2.9rem;
+        display: ${({isHomePage}) => isHomePage ? 'none': 'flex'};
     }
 `
 

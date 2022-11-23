@@ -23,6 +23,7 @@ const ProductCategory = ({category}) => {
 
     const [selectedPage, setselectedPage] = useState(1)
 
+    const [numberOfProducts, setNumberOfProducts] = useState(0)
 
 
     const paginaitonStyles = {
@@ -53,14 +54,16 @@ const ProductCategory = ({category}) => {
                 <SidebarToggler />
                 <Container>
                     <PageRoute /> 
+                    <FastLinks links={ProductCategorylinks} isHomePage={false}/>
+                    <h5>{numberOfProducts} products</h5>
                 </Container>
-                <FastLinks links={ProductCategorylinks}/>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     
                     <Products 
                     category={category}
                     selectedPage={selectedPage} 
                     setNumberOfPages={setNumberOfPages}
+                    setNumberOfProducts={setNumberOfProducts}
                     />
                     
                 </div>

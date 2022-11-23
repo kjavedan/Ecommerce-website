@@ -26,7 +26,7 @@ const Home = () => {
         <StyledMain theme={theme} displaySidebar={displaySidebar}>
           <SidebarToggler /> 
           <PageRoute />
-          <FastLinks links={links}/>
+          <FastLinks links={links} isHomePage={true}/>
           <Slider title={'hot sails'} data={productsData} />
           <Brands />
           <Slider title={'newest products'} data={productsData2} />

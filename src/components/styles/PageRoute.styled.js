@@ -15,7 +15,7 @@ span{
 }
 
 @media (min-width: 900px){
-    /* margin-left: 2%; */
+    padding-left: 3.2rem;
     font-size: 1.5rem;
 }
 `
