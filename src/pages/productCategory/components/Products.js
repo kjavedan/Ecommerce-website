@@ -31,16 +31,13 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
       break;
   }
 
-  console.log(data)
-  console.log(category)
-
+  
   let productsToDisplay = []
 
   const getProductsToDisplay = () => {
     const numOfProductsPerPage = 20;
     const startFrom = (selectedPage * numOfProductsPerPage) - numOfProductsPerPage;
     const endAt = selectedPage * numOfProductsPerPage;
-    console.log(endAt)
 
     let i = startFrom;
 
