@@ -147,8 +147,8 @@ how to pass the link root to product category
 
 -----------------------------------------------------
 * features to add
-1. add take a look at categories pages
-2. link side bar btns and see all tag to them
+1. add take a look at categories pages ✔
+2. link side bar btns ✔
 3. make page route dynamic ✔
 4. add sorted by before sorting in product category pages ✔
 5. create page for brands
@@ -170,4 +170,4 @@ we want to redirect to the specefic page on clicking
 we need to give each route element a url specefic to it
 not the last url
 
-how?
+

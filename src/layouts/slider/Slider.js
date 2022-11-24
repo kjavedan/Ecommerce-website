@@ -6,6 +6,7 @@ import { BiChevronLeft, BiChevronRight } from 'react-icons/bi'
 import {PrevBtn, NextBtn} from './Styles/SliderBtns.styled'
 import { Context } from '../../context/uiContext'
 import { nanoid } from 'nanoid'
+import { Link } from 'react-router-dom'
 
 const Slider = ({title, data}) => {
 
@@ -57,7 +58,7 @@ const Slider = ({title, data}) => {
   
   return (
     <StyledSlider>
-        <StyledTitle><h2>{title}</h2> <p>see all</p></StyledTitle>
+        <StyledTitle><h2>{title}</h2> <Link style={{font:'500 .8rem poppins', color:'gray'}} to={title}>see all</Link></StyledTitle>
         <Wrapper ref={ref}>
           {/* left button */}
            {leftItems &&

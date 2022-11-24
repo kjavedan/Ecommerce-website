@@ -30,9 +30,9 @@ const Home = () => {
           <Slider title={'hot sails'} data={productsData} />
           <Brands />
           <Slider title={'newest products'} data={productsData2} />
-          <Slider title={'populary products'} data={productsData} />
+          <Slider title={'popular products'} data={productsData} />
           <Slider title={'top rated'} data={productsData2} />
-          <Slider title={'heighest off'} data={productsData} />             
+          <Slider title={'highest off'} data={productsData} />             
         </StyledMain>
         <Footer />
     </StyledContainer>

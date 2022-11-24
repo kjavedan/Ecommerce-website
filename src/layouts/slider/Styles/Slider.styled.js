@@ -27,8 +27,4 @@ align-items: center;
 h2{
     text-transform: capitalize;
 }
-p{
-    text-decoration: underline;
-    cursor: pointer;
-}
 `
