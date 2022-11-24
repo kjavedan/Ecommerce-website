@@ -9,6 +9,11 @@ align-items: center;
 padding-left: 0.8rem;
 color: gray;
 
+div{
+    align-items: center;
+    display: flex;
+}
+
 @media (min-width: 900px){
     padding-left: 3.2rem;
 }

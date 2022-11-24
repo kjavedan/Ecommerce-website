@@ -30,7 +30,7 @@ export const sidebarDataHome = [
         children: ['all', 'beats', 'apple', 'samsung', 'huawei', 'xiaomi']
       },
       {
-        title: 'keboard',
+        title: 'keyboard',
         icon: <FaRegKeyboard />,
         children: ['all', 'apple', 'microsoft']
       },

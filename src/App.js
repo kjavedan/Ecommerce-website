@@ -20,7 +20,7 @@ const App = () => {
         <Route path='/mobile' element={<ProductCategory category={'mobile'} />} > 
           <Route path='/mobile/apple' element={<ProductCategory category={'mobile'} />} />
           <Route path='/mobile/samsung' element={<ProductCategory category={'mobile'} />} />
-          <Route path='/mobile/soney' element={<ProductCategory category={'mobile'} />} />
+          <Route path='/mobile/sony' element={<ProductCategory category={'mobile'} />} />
           <Route path='/mobile/nokia' element={<ProductCategory category={'mobile'} />} />
           <Route path='/mobile/Huawei' element={<ProductCategory category={'mobile'} />} />
           <Route path='/mobile/xiaomi' element={<ProductCategory category={'mobile'} />} />

@@ -166,3 +166,8 @@ we have the final page location EX: /mobile , /mobile/apple, /mobile/apple/14pro
 
 we want to redirect to the specefic page on clicking
 
+* solution
+we need to give each route element a url specefic to it
+not the last url
+
+how?
