@@ -36,12 +36,13 @@ const PageRoute = () => {
   }
 
   const route = fullPath.map( (item, index) => {
+    console.log(item.replace('%20', ' '))
     if(item !== ''){
       return (
         <div
          key={nanoid()}
          onClick={(e)=>handleClick(e, index)}
-         ><BiChevronRight /><Link > {item}</Link> 
+         ><BiChevronRight /><Link > {item.replace('%20', ' ')}</Link> 
          </div>
       )
     }
