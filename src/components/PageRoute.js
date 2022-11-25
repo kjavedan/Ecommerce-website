@@ -36,7 +36,6 @@ const PageRoute = () => {
   }
 
   const route = fullPath.map( (item, index) => {
-    console.log(item.replace('%20', ' '))
     if(item !== ''){
       return (
         <div
