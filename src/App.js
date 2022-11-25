@@ -4,6 +4,7 @@ import {Context} from './context/uiContext'
 import Home from './pages/home/Home' 
 import ProductCategory from './pages/productCategory/ProductCategory'
 import {Routes, Route} from 'react-router-dom'
+import Brand from './pages/brand/Brand'
 
 
 const App = () => {
@@ -58,6 +59,8 @@ const App = () => {
         <Route path='/popular products' element={<ProductCategory category={'other'} />} />
         <Route path='/top rated' element={<ProductCategory category={'other'} />} />
         <Route path='/highest off' element={<ProductCategory category={'other'} />} />
+        {/* Brands */}
+        <Route path='/brands/samsung' element={<Brand />} />
       </Routes>
     </>
   )
