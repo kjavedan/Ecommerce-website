@@ -6,7 +6,6 @@ const Hero = () => {
   return (
     <StyledHero>
         <HeroImages>
-            <div> </div>  
             <BrandImage src='../../../../images/samsung-hero-2.jpg' />
         </HeroImages>
         

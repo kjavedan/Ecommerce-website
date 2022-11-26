@@ -4,23 +4,16 @@ import styled from "styled-components";
 export const StyledHero = styled.div`
 width: 100%;
 height: 320px;
-/* border: solid 1px black; */
+border: solid 1px black;
 margin: 80px auto;
 
-div{
-    background: url('../../../../images/samsung-hero.jpg');
-    position: cover;
-    background-repeat: no-repeat;
-    background-position   : 0 ;
 
-    @media (min-width: 1000px) {
-        border-radius: 20px;
-    }
 
-}
+
+
 @media (min-width: 1000px) {
  width   :90% ;
- padding-top: 20px;
+ /* padding-top: 20px; */
 }
 
 `
@@ -28,6 +21,14 @@ export const HeroImages = styled.div`
 width: 100%;
 height: 200px;
 position: relative;
+background: url('../../../../images/samsung-hero.jpg');
+position: cover;
+background-repeat: no-repeat;
+background-position : 0 ;
+
+@media (min-width: 1000px) {
+border-radius: 20px;
+}
 
 `
 export const BrandImage = styled.img`

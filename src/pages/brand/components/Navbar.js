@@ -1,18 +1,22 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import {StyledNavbar} from '../styles/Navbar.styled'
+import {StyledNavbar, Link} from '../styles/Navbar.styled'
 
 const Navbar = () => {
   return (
     <StyledNavbar>
         <ul>
-            <Link>ShowCase</Link>
-            <Link>ShowCase</Link>
-            <Link>ShowCase</Link>
-            <Link>ShowCase</Link>
-            <Link>ShowCase</Link>
-            <Link>ShowCase</Link>
-            <Link>ShowCase</Link>
+            <li><Link>Showcase</Link><div></div></li>
+            <li><Link>Showcase</Link><div></div></li>
+            <li><Link>Showcase</Link><div></div></li>
+            <li><Link>Showcase</Link><div></div></li>
+            <li><Link>Showcase</Link><div></div></li>
+            <li><Link>Showcase</Link><div></div></li>
+            <li><Link>Showcase</Link><div></div></li>
+            {/* <Link>Mobile</Link>
+            <Link>Laptop</Link>
+            <Link>Monitor</Link>
+            <Link>Headset</Link>
+            <Link>all</Link> */}
         </ul>
     </StyledNavbar>
   )
