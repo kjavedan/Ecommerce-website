@@ -5,13 +5,13 @@ import { Context } from '../../context/uiContext'
 import Logo from '../header/components/Logo'
 import StyledButton from '../../components/styles/Button.styled'
 
-const Footer = () => {
+const Footer = ({width}) => {
 
   const {theme, displaySidebar} = useContext(Context)
 
   return (
     <>
-    <StyledFooter theme={theme} displaySidebar={displaySidebar}>
+    <StyledFooter theme={theme} displaySidebar={displaySidebar} width={width}>
         <Container>
             <h3>Customer Service</h3>
             <p>Common questions</p>

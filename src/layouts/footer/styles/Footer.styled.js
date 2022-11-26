@@ -20,6 +20,7 @@ margin-bottom: 80px;
 }
 @media (min-width: 900px){
     width:${({displaySidebar})=> displaySidebar ? 'calc(100% - 240px)' : '100%'};
+    width:${({width}) => width};
     transition: width linear .2s;
     margin-left: auto;
     margin-bottom: 0px;

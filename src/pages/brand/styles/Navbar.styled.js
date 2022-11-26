@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-const StyledNavbar = styled.nav`
+export const StyledNavbar = styled.nav`
 width: 100%;
 height: 80px;
-background-color: red;
 margin-top: 20px;
 overflow-x: scroll;
 scrollbar-width: none;
@@ -12,9 +11,17 @@ scroll-behavior: smooth;
 display: flex;
 align-items: center;
 
+border-bottom: solid 1px gray;
+
 &::-webkit-scrollbar{
     display: none;
 }
+
+ul{
+    background-color: blue;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
 `
 
-export default StyledNavbar;
