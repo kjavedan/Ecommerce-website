@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import StyledContainer from '../../components/styles/Container.styled'
+import { Context } from '../../context/uiContext'
+import Header from '../../layouts/header/Header'
+import Hero from './components/Hero'
 
 const Brand = () => {
+
+  const {theme} = useContext(Context)
+
+
   return (
-    <StyledContainer>
-        
+    <StyledContainer theme={theme}>
+        <Header />
+        <Hero />
     </StyledContainer>
   )
 }
