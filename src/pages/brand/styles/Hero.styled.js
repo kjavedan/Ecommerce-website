@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const StyledHero = styled.div`
 width: 100%;
 height: 320px;
-border: solid 1px black;
 margin: 80px auto;
 
 

@@ -43,7 +43,6 @@ ul{
             height: 6px;
             border-top-left-radius:7px;
             border-top-right-radius: 7px;
-            background-color: #2C00D5;
             position: absolute;
             bottom: 0;
         }
@@ -55,5 +54,9 @@ export const Link = styled(NavLink)`
 text-decoration: none;
 text-align: center;
 width: 100%;
-
+font-family: 'poppins';
+font-weight: 500;
+font-size: .9rem;
+color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#D9D9D9'};
+text-transform: capitalize;
 `
