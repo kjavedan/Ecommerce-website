@@ -12,8 +12,11 @@ const Navbar = () => {
 
     const linkElements = samsungLinks.map(item => {
         return(
-        <li key={nanoid()}>
-            <Link onClick={() => setHeldCategory(item)} theme={theme}>{item}</Link>
+        <li 
+        key={nanoid()}
+        onClick={() => setHeldCategory(item)}
+        >
+            <Link  theme={theme}>{item}</Link>
             <div style={{backgroundColor: heldCategory === item ?  '#2C00D5' : '' }}></div>
         </li>)
     })

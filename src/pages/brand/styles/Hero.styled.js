@@ -5,14 +5,15 @@ export const StyledHero = styled.div`
 width: 100%;
 height: 320px;
 margin: 80px auto;
+margin-bottom: 0;
 
 
 
 
-
-@media (min-width: 1000px) {
- width   :90% ;
- /* padding-top: 20px; */
+@media (min-width: 1200px) {
+ width   :1200px ; 
+ padding-top: 20px;
+ height: 340px;
 }
 
 `

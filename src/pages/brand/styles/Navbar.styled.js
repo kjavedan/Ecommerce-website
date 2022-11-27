@@ -19,7 +19,6 @@ border-bottom: solid 1px gray;
 }
 
 ul{
-    min-width: 100%;
     display: flex;
     height: 100%;
     align-items: center;
@@ -27,6 +26,7 @@ ul{
 
     @media (min-width: 1000px) {
         justify-content: space-around;
+        width: 100%;
     }
 
     li{
@@ -36,7 +36,7 @@ ul{
         width: 100px;
         text-align: center;
         margin-right: 2.5rem;
-        
+        cursor: pointer;
 
         div{
             width: 100%;
@@ -56,7 +56,7 @@ text-align: center;
 width: 100%;
 font-family: 'poppins';
 font-weight: 500;
-font-size: .9rem;
+font-size: .8rem;
 color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#D9D9D9'};
 text-transform: capitalize;
 `
