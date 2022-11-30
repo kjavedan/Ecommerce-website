@@ -60,7 +60,14 @@ const App = () => {
         <Route path='/top rated' element={<ProductCategory category={'other'} />} />
         <Route path='/highest off' element={<ProductCategory category={'other'} />} />
         {/* Brands */}
-        <Route path='/brands/samsung' element={<Brand />} />
+        <Route path='/brands/apple' element={<Brand brandName={'apple'} />} />
+        <Route path='/brands/microsoft' element={<Brand brandName={'microsoft'} />} />
+        <Route path='/brands/dell' element={<Brand brandName={'dell'} />} />
+        <Route path='/brands/hp' element={<Brand brandName={'hp'} />} />
+        <Route path='/brands/samsung' element={<Brand brandName={'samsung'} />} />
+        <Route path='/brands/sony' element={<Brand brandName={'sony'} />} />
+        <Route path='/brands/lenovo' element={<Brand brandName={'lenovo'} />} />
+        <Route path='/brands/huawei' element={<Brand brandName={'huawei'} />} />
       </Routes>
     </>
   )
