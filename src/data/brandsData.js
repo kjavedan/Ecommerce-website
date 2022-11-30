@@ -37,50 +37,50 @@ export const brandsData = [
 
 export const appleHero = 
     {
-        background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        background: '../../../../images/apple-hero.jpg',
+        logo: '../../../../images/apple.png'
     }
 
 export const microsoftHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/microsoft.png'
     }
 
 export const dellHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/dell.png'
     }
 
 export const hpHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/hp.png'
     }
 
 export const samsungHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/samsung.png'
     }
 
-export const soneyHero = 
+export const sonyHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/sony.png'
     }
 
 export const lenovoHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/lenovo.png'
     }
 
 export const huaweiHero = 
     {
         background: '../../../../images/samsung-hero.jpg',
-        logo: '../../../../images/samsung-hero-2.jpg'
+        logo: '../../../../images/huawei.png'
     }
 
 

@@ -9,15 +9,52 @@ import { Grid } from '@mui/material'
 import { Item1, Item2,Item3, Item4, Item5, Item6,Item7, Item8, Item9 } from './styles/Items.styled'
 import Slider from '../../layouts/slider/Slider'
 import { productsData, productsData2 } from '../../data/sliderData'
-import { samsungHero } from '../../data/brandsData'
-import { samsungShowcase } from '../../data/brandsData'
+import { appleHero, appleShowcase, microsoftHero, micorsoftShowcase, dellHero, dellShowcase, hpHero, hpShowcase, samsungHero, samsungShowcase, sonyHero, sonyShowcase, lenovoHero, lenovoShowcase, huaweiHero, huaweiShowcase } from '../../data/brandsData'
 const Brand = ({brandName}) => {
 
+  
   const {theme} = useContext(Context)
+  
+  let heroData;
+  let showcaseData;
 
-  const heroData = samsungHero;
-
-  const showcaseData = samsungShowcase;
+  switch (brandName) {
+    case 'apple':
+      heroData = appleHero;
+      showcaseData = appleShowcase
+      break;
+    case 'microsoft':
+      heroData = microsoftHero;
+      showcaseData = micorsoftShowcase;
+      break;
+    case 'dell':
+      heroData = dellHero;
+      showcaseData = dellShowcase
+      break;
+    case 'hp':
+      heroData = hpHero;
+      showcaseData = hpShowcase
+      break;
+    case 'samsung':
+      heroData = samsungHero;
+      showcaseData = samsungShowcase
+      break;
+    case 'sony':
+      heroData = sonyHero;
+      showcaseData = sonyShowcase
+      break;
+    case 'lenovo':
+      heroData = lenovoHero;
+      showcaseData = lenovoShowcase
+      break;
+    case 'huawei':
+      heroData = huaweiHero;
+      showcaseData = huaweiShowcase
+      break;
+  
+    default:
+      break;
+  }
 
   return (
     
