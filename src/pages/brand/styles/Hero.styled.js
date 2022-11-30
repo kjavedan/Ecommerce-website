@@ -10,10 +10,13 @@ margin-bottom: 0;
 
 
 
-@media (min-width: 1200px) {
- width   :1200px ; 
+@media (min-width: 1250px) {
+ width   :1250px ; 
  padding-top: 20px;
  height: 340px;
+}
+@media (min-width: 1366px) {
+ width :1300px ; 
 }
 
 `
@@ -21,7 +24,7 @@ export const HeroImages = styled.div`
 width: 100%;
 height: 200px;
 position: relative;
-background: url('../../../../images/samsung-hero.jpg');
+background: url(${({background}) => background});
 position: cover;
 background-repeat: no-repeat;
 background-position : 0 ;

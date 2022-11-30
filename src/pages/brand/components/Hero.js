@@ -2,11 +2,11 @@ import React from 'react'
 import {StyledHero, HeroImages, BackgroundImage, BrandImage} from '../styles/Hero.styled'
 import Navbar from './Navbar'
 
-const Hero = () => {
+const Hero = ({background, logo}) => {
   return (
-    <StyledHero>
-        <HeroImages>
-            <BrandImage src='../../../../images/samsung-hero-2.jpg' />
+    <StyledHero >
+        <HeroImages background={background}>
+            <BrandImage src={logo} />
         </HeroImages>
         
         <Navbar></Navbar>

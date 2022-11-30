@@ -33,3 +33,9 @@ export const brandsData = [
         img : 'images/huawei.png'
     },
 ]
+
+export const samsungHero = 
+    {
+        background: '../../../../images/samsung-hero.jpg',
+        logo: '../../../../images/samsung-hero-2.jpg'
+    }

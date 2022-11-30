@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-width: 100%;
+width: 95%;
+margin: 0 auto;
 min-height : 100vh;
 background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
+padding-bottom: 5rem;
 
-border: solid 1px black;
-
-@media (min-width: 1200px) {
-    width: 1200px;
-    margin: 0 auto;
+@media (min-width: 1250px) {
+    width: 1250px;
+}
+@media (min-width: 1366px) {
+ width :1280px ; 
 }
 `
