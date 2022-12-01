@@ -55,7 +55,7 @@ export const dellHero =
 
 export const hpHero = 
     {
-        background: '../../../../images/samsung-hero.jpg',
+        background: '../../../../images/hp-hero.jpg',
         logo: '../../../../images/hp.png'
     }
 
@@ -176,31 +176,31 @@ export const dellShowcase = [
     ]
 export const hpShowcase = [
         {
-            url: '../../../../images/dell-1.png'
+            url: '../../../../images/hp-8.jpg'
         },
         {
-            url: '../../../../images/samsung-8.jpg'
+            url: '../../../../images/hp-2.jpg'
         },
         {
-            url: '../../../../images/samsung-2.jpg'
+            url: '../../../../images/hp-1.jpg'
         },
         {
-            url: '../../../../images/samsung-4.jpg'
+            url: '../../../../images/hp-5.jpg'
         },
         {
-            url: '../../../../images/samsung-5.jpg'
+            url: '../../../../images/hp-8.jpg'
         },
         {
-            url: '../../../../images/samsung-6.jpg'
+            url: '../../../../images/dell-12.jpg'
         },
         {
-            url: '../../../../images/samsung-9.jpg'
+            url: '../../../../images/hp-9.jpg'
         },
         {
-            url: '../../../../images/samsung-7.jpg'
+            url: '../../../../images/hp-10.jpg'
         },
         {
-            url: '../../../../images/samsung-10.webp'
+            url: '../../../../images/dell-13.webp'
         },
     ]
 export const samsungShowcase = [
