@@ -67,7 +67,7 @@ export const samsungHero =
 
 export const sonyHero = 
     {
-        background: '../../../../images/samsung-hero.jpg',
+        background: '../../../../images/sony-hero.jpg',
         logo: '../../../../images/sony.png'
     }
 
@@ -234,31 +234,31 @@ export const samsungShowcase = [
     ]
 export const sonyShowcase = [
         {
-            url: '../../../../images/samsung-1.jpg'
+            url: '../../../../images/sony-7.jpg'
         },
         {
-            url: '../../../../images/samsung-8.jpg'
+            url: '../../../../images/sony-8.jpg'
         },
         {
-            url: '../../../../images/samsung-2.jpg'
+            url: '../../../../images/sony-11.jpg'
         },
         {
-            url: '../../../../images/samsung-4.jpg'
+            url: '../../../../images/sony-9.jpg'
         },
         {
-            url: '../../../../images/samsung-5.jpg'
+            url: '../../../../images/sony-4.jpg'
         },
         {
-            url: '../../../../images/samsung-6.jpg'
+            url: '../../../../images/sony-10.jpg'
         },
         {
-            url: '../../../../images/samsung-9.jpg'
+            url: '../../../../images/sony-2.jpg'
         },
         {
-            url: '../../../../images/samsung-7.jpg'
+            url: '../../../../images/sony-17.jpg'
         },
         {
-            url: '../../../../images/samsung-10.webp'
+            url: '../../../../images/sony-17.webp'
         },
     ]
 export const lenovoShowcase = [
