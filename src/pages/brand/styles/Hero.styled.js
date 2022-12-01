@@ -41,5 +41,4 @@ transform: translateY(-50%);
 right: 50px;
 height: 150px;
 border-radius: 20px;
-
 `
