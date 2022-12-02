@@ -79,7 +79,7 @@ export const lenovoHero =
 
 export const huaweiHero = 
     {
-        background: '../../../../images/huawei-hero.jpg',
+        background: '../../../../images/hp-hero.jpg',
         logo: '../../../../images/huawei.png'
     }
 
@@ -292,30 +292,30 @@ export const lenovoShowcase = [
     ]
 export const huaweiShowcase = [
         {
-            url: '../../../../images/samsung-1.jpg'
+            url: '../../../../images/huawei-1.jpg'
         },
         {
-            url: '../../../../images/samsung-8.jpg'
+            url: '../../../../images/huawei-3.jpg'
         },
         {
-            url: '../../../../images/samsung-2.jpg'
+            url: '../../../../images/huawei-5.jpg'
         },
         {
-            url: '../../../../images/samsung-4.jpg'
+            url: '../../../../images/huawei-13.webp'
         },
         {
-            url: '../../../../images/samsung-5.jpg'
+            url: '../../../../images/huawei-12.jpg'
         },
         {
-            url: '../../../../images/samsung-6.jpg'
+            url: '../../../../images/huawei-9.jpg'
         },
         {
-            url: '../../../../images/samsung-9.jpg'
+            url: '../../../../images/huawei-11.jpg'
         },
         {
-            url: '../../../../images/samsung-7.jpg'
+            url: '../../../../images/huawei-8.jpeg'
         },
         {
-            url: '../../../../images/samsung-10.webp'
+            url: '../../../../images/huawei-10.jpg'
         },
     ]
