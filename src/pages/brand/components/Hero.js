@@ -8,8 +8,7 @@ const Hero = ({background, logo}) => {
         <HeroImages background={background}>
             <BrandImage src={logo} />
         </HeroImages>
-        
-        <Navbar></Navbar>
+        <Navbar/>
     </StyledHero>
   )
 }

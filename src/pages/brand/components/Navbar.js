@@ -16,7 +16,7 @@ const Navbar = () => {
         key={nanoid()}
         onClick={() => setHeldCategory(item)}
         >
-            <Link  theme={theme}>{item}</Link>
+            <Link to={`${item}`} theme={theme}>{item}</Link>
             <div style={{backgroundColor: heldCategory === item ?  '#2C00D5' : '' }}></div>
         </li>)
     })

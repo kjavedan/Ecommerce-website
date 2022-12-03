@@ -174,4 +174,6 @@ not the last url
 
 --------------------------------------------
 * challenge
-
+1. design the brand main content switching
+2. how to switch the brand categories -> showcase/ mobile/ tablet/ monitor 
+3.
