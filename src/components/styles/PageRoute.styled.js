@@ -15,7 +15,7 @@ div{
 }
 
 @media (min-width: 900px){
-    padding-left: 3.2rem;
+    padding-left: 5%;
 }
 `
 

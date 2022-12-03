@@ -14,6 +14,7 @@ border-radius: 8px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 box-shadow: 0px 2px 2px  rgba(0, 0, 0, .25) ;
 position: relative;
+cursor: pointer;
 `
 
 export const Image = styled.div`
