@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import StyledContainer from '../../components/styles/Container.styled'
 import { Context } from '../../context/uiContext'
 import Header from '../../layouts/header/Header'
@@ -6,9 +6,9 @@ import Hero from './components/Hero'
 import Footer from '../../layouts/footer/Footer'
 import { Container } from './styles/Container.styled'
 import BrandShowcase from './components/BrandShowcase'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import { appleHero, appleShowcase, microsoftHero, micorsoftShowcase, dellHero, dellShowcase, hpHero, hpShowcase, samsungHero, samsungShowcase, sonyHero, sonyShowcase, lenovoHero, lenovoShowcase, huaweiHero, huaweiShowcase } from '../../data/brandsData'
-
+import ProductCategory from '../productCategory/ProductCategory'
 
 const Brand = ({brandName}) => {
 
@@ -54,6 +54,12 @@ const Brand = ({brandName}) => {
     default:
       break;
   }
+
+  const navigate = useNavigate()
+
+  useEffect(()=> {
+    navigate(`/brands/${brandName}/showcase`)
+  }, [])
 
   return (
     

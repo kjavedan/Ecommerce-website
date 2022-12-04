@@ -176,4 +176,9 @@ not the last url
 * challenge
 1. design the brand main content switching
 2. how to switch the brand categories -> showcase/ mobile/ tablet/ monitor 
-3.
+3. what is the best way to load and reuse the code
+4. what about filtering -> it's more professional to be there
+
+* condiitons 
+1. best option is to reuse the code and try to load an existing data without creating new data
+2. we need new sidebar with less filter option like digikala

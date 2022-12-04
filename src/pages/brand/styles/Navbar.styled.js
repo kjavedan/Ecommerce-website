@@ -59,4 +59,5 @@ font-weight: 500;
 font-size: .8rem;
 color: ${({theme}) => theme === '#fff' ? '#706F6F' : '#D9D9D9'};
 text-transform: capitalize;
+padding: 1rem;
 `
