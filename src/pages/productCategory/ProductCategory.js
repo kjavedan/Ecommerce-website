@@ -13,7 +13,6 @@ import { ProductCategorylinks } from '../../data/fastLinks'
 import Container from './styles/Container.styled';
 import Products from './components/Products'
 import { Pagination } from '@mui/material'
-import { Routes, Route } from 'react-router-dom'
 
 const ProductCategory = ({category}) => {
 

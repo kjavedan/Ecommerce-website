@@ -9,6 +9,7 @@ import BrandShowcase from './components/BrandShowcase'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { appleHero, appleShowcase, microsoftHero, micorsoftShowcase, dellHero, dellShowcase, hpHero, hpShowcase, samsungHero, samsungShowcase, sonyHero, sonyShowcase, lenovoHero, lenovoShowcase, huaweiHero, huaweiShowcase } from '../../data/brandsData'
 import ProductCategory from '../productCategory/ProductCategory'
+import BrandCategory from './components/BrandCategory'
 
 const Brand = ({brandName}) => {
 
@@ -72,11 +73,13 @@ const Brand = ({brandName}) => {
         <Container theme={theme}>
           <Routes>
             <Route path='/showcase' element={ <BrandShowcase showcaseData={showcaseData} />} />
-            <Route path='/mobile' element={<p>apple mobile</p>} />
-            <Route path='/laptop' element={<p>apple laptop</p>} />
-            <Route path='/tablet' element={<p>apple tablet</p>} />
-            <Route path='/watch' element={<p>apple watch</p>} />
-            <Route path='/mobile' element={<p>apple mobile</p>} />
+            <Route path='/mobile' element={<BrandCategory category={'mobile'} />} />
+            <Route path='/laptop' element={<BrandCategory category={'laptop'} />} />
+            <Route path='/tablet' element={<BrandCategory category={'tablet'} />} />
+            <Route path='/watch' element={<BrandCategory category={'watch'} />} />
+            <Route path='/monitor' element={<BrandCategory category={'monitor'} />} />
+            <Route path='/headset' element={<BrandCategory category={'headset'} />} />
+            <Route path='/all' element={<BrandCategory category={'all'} />} />
           </Routes>
         
         </Container>  

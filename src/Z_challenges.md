@@ -182,3 +182,23 @@ not the last url
 * condiitons 
 1. best option is to reuse the code and try to load an existing data without creating new data
 2. we need new sidebar with less filter option like digikala
+
+* solution
+1. use custom hooks to reuse the similar functionality
+2. reuse the existing components
+3. create unexisted necessary components
+
+* steps
+1. draw the page layout
+2. define existed & unexisted components
+3. import existed
+4. create unexisted
+5. create new custom hook and used it here
+6. create new required data for the page
+-------------------------------------------
+* challenge
+how to create the BrandCategory layout?
+
+*solution
+1. I want the whole page to be products in the mobile screen with sidebar activator btn in the top
+2. I want to display the sidebar in the larger screen (900 and more)

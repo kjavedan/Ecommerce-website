@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Item1, Item2,Item3, Item4, Item5, Item6,Item7, Item8, Item9 } from '../styles/Items.styled'
 import { Grid } from '@mui/material'
-
+import { ShowcaseContainer } from '../styles/Container.styled'
 import Slider from '../../../layouts/slider/Slider'
 import { productsData, productsData2 } from '../../../data/sliderData'
+import { Context } from '../../../context/uiContext'
 
 const BrandShowcase = ({showcaseData}) => {
+
+  const {theme} = useContext(Context)
+
   return (
-    <>
-        <Grid container spacing={2}>
+    <ShowcaseContainer theme={theme}>
+        <Grid container spacing={2} >
             <Grid item xs={12} lg={8}>
               <Item1 url={showcaseData[0].url}></Item1>
             </Grid>
@@ -37,7 +41,7 @@ const BrandShowcase = ({showcaseData}) => {
         </Grid>
         <Slider title={'newest products'} data={productsData2} />
         <Slider title={'popular products'} data={productsData} />
-        </>
+        </ShowcaseContainer>
   )
 }
 
