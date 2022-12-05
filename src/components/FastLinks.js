@@ -7,9 +7,8 @@ import {nanoid} from 'nanoid'
 
 const FastLinks = ({links, isHomePage}) => {
 
-    const {theme, toggleSidebar} = useContext(Context)
+    const {theme, toggleSidebar, smallScreen} = useContext(Context)
 
-    const [smallScreen, setSmallScreen] = useState(false)
 
     useEffect(()=> {
       console.log(window.innerWidth)
@@ -21,13 +20,13 @@ const FastLinks = ({links, isHomePage}) => {
     <StyledFastLinks theme={theme} isHomePage={isHomePage}>
            {smallScreen
             ? 
-            <h4>Sorted by:</h4> : 
             <span 
             onClick={toggleSidebar} 
             style={{borderRight:'2px solid lightgray', paddingRight:'.5rem'}}>
               <BsFilterLeft style={{fontSize:'1.8rem', paddingRight:'.2rem'}} />
                Filters 
-            </span>}
+            </span> :
+            <h4>Sorted by:</h4> }
         <StyledFastLinksContainer>
             {linkElements}
         </StyledFastLinksContainer>
