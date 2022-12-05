@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Brands = () => {
 
-  const BrandElements = brandsData.map( brand =>  <Link style={{textDecoration:'none'}} to={`/brands/${brand.title}`}><Brand key={nanoid()} img={brand.img} title={brand.title} /></Link>)
+  const BrandElements = brandsData.map( brand =>  <Link key={nanoid()} style={{textDecoration:'none'}} to={`/brands/${brand.title}`}><Brand key={nanoid()} img={brand.img} title={brand.title} /></Link>)
   
   return (
     <>

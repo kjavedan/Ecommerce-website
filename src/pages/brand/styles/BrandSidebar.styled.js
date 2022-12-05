@@ -7,7 +7,7 @@ width: 100%;
 height: 80Vh;
 position: fixed;
 transition: all .3s ease-in-out;
-bottom: ${({displaySidebar}) => displaySidebar ? '-100%' : '0'};
+bottom: ${({displaySidebar}) => displaySidebar ? '0' : '-100%'};
 left: 0;
 z-index: 10;
 border-top-left-radius: 20px;
