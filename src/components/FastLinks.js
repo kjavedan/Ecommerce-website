@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import {StyledFastLinks, StyledFastLinksContainer} from './styles/FastLinks.styled'
 import {BsFilterLeft} from 'react-icons/bs'
 import Link from './Link'
@@ -7,14 +7,15 @@ import {nanoid} from 'nanoid'
 
 const FastLinks = ({links, isHomePage}) => {
 
-    const {theme} = useContext(Context)
+    const {theme, toggleSidebar} = useContext(Context)
+
+    const [smallScreen, setSmallScreen] = useState(false)
 
     const linkElements = links.map(link => <Link key={nanoid()} title={link.title} icon={link.icon} />) 
     
   return (
     <StyledFastLinks theme={theme} isHomePage={isHomePage}>
-        {/* <BsFilterLeft style={{fontSize: '2.5rem'}}/> */}
-           <h4>Sorted by:</h4>
+           {smallScreen ? <h4>Sorted by:</h4> : <span onClick={toggleSidebar} style={{borderRight:'2px solid lightgray', paddingRight:'.5rem'}}><BsFilterLeft style={{fontSize:'1.8rem', paddingRight:'.2rem'}} /> Filters </span>}
         <StyledFastLinksContainer>
             {linkElements}
         </StyledFastLinksContainer>

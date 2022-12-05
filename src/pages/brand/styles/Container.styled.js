@@ -16,7 +16,9 @@ padding-bottom: 5rem;
 `
 export const ShowcaseContainer = styled(Container)`
 
+
+
 @media (max-width: 1250px) {
-    width:95%;
+    width:95%; 
 }
 `

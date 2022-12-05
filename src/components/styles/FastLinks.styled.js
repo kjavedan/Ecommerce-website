@@ -11,6 +11,12 @@ export const StyledFastLinks = styled.div`
     h4{
         width: 80px;
     }
+
+    span{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
     
     @media (min-width: 900px){
         padding-left: 3.3rem;

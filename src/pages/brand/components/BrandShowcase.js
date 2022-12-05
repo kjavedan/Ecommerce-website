@@ -12,7 +12,7 @@ const BrandShowcase = ({showcaseData}) => {
 
   return (
     <ShowcaseContainer theme={theme}>
-        <Grid container spacing={2} >
+        <Grid container spacing={2} style={{paddingTop:'15px'}}>
             <Grid item xs={12} lg={8}>
               <Item1 url={showcaseData[0].url}></Item1>
             </Grid>
