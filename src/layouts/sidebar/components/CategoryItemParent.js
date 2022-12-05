@@ -9,7 +9,7 @@ import Checkbox from './Checkbox'
 
 const Parent = ({title, icon, children, isProductCategory}) => {
 
-    const {theme} = useContext(Context)
+    const {theme, hideSidebarSmallScreen} = useContext(Context)
 
     const childElements = children.map((item, index) =>{
       return(
@@ -71,7 +71,9 @@ const Parent = ({title, icon, children, isProductCategory}) => {
               />
             </StyledParent>
             : 
-            <Link style={{textDecoration: 'none'}} to={`/${title}`} > 
+            <Link 
+            onClick={hideSidebarSmallScreen}
+            style={{textDecoration: 'none'}} to={`/${title}`} > 
             <StyledParent 
               theme={theme}
               > 

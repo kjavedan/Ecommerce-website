@@ -28,13 +28,20 @@ const ContextProvider = props => {
         window.addEventListener('resize', updateScreenWidth)
         if(screenWidth > 900){
             setDisplaySidebar(true)
+            setSmallScreen(false)
         }else{
             setDisplaySidebar(false)
+            setSmallScreen(true)
         }
     },[screenWidth])
 
+    const hideSidebarSmallScreen = () => {
+        if(smallScreen){
+            setDisplaySidebar(false)
+          }
+    }
     return(
-        <Context.Provider value={{theme, switchTheme, displaySidebar, toggleSidebar}}>
+        <Context.Provider value={{theme, switchTheme, displaySidebar, hideSidebarSmallScreen, toggleSidebar, smallScreen}}>
             {props.children}
         </Context.Provider>
     )
