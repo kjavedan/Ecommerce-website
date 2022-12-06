@@ -202,3 +202,49 @@ how to create the BrandCategory layout?
 *solution
 1. I want the whole page to be products in the mobile screen with sidebar activator btn in the top
 2. I want to display the sidebar in the larger screen (900 and more)
+
+-------------------------------------------
+* challenge
+how and what to fetch from the api 
+
+* condiiton 
+
+------navigation from home sidebar----------
+1. we can navigate to mobile > all
+2. we can navigate to laptop > all
+3. we can navigate to mouse > all
+
+4. we can navigate to mobile > apple
+5. we can navigate to mobile> samsung
+6. and many more similar
+
+------navigation from brand sidebar----------
+1. we can navigate to brands > samsung > mobile/ laptop/ headset/ watch / all/ ..
+2. we can navigate to brands > apple > mobile/ laptop/ headset/ watch / all/ ..
+3. and many more
+
+--------------------------------------
+* common paths
+
+1. brands > samsung > laptop
+2. laptop > samsung
+
+both of them will recieve the same product
+
+* condition
+1. I have two different sidebar layout
+2. I have two similar data in each sidebar
+3. I have tow different products layout
+4. I have the same products for both layout
+
+*solution 
+1. create two different layout with the least use of different components
+2. fetch data from the same source for both places
+3. have the same functionality for both -> using custom hooks will be good idea
+4. we will fetch data in their own rout -> home > mobile > samsung | brands > samsung > mobile but the data will be fetched from the same place
+
+* break down the plan
+
+1. all section of home sidebar categories -> mobile > all | laptop > all, ... will have their unique data(sidebar and products)
+2. mobile > samsung | brands > samsung > mobile will have the same data(sidebar and products)
+3. 
