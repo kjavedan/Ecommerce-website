@@ -9,6 +9,7 @@ import Products from '../../../pages/productCategory/components/Products'
 import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/ProductsData'
 import useProducts from '../../../hooks/useProducts'
 import { Pagination } from '@mui/material'
+import ProductsQTY from '../../../components/styles/ProductsQTY.styled'
 
 const BrandCategory = ({category}) => {
 
@@ -28,22 +29,25 @@ const BrandCategory = ({category}) => {
   return (
     <Container theme={theme}>
         <ProductsContainer>
-            <FastLinks links={links}/>
-            <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
-                    
-                    <Products 
-                    category={category}
-                    selectedPage={selectedPage} 
-                    setNumberOfPages={setNumberOfPages}
-                    setNumberOfProducts={setNumberOfProducts}
-                    />
-                    
-                </div>
-                <Pagination 
-                sx={paginaitonStyles} 
-                count={numberOfPages} 
-                onChange={(e, value) => setselectedPage(value)}
-                />
+          <ProductsQTY>
+              <FastLinks links={links}/>
+              <h5>{numberOfProducts} products</h5>
+          </ProductsQTY>
+          <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
+                  
+                  <Products 
+                  category={category}
+                  selectedPage={selectedPage} 
+                  setNumberOfPages={setNumberOfPages}
+                  setNumberOfProducts={setNumberOfProducts}
+                  />
+                  
+              </div>
+          <Pagination 
+          sx={paginaitonStyles} 
+          count={numberOfPages} 
+          onChange={(e, value) => setselectedPage(value)}
+          />
         </ProductsContainer>
         <BrandSidebar theme={theme} displaySidebar={displaySidebar}>
 

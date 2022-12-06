@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.div`
+const ProductsQTY = styled.div`
 
 
 h5{
@@ -11,4 +11,4 @@ h5{
 }
 `
 
-export default Container
+export default ProductsQTY

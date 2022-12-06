@@ -11,7 +11,7 @@ import SidebarToggler from '../../layouts/main/components/SidebarToggler'
 import PageRoute from '../../components/PageRoute'
 import FastLinks from '../../components/FastLinks'
 import { ProductCategorylinks } from '../../data/fastLinks'
-import Container from './styles/Container.styled';
+import ProductsQTY from '../../components/styles/ProductsQTY.styled';
 import Products from './components/Products'
 import { Pagination } from '@mui/material'
 
@@ -36,11 +36,11 @@ const ProductCategory = ({category}) => {
             <Sidebar category={sidebarDataMobile} isProductCategory={true}/>
             <StyledMain theme={theme} displaySidebar={displaySidebar}>
                 <SidebarToggler />
-                <Container>
+                <ProductsQTY>
                     <PageRoute /> 
                     <FastLinks links={ProductCategorylinks} isHomePage={false}/>
                     <h5>{numberOfProducts} products</h5>
-                </Container>
+                </ProductsQTY>
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     
                     <Products 

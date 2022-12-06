@@ -7,15 +7,11 @@ display: grid;
 margin-top: 2rem;
 gap: 1px;
 
-@media (min-width: 800px){
-    grid-template-columns: 1fr 1fr;
-}
+grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
-@media (min-width: 1000px){
-    grid-template-columns: repeat(3, 1fr);
-}
-@media (min-width: 1200px){
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 900px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 }
 `
 
