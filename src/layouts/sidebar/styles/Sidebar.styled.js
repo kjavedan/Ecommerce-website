@@ -11,7 +11,6 @@ top: 0;
 z-index: 11;
 transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
 border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
-
 &::-webkit-scrollbar {
         width: 3px;
     }

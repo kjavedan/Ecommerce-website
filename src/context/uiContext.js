@@ -23,6 +23,10 @@ const ContextProvider = props => {
     const updateScreenWidth = () => {
         setScreenWidth(window.innerWidth)
     }
+    const closeSidebar = () => {
+        setDisplaySidebar(false)
+    }
+
     useEffect(()=>{
 
         window.addEventListener('resize', updateScreenWidth)
@@ -41,7 +45,7 @@ const ContextProvider = props => {
           }
     }
     return(
-        <Context.Provider value={{theme, switchTheme, displaySidebar, hideSidebarSmallScreen, toggleSidebar, smallScreen}}>
+        <Context.Provider value={{theme, switchTheme, displaySidebar, hideSidebarSmallScreen, toggleSidebar, closeSidebar,smallScreen}}>
             {props.children}
         </Context.Provider>
     )
