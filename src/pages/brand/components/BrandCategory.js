@@ -10,7 +10,7 @@ import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/Pro
 import useProducts from '../../../hooks/useProducts'
 import { Pagination } from '@mui/material'
 import ProductsQTY from '../../../components/styles/ProductsQTY.styled'
-
+import PageRoute from '../../../components/PageRoute'
 const BrandCategory = ({category}) => {
 
     const {theme, displaySidebar} = useContext(Context)
@@ -30,6 +30,7 @@ const BrandCategory = ({category}) => {
     <Container theme={theme}>
         <ProductsContainer>
           <ProductsQTY>
+            <PageRoute />
               <FastLinks links={links}/>
               <h5>{numberOfProducts} products</h5>
           </ProductsQTY>
