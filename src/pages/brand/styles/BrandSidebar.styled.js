@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 
-export const BrandSidebar = styled.div`
+export const StyledBrandSidebar = styled.div`
 background-color: green;
 width: 100%;
-height: 80Vh;
+height: 85Vh;
+padding-top: 1rem;
 position: fixed;
 transition: all .3s ease-in-out;
 bottom: ${({displaySidebar}) => displaySidebar ? '0' : '-100%'};
@@ -14,12 +15,21 @@ border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 
+/* overflow-y: scroll; */
+/* &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+&::-webkit-scrollbar-thumb{
+    background: ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
+    height: 10px;
+} */
 
 @media (min-width: 900px) {
     width: 300px;
     position: sticky;
     position: -webkit-sticky; /* Safari */
-    height: 600px;
+    height: auto;
     bottom: 50px;
     z-index: 2;
     border-radius: 20px;

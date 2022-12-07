@@ -6,7 +6,11 @@ margin: .5rem auto;
 padding-bottom: 8rem;
 padding-top: 2rem;
 
+
 @media (min-width: 900px) {
     padding-top: 0;
 }
+`
+export const BrandSidbarWrapper = styled(Wrapper)`
+padding-bottom: 1rem;
 `

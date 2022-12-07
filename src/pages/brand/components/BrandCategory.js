@@ -4,13 +4,15 @@ import {Container} from '../../brand/styles/Container.styled'
 import { Context } from '../../../context/uiContext'
 import { links } from '../../../data/fastLinks'
 import { ProductsContainer } from '../styles/BrandCategory.styled'
-import { BrandSidebar } from '../styles/BrandSidebar.styled'
+import BrandSidebar from './BrandSidebar'
 import Products from '../../../pages/productCategory/components/Products'
 import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/ProductsData'
 import useProducts from '../../../hooks/useProducts'
 import { Pagination } from '@mui/material'
 import ProductsQTY from '../../../components/styles/ProductsQTY.styled'
 import PageRoute from '../../../components/PageRoute'
+import { sidebarDataMobile } from '../../../data/sidebarData'
+
 const BrandCategory = ({category}) => {
 
     const {theme, displaySidebar} = useContext(Context)
@@ -50,9 +52,10 @@ const BrandCategory = ({category}) => {
           onChange={(e, value) => setselectedPage(value)}
           />
         </ProductsContainer>
-        <BrandSidebar theme={theme} displaySidebar={displaySidebar}>
-
-        </BrandSidebar>
+        <BrandSidebar 
+        category={sidebarDataMobile}
+        isProductCategory={true}
+        />
         <div>BrandCategory {category}</div>
     </Container>
   )
