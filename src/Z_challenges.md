@@ -151,12 +151,12 @@ how to pass the link root to product category
 2. link side bar btns ✔
 3. make page route dynamic ✔
 4. add sorted by before sorting in product category pages ✔
-5. create page for brands -> (vitrien - mobile - laptop - headset - ...)
+5. create page for brands -> (vitrien - mobile - laptop - headset - ...) ✔
 6. create page for card
 7. create page for product
 8. create login page
 9. create admin dashboard page
-10. close the side bar in the small screen when you navigate to a certain page
+10. close the side bar in the small screen when you navigate to a certain page ✔
 11. send different data for each page (sidebar, products, category, ...)
 
 --------------------------------------------
@@ -250,8 +250,8 @@ both of them will recieve the same product
 -----------------------------------------------------
 
 * challenge
-1. adding close btn to close the side bar in the small screen
-2. creating the brand page sidebar
+1. adding close btn to close the side bar in the small screen ✔
+2. creating the brand page sidebar ✔
 3. fetching data for other brand category -> tablet / laptop/ ...
 4. fixing the price position in the other category
 5. fixing brand showcase slider data fetching and link redirecting

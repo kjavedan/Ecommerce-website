@@ -4,6 +4,7 @@ export const ProductInfo = styled.div`
 height: 100%;
 padding: .5rem 1rem;
 position: relative;
+width: 100%;
 `
 
 export const Availability = styled.p`
