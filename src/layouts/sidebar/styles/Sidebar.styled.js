@@ -7,10 +7,12 @@ width: 100%;
 position: fixed;
 overflow-y: scroll;
 overflow-x: ${({displaySidebar})=> displaySidebar ? 'hidden' : 'visible'};
-top: 0;
 z-index: 11;
-transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
+left: 0;
+bottom: ${({displaySidebar})=> displaySidebar ? '0' : '-100%'};
+transition: all .3s ease-in-out;
 border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
+
 &::-webkit-scrollbar {
         width: 3px;
     }
@@ -22,8 +24,8 @@ border-right: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 @media (min-width: 900px){
     top:80px;
     width: 240px;
-    transform: translateX(${({displaySidebar})=> displaySidebar ? '0' : '-100%'});
-    transition: width linear .2s;
+    left:${({displaySidebar})=> displaySidebar ? '0' : '-100%'};
+    transition: none;
 }
 
 `

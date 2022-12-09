@@ -20,7 +20,8 @@ const ProductCategory = ({category}) => {
     const {theme, displaySidebar} = useContext(Context)
 
 
-    const [numberOfPages,
+    const [
+        numberOfPages,
             setNumberOfPages,
             selectedPage, 
             setselectedPage,

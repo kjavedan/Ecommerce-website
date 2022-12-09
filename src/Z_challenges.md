@@ -253,6 +253,12 @@ both of them will recieve the same product
 1. adding close btn to close the side bar in the small screen ✔
 2. creating the brand page sidebar ✔
 3. fetching data for other brand category -> tablet / laptop/ ...
-4. fixing the price position in the other category
+4. fixing the price position in the other category ✔
 5. fixing brand showcase slider data fetching and link redirecting
 6. creating different sidebar data and different products data for each category
+--------------------------------------------------------
+
+* challenge
+
+linking brand categoris to different sidbar and products data
+

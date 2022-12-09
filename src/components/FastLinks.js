@@ -9,11 +9,6 @@ const FastLinks = ({links, isHomePage}) => {
 
     const {theme, toggleSidebar, smallScreen} = useContext(Context)
 
-
-    useEffect(()=> {
-      console.log(window.innerWidth)
-    })
-
     const linkElements = links.map(link => <Link key={nanoid()} title={link.title} icon={link.icon} />) 
     
   return (

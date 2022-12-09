@@ -3,6 +3,7 @@ import { Context } from "../context/uiContext"
 
 const useProducts = () => {
 
+
     const {theme, displaySidebar} = useContext(Context)
 
     const [numberOfPages, setNumberOfPages] = useState()
@@ -10,6 +11,7 @@ const useProducts = () => {
     const [selectedPage, setselectedPage] = useState(1)
 
     const [numberOfProducts, setNumberOfProducts] = useState(0)
+
 
 
     const paginaitonStyles = {
@@ -32,7 +34,9 @@ const useProducts = () => {
         })
     },[selectedPage])
 
-    return [numberOfPages,
+
+    return [
+            numberOfPages,
             setNumberOfPages,
             selectedPage, 
             setselectedPage,

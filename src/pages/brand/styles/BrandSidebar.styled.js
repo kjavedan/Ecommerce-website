@@ -15,15 +15,6 @@ border-top-left-radius: 20px;
 border-top-right-radius: 20px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 
-/* overflow-y: scroll; */
-/* &::-webkit-scrollbar {
-        width: 3px;
-    }
-
-&::-webkit-scrollbar-thumb{
-    background: ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
-    height: 10px;
-} */
 
 @media (min-width: 900px) {
     width: 300px;

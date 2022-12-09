@@ -65,6 +65,7 @@ const Brand = ({brandName}) => {
   return (
     
     <StyledContainer theme={theme}>
+      {/* send the brand name to hero in order display the brand name links */}
         <Header />
         <Hero 
         background={heroData.background}
@@ -74,12 +75,13 @@ const Brand = ({brandName}) => {
           <Routes>
             <Route path='/showcase' element={ <BrandShowcase showcaseData={showcaseData} />} />
             <Route path='/mobile' element={<BrandCategory category={'mobile'} />} />
-            <Route path='/laptop' element={<BrandCategory category={'laptop'} />} />
-            <Route path='/tablet' element={<BrandCategory category={'tablet'} />} />
-            <Route path='/watch' element={<BrandCategory category={'watch'} />} />
-            <Route path='/monitor' element={<BrandCategory category={'monitor'} />} />
+            <Route path='/laptop' element={<BrandCategory category={'mobile'} />} />
+            <Route path='/tablet' element={<BrandCategory category={'mobile'} />} />
+            <Route path='/watch' element={<BrandCategory category={'mobile'} />} />
+            <Route path='/monitor' element={<BrandCategory category={'mobile'} />} />
             <Route path='/headset' element={<BrandCategory category={'headset'} />} />
-            <Route path='/all' element={<BrandCategory category={'all'} />} />
+            <Route path='/all' element={<BrandCategory category={'mobile'} />} />
+            {/* write down all links path */}
           </Routes>
         
         </Container>  

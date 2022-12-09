@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import FastLinks from '../../../components/FastLinks'
 import {Container} from '../../brand/styles/Container.styled'
 import { Context } from '../../../context/uiContext'
@@ -14,11 +14,12 @@ import PageRoute from '../../../components/PageRoute'
 import { sidebarDataMobile } from '../../../data/sidebarData'
 
 const BrandCategory = ({category}) => {
-
+    
     const {theme, displaySidebar} = useContext(Context)
 
     
-    const [numberOfPages,
+    const [
+      numberOfPages,
       setNumberOfPages,
       selectedPage, 
       setselectedPage,
@@ -26,6 +27,9 @@ const BrandCategory = ({category}) => {
       setNumberOfProducts,
       paginaitonStyles
   ] = useProducts()
+
+
+
 
 
   return (
@@ -56,7 +60,6 @@ const BrandCategory = ({category}) => {
         category={sidebarDataMobile}
         isProductCategory={true}
         />
-        <div>BrandCategory {category}</div>
     </Container>
   )
 }

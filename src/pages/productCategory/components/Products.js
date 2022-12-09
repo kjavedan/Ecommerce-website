@@ -1,35 +1,41 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
 import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/ProductsData'
+import { json } from 'react-router-dom'
 
 const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts}) => {
 
-  let data;
 
-  switch (category) {
-    case 'mobile':
-      data = mobile;
-      break;
-    case 'laptop':
-      data = laptop;
-      break;
-    case 'mouse':
-      data = mouse;
-      break;
-    case 'keyboard':
-      data = keyboard;
-      break;
-    case 'headset':
-      data = headset;
-      break;
-    case 'other':
-      data = other;
-      break;
+  // let data;
+
+  // products needs to call category data from an Api
+
+  const [productsData, setProductsData] = useState()
+
+  // switch (category) {
+  //   case 'mobile':
+  //     data = mobile;
+  //     break;
+  //   case 'laptop':
+  //     data = laptop;
+  //     break;
+  //   case 'mouse':
+  //     data = mouse;
+  //     break;
+  //   case 'keyboard':
+  //     data = keyboard;
+  //     break;
+  //   case 'headset':
+  //     data = headset;
+  //     break;
+  //   case 'other':
+  //     data = other;
+  //     break;
   
-    default:
-      break;
-  }
+  //   default:
+  //     break;
+  // }
 
   
   let productsToDisplay = []
@@ -41,12 +47,26 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
 
     let i = startFrom;
 
-    while(data[i] !== undefined && i < endAt){
-      productsToDisplay.push(data[i])
+    while(productsData[i] !== undefined && i < endAt){
+      productsToDisplay.push(productsData[i])
       i++
     }
+
   }
-  getProductsToDisplay()
+  
+  const handleProductsInfo = () => {
+      const numberOfProducts = productsData.length
+      const numberOfPages = Math.ceil(numberOfProducts / 20)
+      setNumberOfPages(numberOfPages)
+      setNumberOfProducts(productsData.length)
+  }
+
+  if(productsData){
+    getProductsToDisplay()
+    handleProductsInfo()
+  }
+
+  
 
   const products = productsToDisplay.map(item => <Product 
     key={item.id}
@@ -60,13 +80,17 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
     img={item.img}
     />)
 
-
     useEffect(()=> {
-      const numberOfProducts = data.length
-      const numberOfPages = Math.ceil(numberOfProducts / 20)
-      setNumberOfPages(numberOfPages)
-      setNumberOfProducts(data.length)
-    })
+      fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+        .then(res => res.json())
+        .then(data => setProductsData(data) )
+    }, [])
+
+    // useEffect(()=> {
+
+    // })
+
+  
     
   return (
 
