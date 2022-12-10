@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
+import { Context } from '../../../context/uiContext'
+import SkeletonProductCategoryCard from '../../../skeleton/components/SkeletonProductCategoryCard'
 
 const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts}) => {
+
 
   const [productsData, setProductsData] = useState()
 
@@ -82,12 +85,26 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
       return () => clearTimeout(timer);
     },[])
 
-  
+
+    const {theme} = useContext(Context)
+    const color = isLoding ? theme : false
+    
   return (
 
-    <ProductsContainer>
-        {products}
-        {isLoding && <Skeleton />}
+    <ProductsContainer color={color}>
+        {/* {products} */}
+        {/* {isLoding &&  */}
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        <SkeletonProductCategoryCard />
+        
+        {/* } */}
     </ProductsContainer>
   )
 }
