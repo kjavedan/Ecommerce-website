@@ -1,43 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import ProductsContainer from '../styles/Products.styled'
 import Product from '../components/Product'
-import {mobile, laptop, headset, other, keyboard, mouse} from '../../../data/ProductsData'
-import { json } from 'react-router-dom'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts}) => {
 
-
-  // let data;
-
-  // products needs to call category data from an Api
-
   const [productsData, setProductsData] = useState()
 
-  // switch (category) {
-  //   case 'mobile':
-  //     data = mobile;
-  //     break;
-  //   case 'laptop':
-  //     data = laptop;
-  //     break;
-  //   case 'mouse':
-  //     data = mouse;
-  //     break;
-  //   case 'keyboard':
-  //     data = keyboard;
-  //     break;
-  //   case 'headset':
-  //     data = headset;
-  //     break;
-  //   case 'other':
-  //     data = other;
-  //     break;
-  
-  //   default:
-  //     break;
-  // }
+  const[isLoding, setIsLoading] = useState(true)
 
-  
   let productsToDisplay = []
 
   const getProductsToDisplay = () => {
@@ -70,6 +42,7 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
 
   const products = productsToDisplay.map(item => <Product 
     key={item.id}
+    id={item.id}
     title={item.title} 
     rate={item.rate} 
     availability={item.availability} 
@@ -80,22 +53,41 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
     img={item.img}
     />)
 
-    useEffect(()=> {
-      fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
-        .then(res => res.json())
-        .then(data => setProductsData(data) )
-    }, [])
 
     // useEffect(()=> {
+    //   fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+    //     .then(res => res.json())
+    //     .then(data => {
+    //       setProductsData(data)
+    //       setIsLoading(false)
+    //     })
+    // }, [])
 
-    // })
+    
+    useEffect(()=>{
+      const fetchData = async () => {
+        await fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+          .then(res => res.json())
+          .then(data => {
+            setProductsData(data)
+            setIsLoading(false)
+          })
+          .catch(e => console.log(e))
+      }
+
+      const timer = setTimeout(() => {
+        fetchData();
+      }, 5000)
+
+      return () => clearTimeout(timer);
+    },[])
 
   
-    
   return (
 
     <ProductsContainer>
         {products}
+        {isLoding && <Skeleton />}
     </ProductsContainer>
   )
 }

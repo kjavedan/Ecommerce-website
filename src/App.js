@@ -5,6 +5,7 @@ import Home from './pages/home/Home'
 import ProductCategory from './pages/productCategory/ProductCategory'
 import {Routes, Route} from 'react-router-dom'
 import Brand from './pages/brand/Brand'
+import { SkeletonTheme } from 'react-loading-skeleton'
 
 
 const App = () => {
@@ -12,8 +13,8 @@ const App = () => {
   const {theme} = useContext(Context)
 
   return (
-    <>
-      <GlobalStyles theme={theme}/>
+  <SkeletonTheme baseColor={theme === '#fff' ? 'white' : '313131'} highlightColor={theme === '#fff' ? '#f1f1f1' : '525252'}>
+    <GlobalStyles theme={theme}/>
       <Routes>
         {/* categories */}
         <Route path='/' element={<Home />} />
@@ -69,7 +70,7 @@ const App = () => {
         <Route path='/brands/lenovo/*' element={<Brand brandName={'lenovo'} />} />
         <Route path='/brands/huawei/*' element={<Brand brandName={'huawei'} />} />
       </Routes>
-    </>
+    </SkeletonTheme>
   )
 }
 
