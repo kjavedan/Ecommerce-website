@@ -1,5 +1,5 @@
 const Brands = {
-    samsung :{
+    samsung:{
         products:{
             mobile : [
                 {
@@ -331,7 +331,7 @@ const Brands = {
                     price: 1099,
                     colors: ['red', 'blue', 'black'],
                     img: 'images/77.png'
-                },
+                }
             ],
             laptop: [
                 {
@@ -465,7 +465,7 @@ const Brands = {
                     price: 1099,
                     colors: ['red', 'blue', 'black'],
                     img: 'images/3.png'
-                },
+                }
                 
             ],
             keyboard : [
@@ -556,7 +556,7 @@ const Brands = {
                     price: 1099,
                     colors: ['red', 'blue', 'black'],
                     img: 'images/65.png'
-                },
+                }
             ],
             tablet : [
                 {
@@ -690,7 +690,7 @@ const Brands = {
                     price: 1099,
                     colors: ['red', 'blue', 'black'],
                     img: 'images/63.png'
-                },
+                }
             ],
             watch : [
                 {
@@ -934,7 +934,7 @@ const Brands = {
                     price: 1099,
                     colors: ['red', 'blue', 'black'],
                     img: 'images/77.png'
-                },
+                }
                 
             ],
             headset : [
@@ -1047,7 +1047,7 @@ const Brands = {
                     price: 1099,
                     colors: ['red', 'blue', 'black'],
                     img: 'images/19.png'
-                },
+                }
             
             ]
         },

@@ -1,19 +1,20 @@
 import { useState, useEffect, useContext } from "react"
 import { Context } from "../context/uiContext"
 
-const useProducts = () => {
+const useProducts = (url) => {
 
-
+    
     const {theme, displaySidebar} = useContext(Context)
     
-
-    const [numberOfPages, setNumberOfPages] = useState()
-
+    const [productsData, setProductsData] = useState([])
+    
+    const[isLoading, setIsLoading] = useState(true)
+    
     const [selectedPage, setselectedPage] = useState(1)
-
+    
     const [numberOfProducts, setNumberOfProducts] = useState(0)
-
-
+    
+    const [numberOfPages, setNumberOfPages] = useState(0)
 
     const paginaitonStyles = {
         margin: '4rem 0rem',
@@ -27,15 +28,13 @@ const useProducts = () => {
         }
 
     }
+  
+    useEffect(()=> {
+        setNumberOfProducts(productsData.length)
+        setNumberOfPages(Math.ceil(numberOfProducts / 20))
+    })
 
-    const getNumberOfProducts = ({number}) => {
-        setNumberOfProducts(number)
-    }
-
-    const getNumberOfPages = ({number}) => {
-        setNumberOfPages(number)
-    }
-
+    
     useEffect(()=>{
         window.scrollTo({
             top: 0,
@@ -43,15 +42,45 @@ const useProducts = () => {
         })
     },[selectedPage])
 
+    // useEffect(()=> {
+    //     fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+    //       .then(res => res.json())
+    //       .then(data => setProductsData(data.Brands.samsung.products.mobile))
+    //       // setIsLoading(false)
+        
+    //   }, [])
+
+        useEffect(()=>{
+      const fetchData = async () => {
+        await fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+          .then(res => res.json())
+          .then(data => {
+            setProductsData(data.Brands.samsung.products.mobile)
+            setIsLoading(false)
+
+          })
+          .catch(e => console.log(e))
+         
+      }
+
+      const timer = setTimeout(() => {
+        fetchData();
+      }, 3000)
+
+      return () => clearTimeout(timer);
+    },[])
+
+      
+
 
     return [
-            numberOfPages,
-            getNumberOfPages,
+            productsData,
+            isLoading,
             selectedPage, 
             setselectedPage,
             numberOfProducts,
-            getNumberOfProducts,
-            paginaitonStyles
+            numberOfPages,
+            paginaitonStyles,
         ]
 
 }

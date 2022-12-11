@@ -21,15 +21,14 @@ const ProductCategory = ({category}) => {
 
 
     const [
-            numberOfPages,
-            getNumberOfPages,
+            productsData,
+            isLoading,
             selectedPage, 
             setselectedPage,
             numberOfProducts,
-            getNumberOfProducts,
-            paginaitonStyles
-        ] = useProducts()
-
+            numberOfPages,
+            paginaitonStyles,
+        ] = useProducts(category)
 
     return (
         <StyledContainer theme={theme}>
@@ -45,11 +44,10 @@ const ProductCategory = ({category}) => {
                 <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                     
                     <Products 
-                    category={category}
+                    productsData={productsData}
+                    isLoding={isLoading}
                     selectedPage={selectedPage} 
                     numberOfPages={numberOfPages}
-                    getNumberOfPages={getNumberOfPages}
-                    getNumberOfProducts={getNumberOfProducts}
                     />
                     
                 </div>

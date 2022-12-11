@@ -6,12 +6,8 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import { Context } from '../../../context/uiContext'
 import SkeletonProductCategoryCard from '../../../skeleton/components/SkeletonProductCategoryCard'
 
-const Products = ({category, selectedPage, getNumberOfPages, getNumberOfProducts}) => {
+const Products = ({selectedPage, productsData, isLoding}) => {
 
-
-  const [productsData, setProductsData] = useState()
-
-  const[isLoding, setIsLoading] = useState(true)
 
   let productsToDisplay = []
 
@@ -28,19 +24,9 @@ const Products = ({category, selectedPage, getNumberOfPages, getNumberOfProducts
     }
 
   }
-  
-  const handleProductsInfo = () => {
-      const numberOfProducts = productsData.length
-      const numberOfPages = Math.ceil(numberOfProducts / 20)
-      getNumberOfPages(numberOfPages)
-      getNumberOfProducts(productsData.length)
-  }
-
- 
 
   if(productsData){
     getProductsToDisplay()
-    handleProductsInfo()
   }
   
 
@@ -58,32 +44,8 @@ const Products = ({category, selectedPage, getNumberOfPages, getNumberOfProducts
     />)
 
 
-    useEffect(()=> {
-      fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
-        .then(res => res.json())
-        .then(data => setProductsData(data))
-        // setIsLoading(false)
-      
-    }, [])
-
     
-    // useEffect(()=>{
-    //   const fetchData = async () => {
-    //     await fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
-    //       .then(res => res.json())
-    //       .then(data => {
-    //         setProductsData(data)
-    //         setIsLoading(false)
-    //       })
-    //       .catch(e => console.log(e))
-    //   }
-
-    //   const timer = setTimeout(() => {
-    //     fetchData();
-    //   }, 5000)
-
-    //   return () => clearTimeout(timer);
-    // },[])
+  
 
    
   return (
@@ -91,7 +53,6 @@ const Products = ({category, selectedPage, getNumberOfPages, getNumberOfProducts
     <ProductsContainer >
         {products}
         {isLoding && <SkeletonProductCategoryCard cards={12} />}
-
     </ProductsContainer>
   )
 }
