@@ -20,16 +20,13 @@ const BrandCategory = ({category}) => {
     
     const [
       numberOfPages,
-      setNumberOfPages,
+      getNumberOfPages,
       selectedPage, 
       setselectedPage,
       numberOfProducts,
-      setNumberOfProducts,
+      getNumberOfProducts,
       paginaitonStyles
   ] = useProducts()
-
-
-
 
 
   return (
@@ -45,8 +42,8 @@ const BrandCategory = ({category}) => {
                   <Products 
                   category={category}
                   selectedPage={selectedPage} 
-                  setNumberOfPages={setNumberOfPages}
-                  setNumberOfProducts={setNumberOfProducts}
+                  getNumberOfPages={getNumberOfPages}
+                  getNumberOfProducts={getNumberOfProducts}
                   />
                   
               </div>

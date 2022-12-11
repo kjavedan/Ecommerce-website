@@ -5,6 +5,7 @@ const useProducts = () => {
 
 
     const {theme, displaySidebar} = useContext(Context)
+    
 
     const [numberOfPages, setNumberOfPages] = useState()
 
@@ -27,6 +28,14 @@ const useProducts = () => {
 
     }
 
+    const getNumberOfProducts = ({number}) => {
+        setNumberOfProducts(number)
+    }
+
+    const getNumberOfPages = ({number}) => {
+        setNumberOfPages(number)
+    }
+
     useEffect(()=>{
         window.scrollTo({
             top: 0,
@@ -37,11 +46,11 @@ const useProducts = () => {
 
     return [
             numberOfPages,
-            setNumberOfPages,
+            getNumberOfPages,
             selectedPage, 
             setselectedPage,
             numberOfProducts,
-            setNumberOfProducts,
+            getNumberOfProducts,
             paginaitonStyles
         ]
 

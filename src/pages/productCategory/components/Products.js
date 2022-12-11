@@ -6,7 +6,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 import { Context } from '../../../context/uiContext'
 import SkeletonProductCategoryCard from '../../../skeleton/components/SkeletonProductCategoryCard'
 
-const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts}) => {
+const Products = ({category, selectedPage, getNumberOfPages, getNumberOfProducts}) => {
 
 
   const [productsData, setProductsData] = useState()
@@ -32,15 +32,16 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
   const handleProductsInfo = () => {
       const numberOfProducts = productsData.length
       const numberOfPages = Math.ceil(numberOfProducts / 20)
-      setNumberOfPages(numberOfPages)
-      setNumberOfProducts(productsData.length)
+      getNumberOfPages(numberOfPages)
+      getNumberOfProducts(productsData.length)
   }
+
+ 
 
   if(productsData){
     getProductsToDisplay()
     handleProductsInfo()
   }
-
   
 
   const products = productsToDisplay.map(item => <Product 
@@ -57,54 +58,40 @@ const Products = ({category, selectedPage, setNumberOfPages, setNumberOfProducts
     />)
 
 
-    // useEffect(()=> {
-    //   fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
-    //     .then(res => res.json())
-    //     .then(data => {
-    //       setProductsData(data)
-    //       setIsLoading(false)
-    //     })
-    // }, [])
+    useEffect(()=> {
+      fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+        .then(res => res.json())
+        .then(data => setProductsData(data))
+        // setIsLoading(false)
+      
+    }, [])
 
     
-    useEffect(()=>{
-      const fetchData = async () => {
-        await fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
-          .then(res => res.json())
-          .then(data => {
-            setProductsData(data)
-            setIsLoading(false)
-          })
-          .catch(e => console.log(e))
-      }
+    // useEffect(()=>{
+    //   const fetchData = async () => {
+    //     await fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+    //       .then(res => res.json())
+    //       .then(data => {
+    //         setProductsData(data)
+    //         setIsLoading(false)
+    //       })
+    //       .catch(e => console.log(e))
+    //   }
 
-      const timer = setTimeout(() => {
-        fetchData();
-      }, 5000)
+    //   const timer = setTimeout(() => {
+    //     fetchData();
+    //   }, 5000)
 
-      return () => clearTimeout(timer);
-    },[])
+    //   return () => clearTimeout(timer);
+    // },[])
 
-
-    const {theme} = useContext(Context)
-    const color = isLoding ? theme : false
-    
+   
   return (
 
-    <ProductsContainer color={color}>
-        {/* {products} */}
-        {/* {isLoding &&  */}
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        <SkeletonProductCategoryCard />
-        
-        {/* } */}
+    <ProductsContainer >
+        {products}
+        {isLoding && <SkeletonProductCategoryCard cards={12} />}
+
     </ProductsContainer>
   )
 }

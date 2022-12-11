@@ -13,7 +13,7 @@ const App = () => {
   const {theme} = useContext(Context)
 
   return (
-  <SkeletonTheme baseColor={theme === '#fff' ? 'white' : '#313131'} highlightColor={theme === '#fff' ? '#f1f1f1' : '#525252'}>
+  <SkeletonTheme baseColor={theme === '#fff' ? '#f1f1f1' : '#313131'} highlightColor={theme === '#fff' ? '#dfdfdf' : '#525252'}>
     <GlobalStyles theme={theme}/>
       <Routes>
         {/* categories */}

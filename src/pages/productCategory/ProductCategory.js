@@ -21,12 +21,12 @@ const ProductCategory = ({category}) => {
 
 
     const [
-        numberOfPages,
-            setNumberOfPages,
+            numberOfPages,
+            getNumberOfPages,
             selectedPage, 
             setselectedPage,
             numberOfProducts,
-            setNumberOfProducts,
+            getNumberOfProducts,
             paginaitonStyles
         ] = useProducts()
 
@@ -47,8 +47,9 @@ const ProductCategory = ({category}) => {
                     <Products 
                     category={category}
                     selectedPage={selectedPage} 
-                    setNumberOfPages={setNumberOfPages}
-                    setNumberOfProducts={setNumberOfProducts}
+                    numberOfPages={numberOfPages}
+                    getNumberOfPages={getNumberOfPages}
+                    getNumberOfProducts={getNumberOfProducts}
                     />
                     
                 </div>
