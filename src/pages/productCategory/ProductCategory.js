@@ -15,7 +15,7 @@ import ProductsQTY from '../../components/styles/ProductsQTY.styled';
 import Products from './components/Products'
 import { Pagination } from '@mui/material'
 
-const ProductCategory = ({category}) => {
+const ProductCategory = ({url}) => {
 
     const {theme, displaySidebar} = useContext(Context)
 
@@ -28,7 +28,7 @@ const ProductCategory = ({category}) => {
             numberOfProducts,
             numberOfPages,
             paginaitonStyles,
-        ] = useProducts(category)
+        ] = useProducts()
 
     return (
         <StyledContainer theme={theme}>

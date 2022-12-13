@@ -4,7 +4,7 @@ import { Context } from "../context/uiContext"
 const useProducts = (url) => {
 
     
-    const {theme, displaySidebar} = useContext(Context)
+    const {theme} = useContext(Context)
     
     const [productsData, setProductsData] = useState([])
     
@@ -52,10 +52,10 @@ const useProducts = (url) => {
 
         useEffect(()=>{
       const fetchData = async () => {
-        await fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
+        await fetch('https://api.npoint.io/12694b0cf1d66201e6e9')
           .then(res => res.json())
           .then(data => {
-            setProductsData(data.Brands.samsung.products.mobile)
+            setProductsData(data.mobile)
             setIsLoading(false)
 
           })
@@ -71,6 +71,7 @@ const useProducts = (url) => {
     },[])
 
       
+    console.log(productsData)
 
 
     return [

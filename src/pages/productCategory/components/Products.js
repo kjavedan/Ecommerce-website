@@ -43,11 +43,6 @@ const Products = ({selectedPage, productsData, isLoding}) => {
     img={item.img}
     />)
 
-
-    
-  
-
-   
   return (
 
     <ProductsContainer >

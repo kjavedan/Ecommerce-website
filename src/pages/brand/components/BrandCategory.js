@@ -19,13 +19,13 @@ const BrandCategory = ({category}) => {
 
     
     const [
-      numberOfPages,
-      getNumberOfPages,
-      selectedPage, 
-      setselectedPage,
-      numberOfProducts,
-      getNumberOfProducts,
-      paginaitonStyles
+            productsData,
+            isLoading,
+            selectedPage, 
+            setselectedPage,
+            numberOfProducts,
+            numberOfPages,
+            paginaitonStyles,
   ] = useProducts()
 
 
@@ -40,10 +40,10 @@ const BrandCategory = ({category}) => {
           <div style={{backgroundColor: theme === '#fff' ? '#e0e0e0' : '#2E2E2E'}}>
                   
                   <Products 
-                  category={category}
-                  selectedPage={selectedPage} 
-                  getNumberOfPages={getNumberOfPages}
-                  getNumberOfProducts={getNumberOfProducts}
+                   productsData={productsData}
+                   isLoding={isLoading}
+                   selectedPage={selectedPage} 
+                   numberOfPages={numberOfPages}
                   />
                   
               </div>

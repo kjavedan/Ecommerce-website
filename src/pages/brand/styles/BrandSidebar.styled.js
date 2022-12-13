@@ -10,6 +10,7 @@ position: fixed;
 transition: all .3s ease-in-out;
 bottom: ${({displaySidebar}) => displaySidebar ? '0' : '-100%'};
 left: 0;
+overflow-y: scroll;
 z-index: 10;
 border-top-left-radius: 20px;
 border-top-right-radius: 20px;
@@ -24,5 +25,6 @@ background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
     bottom: 50px;
     z-index: 2;
     border-radius: 20px;
+    overflow-y: unset;
 }
 `

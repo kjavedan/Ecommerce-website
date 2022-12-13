@@ -254,11 +254,24 @@ both of them will recieve the same product
 2. creating the brand page sidebar ✔
 3. fetching data for other brand category -> tablet / laptop/ ...
 4. fixing the price position in the other category ✔
-5. fixing brand showcase slider data fetching and link redirecting
-6. creating different sidebar data and different products data for each category
+5. fixing brand showcase slider data fetching and link redirecting ✔
 --------------------------------------------------------
+* challenge
+1. hosting website data online
+
+* condiiton
+1. in the App components we will pass a url to (ProductsCategory & BrandCategory) which they will fetch that url and display
+it on the screen
+2. 
+
+
+
+
 
 * challenge
 
-linking brand categoris to different sidbar and products data
+1. linking brand categoris to different sidbar and products data
+2. hosting data online
+3. linking the data images to online hosted image links
+
 
