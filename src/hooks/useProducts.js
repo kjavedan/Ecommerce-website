@@ -52,10 +52,11 @@ const useProducts = (url) => {
 
         useEffect(()=>{
       const fetchData = async () => {
-        await fetch('https://api.npoint.io/12694b0cf1d66201e6e9')
+        await fetch('https://api.jsonbin.io/v3/b/6398922134ae3620ec2d4a51')
           .then(res => res.json())
           .then(data => {
-            setProductsData(data.mobile)
+            console.log(data.record)
+            setProductsData(data.record.products)
             setIsLoading(false)
 
           })

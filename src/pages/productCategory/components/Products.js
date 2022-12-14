@@ -39,7 +39,7 @@ const Products = ({selectedPage, productsData, isLoding}) => {
     discount={item.discount} 
     isFreeDelivery={item.isFreeDelivery} 
     price={item.price} 
-    colors={item.colors} 
+    colors={item.info.colors} 
     img={item.img}
     />)
 

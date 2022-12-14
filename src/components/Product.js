@@ -5,10 +5,10 @@ import { ProductInfo, Availability, Rate, BeforeDiscount } from './styles/Produc
 import {HiStar} from 'react-icons/hi'
 
 
-const Product = ({title, discount, isFreeDelivery, availability, rate, price, url}) => {
+const Product = ({title, discount, isFreeDelivery, availability, rate, price, img}) => {
 
   const {theme} = useContext(Context)
-  
+
   const getAfterDiscountPrice = () => {
     const newPrice1 = price / 100;
     const newPrice2 = newPrice1 * discount;
@@ -21,7 +21,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, ur
         <Card theme={theme}>
          {discount ? <Discount>%{discount} off</Discount> : ''}
           <Image>
-            <img src={url} alt='image' />
+            <img src={img} alt='image' />
           </Image>
           {isFreeDelivery && <FreeDilevery>free delivery</FreeDilevery>}
         </Card>
