@@ -5,6 +5,7 @@ height: 100%;
 padding: .5rem 1rem;
 position: relative;
 width: 100%;
+
 `
 
 export const Availability = styled.p`
@@ -19,6 +20,7 @@ display: inline-flex;
 align-items: center;
 margin-left: auto;
 margin-bottom: .5rem;
+margin-top: .5rem;
 
 span{
     font: 500 .7rem 'Roboto';
@@ -31,4 +33,10 @@ display: flex;
 export const BeforeDiscount = styled.span`
 text-decoration: line-through;
 color: #969494;
+`
+
+export const Price = styled.h3`
+position: absolute;
+bottom: 0;
+right: 10%;
 `

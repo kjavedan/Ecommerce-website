@@ -19,13 +19,13 @@ const App = () => {
         {/* categories */}
         <Route path='/' element={<Home />} />
         {/* mobile */}
-        <Route path='/mobile' element={<ProductCategory url={'mobile'} />} > 
-          <Route path='/mobile/apple' element={<ProductCategory url={'mobile'} />} />
-          <Route path='/mobile/samsung' element={<ProductCategory url={'mobile'} />} />
-          <Route path='/mobile/sony' element={<ProductCategory url={'mobile'} />} />
-          <Route path='/mobile/nokia' element={<ProductCategory url={'mobile'} />} />
-          <Route path='/mobile/Huawei' element={<ProductCategory url={'mobile'} />} />
-          <Route path='/mobile/xiaomi' element={<ProductCategory url={'mobile'} />} />
+          <Route path='/mobile/samsung' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/apple' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/6398922134ae3620ec2d4a51'} />} />
+          <Route path='/mobile/sony' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/nokia' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/Huawei' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/xiaomi' element={<ProductCategory url={''} />} />
+          <Route path='/mobile' element={<ProductCategory url={''} />} > 
         </Route>
         {/* laptop */}
         <Route path='/laptop' element={<ProductCategory url={'laptop'} />} >

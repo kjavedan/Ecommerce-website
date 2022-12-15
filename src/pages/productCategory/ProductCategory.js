@@ -19,6 +19,7 @@ const ProductCategory = ({url}) => {
 
     const {theme, displaySidebar} = useContext(Context)
 
+    console.log(url)
 
     const [
             productsData,
@@ -28,7 +29,7 @@ const ProductCategory = ({url}) => {
             numberOfProducts,
             numberOfPages,
             paginaitonStyles,
-        ] = useProducts()
+        ] = useProducts(url)
 
     return (
         <StyledContainer theme={theme}>

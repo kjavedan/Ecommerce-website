@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import { Context } from '../../../context/uiContext'
 import { StyledProduct, Card, FreeDilevery, Discount, Image } from '../styles/Product.styled'
-import { ProductInfo, Availability, RateBlock, BeforeDiscount } from '../../../components/styles/ProductInfo.styled'
+import { ProductInfo, Availability, RateBlock, BeforeDiscount, Price } from '../../../components/styles/ProductInfo.styled'
 import {HiStar} from 'react-icons/hi'
-import ProductColors from './ProductColors.styled'
+import ProductColors from '../styles/ProductColors.styled'
 import CardContainer from '../styles/CardContainer.styled'
 
-const Product = ({title, discount, isFreeDelivery, availability, rate, price, img, colors}) => {
+const Product = ({title, discount, isFreeDelivery, availability, rate, raters, price, img, colors}) => {
 
   const {theme} = useContext(Context)
   
@@ -16,6 +16,13 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, im
     const newPrice3 = price - newPrice2;
     return newPrice3.toFixed(2)
     // (price - ((price / 100) * discount)).toFixed(2)
+  }
+
+  const getAvailability = () => {
+    if(availability){
+      if(availability > 10 ) return 'available'
+      else return `only ${availability} remained in stock`
+    }else return 'out of stock'
   }
 
 
@@ -45,11 +52,16 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, price, im
         </CardContainer>
         <ProductInfo>
           <h3>{title}</h3>
-          <Availability>{availability}</Availability>
-          <RateBlock><span>{rate}</span> <HiStar style={{color: '#FFD233', marginLeft:'.4rem'}} /></RateBlock>
+          <Availability>{getAvailability()}</Availability>
+          <RateBlock>
+            <span>
+              <p style={{display:'inline', fontSize:'10px'}}>({raters})</p> {rate}
+            </span>
+             <HiStar style={{color: '#FFD233', marginLeft:'.2rem'}} />
+          </RateBlock>
           {discount ? 
-            <h3 style={{position:'absolute', bottom:'0', right:'0'}}>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></h3>:
-            <h3>${price}</h3>
+            <Price>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></Price>:
+            <Price>${price}</Price>
             }
         </ProductInfo>
     </StyledProduct>

@@ -35,6 +35,7 @@ const Products = ({selectedPage, productsData, isLoding}) => {
     id={item.id}
     title={item.title} 
     rate={item.rate} 
+    raters={item.raters}
     availability={item.availability} 
     discount={item.discount} 
     isFreeDelivery={item.isFreeDelivery} 

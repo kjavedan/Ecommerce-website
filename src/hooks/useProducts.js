@@ -49,10 +49,11 @@ const useProducts = (url) => {
     //       // setIsLoading(false)
         
     //   }, [])
+    console.log(url)
 
         useEffect(()=>{
       const fetchData = async () => {
-        await fetch('https://api.jsonbin.io/v3/b/6398922134ae3620ec2d4a51')
+        await fetch(url)
           .then(res => res.json())
           .then(data => {
             console.log(data.record)
@@ -66,7 +67,7 @@ const useProducts = (url) => {
 
       const timer = setTimeout(() => {
         fetchData();
-      }, 3000)
+      }, 0)
 
       return () => clearTimeout(timer);
     },[])
