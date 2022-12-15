@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledProduct = styled.div`
-height: 170px;
+height: 200px;
 width: 100%;
 display: flex;
 padding: 1rem;
@@ -13,14 +13,15 @@ cursor: pointer;
 }
 
 @media (min-width: 900px){
-    height: 400px;
+    height: auto;
     flex-direction: column;
 }
+
 `
 
 export const Card = styled.div`
-min-width: 120px;
-height: 120px;
+min-width: 150px;
+height: 160px;
 border-radius: 8px;
 background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 box-shadow: 0px 2px 2px  rgba(0, 0, 0, .25) ;
@@ -52,8 +53,8 @@ img{
 `
 export const Discount = styled.span`
 position: absolute;
-top: 6px;
-left: 6px;
+top: 0px;
+left: 0px;
 color: #D9D9D9;
 padding: .1rem .3rem;
 border-radius: 4px;
@@ -62,10 +63,10 @@ font: 500 .7rem 'Poppins';
 z-index:1;
 `
 export const FreeDilevery = styled(Discount)`
-top: 83%;
+top: 88%;
 background-color: #171616;
 
 @media (min-width: 900px){
-    top: 90%;
+    top: 92%;
 }
 `
