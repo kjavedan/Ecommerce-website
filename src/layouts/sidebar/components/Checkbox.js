@@ -10,7 +10,7 @@ const Checkbox = ({icon, title}) => {
     <StyledCheckbox>
       <Input id={title}/>
       <Label htmlFor={title}  theme={theme}>
-        {icon}
+        <i className={icon}></i>
         <span>{title}</span>
         </Label>
     </StyledCheckbox>

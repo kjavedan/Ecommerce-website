@@ -35,8 +35,10 @@ const ProductCategory = ({url}) => {
     return (
         <StyledContainer theme={theme}>
             <Header />
-            <SkeletonSidebar />
-            {/* <Sidebar sidebarData={sidebarData} isProductCategory={true} /> */}
+            {isLoading ?
+            <SkeletonSidebar /> :
+            <Sidebar sidebarData={sidebarData} isProductCategory={true} /> 
+            }
             <StyledMain theme={theme} displaySidebar={displaySidebar}>
                 <SidebarToggler />
                 <ProductsQTY>

@@ -7,7 +7,7 @@ const CategoryItemContent = ({icon, title, children, displayChildElements}) => {
 
   return (
     <>
-        {icon}<h5>{title}</h5> { children.length ? commonIcon : '' }
+        <i className={icon}></i><h5>{title}</h5> { children.length ? commonIcon : '' }
     </>
   )
 }

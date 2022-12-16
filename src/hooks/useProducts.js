@@ -62,14 +62,14 @@ const useProducts = (url) => {
             setSidebarData(data.record.sidebar)
             setIsLoading(false)
 
-          }, 5000)
+          })
           .catch(e => console.log(e))
          
       }
 
       const timer = setTimeout(() => {
         fetchData();
-      }, 0)
+      }, 3000)
 
       return () => clearTimeout(timer);
     },[])
