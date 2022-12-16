@@ -14,15 +14,16 @@ import { ProductCategorylinks } from '../../data/fastLinks'
 import ProductsQTY from '../../components/styles/ProductsQTY.styled';
 import Products from './components/Products'
 import { Pagination } from '@mui/material'
+import SkeletonSidebar from '../../skeleton/components/SkeletonSidebar'
 
 const ProductCategory = ({url}) => {
 
     const {theme, displaySidebar} = useContext(Context)
 
-    console.log(url)
 
     const [
             productsData,
+            sidebarData,
             isLoading,
             selectedPage, 
             setselectedPage,
@@ -34,7 +35,8 @@ const ProductCategory = ({url}) => {
     return (
         <StyledContainer theme={theme}>
             <Header />
-            <Sidebar category={sidebarDataMobile} isProductCategory={true}/>
+            <SkeletonSidebar />
+            {/* <Sidebar sidebarData={sidebarData} isProductCategory={true} /> */}
             <StyledMain theme={theme} displaySidebar={displaySidebar}>
                 <SidebarToggler />
                 <ProductsQTY>

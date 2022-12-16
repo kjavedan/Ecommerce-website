@@ -7,6 +7,8 @@ const useProducts = (url) => {
     const {theme} = useContext(Context)
     
     const [productsData, setProductsData] = useState([])
+
+    const [sidebarData, setSidebarData] = useState([])
     
     const[isLoading, setIsLoading] = useState(true)
     
@@ -49,7 +51,6 @@ const useProducts = (url) => {
     //       // setIsLoading(false)
         
     //   }, [])
-    console.log(url)
 
         useEffect(()=>{
       const fetchData = async () => {
@@ -58,9 +59,10 @@ const useProducts = (url) => {
           .then(data => {
             console.log(data.record)
             setProductsData(data.record.products)
+            setSidebarData(data.record.sidebar)
             setIsLoading(false)
 
-          })
+          }, 5000)
           .catch(e => console.log(e))
          
       }
@@ -78,6 +80,7 @@ const useProducts = (url) => {
 
     return [
             productsData,
+            sidebarData,
             isLoading,
             selectedPage, 
             setselectedPage,

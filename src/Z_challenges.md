@@ -237,7 +237,7 @@ both of them will recieve the same product
 3. I have tow different products layout
 4. I have the same products for both layout
 
-*solution 
+* solution 
 1. create two different layout with the least use of different components
 2. fetch data from the same source for both places
 3. have the same functionality for both -> using custom hooks will be good idea
@@ -262,7 +262,7 @@ both of them will recieve the same product
 * condiiton
 1. in the App components we will pass a url to (ProductsCategory & BrandCategory) which they will fetch that url and display
 it on the screen
-2. 
+
 
 
 
@@ -275,3 +275,4 @@ it on the screen
 3. linking the data images to online hosted image links
 
 
+----------------------------------------------------------

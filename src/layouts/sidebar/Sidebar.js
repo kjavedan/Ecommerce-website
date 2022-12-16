@@ -6,11 +6,18 @@ import Category from './components/Category'
 import PriceFilter from './components/PriceFilter'
 import CloseSidebar from '../../components/CloseSidebar'
 
-const Sidebar = ({category, isProductCategory}) => {
+const Sidebar = ({sidebarData, isProductCategory}) => {
+
 
     const {theme, displaySidebar} = useContext(Context)
 
-    const categoryElements = category.map((category, index) => <Category key={index} title={category.title} items={category.data} isProductCategory={isProductCategory}/>)
+    const categoryElements = sidebarData.map((category, index) => (
+    <Category 
+    key={index} 
+    title={category.title} 
+    items={category.data} 
+    isProductCategory={isProductCategory} 
+    />))
 
   return (
     <StyledSidebar theme={theme} displaySidebar={displaySidebar}>

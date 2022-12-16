@@ -22,7 +22,7 @@ const Home = () => {
     <>
      <StyledContainer theme={theme}>
         <Header />
-        <Sidebar category={sidebarDataHome} displayPriceFilter={false}/>
+        <Sidebar sidebarData={sidebarDataHome} displayPriceFilter={false}/>
         <StyledMain theme={theme} displaySidebar={displaySidebar}>
           <SidebarToggler /> 
           <PageRoute />
