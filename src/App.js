@@ -19,12 +19,12 @@ const App = () => {
         {/* categories */}
         <Route path='/' element={<Home />} />
         {/* mobile */}
-          <Route path='/mobile/samsung' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/samsung' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c241315ab31599e1dac23'} />} />
           <Route path='/mobile/apple' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/6398922134ae3620ec2d4a51'} />} />
-          <Route path='/mobile/sony' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/sony' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c7fc4dfc68e59d569ef85'} />} />
           <Route path='/mobile/nokia' element={<ProductCategory url={''} />} />
-          <Route path='/mobile/Huawei' element={<ProductCategory url={''} />} />
-          <Route path='/mobile/xiaomi' element={<ProductCategory url={''} />} />
+          <Route path='/mobile/Huawei' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c7d8815ab31599e1def62'} />} />
+          <Route path='/mobile/xiaomi' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c89f7dfc68e59d569f599'} />} />
           <Route path='/mobile' element={<ProductCategory url={''} />} > 
         </Route>
         {/* laptop */}

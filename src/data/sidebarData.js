@@ -17,7 +17,7 @@ export const sidebarDataHome = [
       {
         title: 'mobile',
         icon: <HiOutlineDeviceMobile />,
-        children: ['all', 'apple', 'samsung', 'sony', 'nokia' ,'huawei', 'xiaomi']
+        children: ['all', 'apple', 'samsung', 'sony', 'huawei', 'xiaomi']
       },
       {
         title: 'Laptop',
