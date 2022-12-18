@@ -19,39 +19,34 @@ const App = () => {
         {/* categories */}
         <Route path='/' element={<Home />} />
         {/* mobile */}
+          <Route path='/mobile' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639d67d901a72b59f232c125'} />} /> 
           <Route path='/mobile/samsung' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c241315ab31599e1dac23'} />} />
           <Route path='/mobile/apple' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/6398922134ae3620ec2d4a51'} />} />
           <Route path='/mobile/sony' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c7fc4dfc68e59d569ef85'} />} />
-          <Route path='/mobile/nokia' element={<ProductCategory url={''} />} />
           <Route path='/mobile/Huawei' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c7d8815ab31599e1def62'} />} />
           <Route path='/mobile/xiaomi' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639c89f7dfc68e59d569f599'} />} />
-          <Route path='/mobile' element={<ProductCategory url={''} />} > 
-        </Route>
+        
         {/* laptop */}
-        <Route path='/laptop' element={<ProductCategory url={'laptop'} />} >
-          <Route path='/laptop/apple' element={<ProductCategory url={'laptop'} />} />
-          <Route path='/laptop/microsoft' element={<ProductCategory url={'laptop'} />} />
-          <Route path='/laptop/dell' element={<ProductCategory url={'laptop'} />} />
-          <Route path='/laptop/hp' element={<ProductCategory url={'laptop'} />} />
-        </Route>
+          <Route path='/laptop' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639d6f2f01a72b59f232c4e6'} />} />
+          <Route path='/laptop/apple' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639d6e70dfc68e59d56a72e5'} />} />
+          <Route path='/laptop/microsoft' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639d6ec901a72b59f232c4a8'} />} />
+          <Route path='/laptop/dell' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639d6ee101a72b59f232c4b8'} />} />
+          <Route path='/laptop/hp' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639d6f0bdfc68e59d56a733e'} />} />
+        
         {/* headset */}
-        <Route path='/headset' element={<ProductCategory url={'headset'} />} >
-          <Route path='/headset/apple' element={<ProductCategory url={'headset'} />} />
-          <Route path='/headset/beats' element={<ProductCategory url={'headset'} />} />
-          <Route path='/headset/samsung' element={<ProductCategory url={'headset'} />} />
-          <Route path='/headset/huawei' element={<ProductCategory url={'headset'} />} />
-          <Route path='/headset/xiaomi' element={<ProductCategory url={'headset'} />} />
-        </Route>
+          <Route path='/headset' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639dc01adfc68e59d56aa167'} />} />
+          <Route path='/headset/apple' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639dbe2115ab31599e1ea3d6'} />} />
+          <Route path='/headset/beats' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639dbfdd15ab31599e1ea4ae'} />} />
+          <Route path='/headset/samsung' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639dbbd701a72b59f232f0d4'} />} />
+        
         {/* keyboard */}
-        <Route path='/keyboard' element={<ProductCategory url={'keyboard'} />} >
+          <Route path='/keyboard' element={<ProductCategory url={'keyboard'} />} />
           <Route path='/keyboard/apple' element={<ProductCategory url={'keyboard'} />} />
           <Route path='/keyboard/microsoft' element={<ProductCategory url={'keyboard'} />} />
-        </Route>
+        
         {/* mouse */}
-        <Route path='/mouse' element={<ProductCategory url={'mouse'} />} >
-          <Route path='/mouse/apple' element={<ProductCategory url={'mouse'} />} />
-          <Route path='/mouse/microsoft' element={<ProductCategory url={'mouse'} />} />
-        </Route>
+          <Route path='/mouse' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639ef7c6dfc68e59d56b44a2'} />} />
+        
         {/* other */}
         <Route path='/other' element={<ProductCategory url={'other'} />} />
         {/* take a look at */}

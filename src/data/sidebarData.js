@@ -27,17 +27,17 @@ export const sidebarDataHome = [
       {
         title: 'headset',
         icon: <FiHeadphones />,
-        children: ['all', 'beats', 'apple', 'samsung', 'huawei', 'xiaomi']
+        children: ['all', 'beats', 'apple', 'samsung']
       },
       {
         title: 'keyboard',
         icon: <FaRegKeyboard />,
-        children: ['all', 'apple', 'microsoft']
+        children: ['all', 'apple', 'microsoft','logitech']
       },
       {
         title: 'mouse',
         icon: <CgMouse />,
-        children: ['all', 'apple', 'microsoft']
+        children: []
       },
       {
         title: 'other',
