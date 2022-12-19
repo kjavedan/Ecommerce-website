@@ -40,21 +40,21 @@ const App = () => {
           <Route path='/headset/samsung' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639dbbd701a72b59f232f0d4'} />} />
         
         {/* keyboard */}
-          <Route path='/keyboard' element={<ProductCategory url={'keyboard'} />} />
-          <Route path='/keyboard/apple' element={<ProductCategory url={'keyboard'} />} />
-          <Route path='/keyboard/microsoft' element={<ProductCategory url={'keyboard'} />} />
+          <Route path='/keyboard' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639efe01dfc68e59d56b4895'} />} />
         
         {/* mouse */}
           <Route path='/mouse' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639ef7c6dfc68e59d56b44a2'} />} />
         
         {/* other */}
-        <Route path='/other' element={<ProductCategory url={'other'} />} />
+        <Route path='/other' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639effa315ab31599e1f4e07'} />} />
+
         {/* take a look at */}
         <Route path='/hot sails' element={<ProductCategory url={'other'} />} />
         <Route path='/newest products' element={<ProductCategory url={'other'} />} />
         <Route path='/popular products' element={<ProductCategory url={'other'} />} />
         <Route path='/top rated' element={<ProductCategory url={'other'} />} />
         <Route path='/highest off' element={<ProductCategory url={'other'} />} />
+
         {/* Brands */}
         <Route path='/brands/apple/*' element={<Brand brandName={'apple'} />} />
         <Route path='/brands/microsoft/*' element={<Brand brandName={'microsoft'} />} />
