@@ -49,11 +49,11 @@ const App = () => {
         <Route path='/other' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/639effa315ab31599e1f4e07'} />} />
 
         {/* take a look at */}
-        <Route path='/hot sails' element={<ProductCategory url={'other'} />} />
-        <Route path='/newest products' element={<ProductCategory url={'other'} />} />
-        <Route path='/popular products' element={<ProductCategory url={'other'} />} />
-        <Route path='/top rated' element={<ProductCategory url={'other'} />} />
-        <Route path='/highest off' element={<ProductCategory url={'other'} />} />
+        <Route path='/hot sails' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/63a2e43cdfc68e59d56dbf91'} />} />
+        <Route path='/newest products' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/63a2e48601a72b59f2360efd'} />} />
+        <Route path='/popular products' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/63a2e4a701a72b59f2360f18'} />} />
+        <Route path='/top rated' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/63a2e4c415ab31599e21c246'} />} />
+        <Route path='/highest off' element={<ProductCategory url={'https://api.jsonbin.io/v3/b/63a2e4e3dfc68e59d56dc001'} />} />
 
         {/* Brands */}
         <Route path='/brands/apple/*' element={<Brand brandName={'apple'} />} />
