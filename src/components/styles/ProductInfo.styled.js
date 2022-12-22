@@ -6,6 +6,10 @@ padding: .5rem 1rem;
 position: relative;
 width: 100%;
 
+h3{
+    overflow: hidden;
+}
+
 `
 
 export const Availability = styled.p`

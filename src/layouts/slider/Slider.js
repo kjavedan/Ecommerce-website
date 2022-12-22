@@ -24,6 +24,8 @@ const Slider = ({title, data}) => {
 
   const [sliderWidth, setSliderWidth] = useState(0)
 
+  console.log(data)
+
   const productElements = data.map(product => {
     return (
       <Product 
@@ -34,7 +36,7 @@ const Slider = ({title, data}) => {
       availability={product.availability} 
       rate={product.rate} 
       price={product.price} 
-      url={product.url} />)
+      img={product.img} />)
   })
   
   const scroll = directions => {
