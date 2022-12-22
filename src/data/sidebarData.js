@@ -65,11 +65,6 @@ export const sidebarDataHome = [
           children: []
         },
         {
-          title: 'top rated',
-          icon: <HiStar />,
-          children: []
-        },
-        {
           title: 'highest off',
           icon: <MdLocalOffer />,
           children: []

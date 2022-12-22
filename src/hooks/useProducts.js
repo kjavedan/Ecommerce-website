@@ -69,7 +69,7 @@ const useProducts = (url) => {
 
       const timer = setTimeout(() => {
         fetchData();
-      }, 3000)
+      }, 0)
 
       return () => clearTimeout(timer);
     },[])
