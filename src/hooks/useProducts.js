@@ -57,7 +57,6 @@ const useProducts = (url) => {
         await fetch(url)
           .then(res => res.json())
           .then(data => {
-            console.log(data.record)
             setProductsData(data.record.products)
             setSidebarData(data.record.sidebar)
             setIsLoading(false)

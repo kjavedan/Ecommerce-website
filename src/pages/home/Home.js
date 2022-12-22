@@ -13,10 +13,15 @@ import { productsData, productsData2 } from '../../data/sliderData'
 import Brands from './components/Brands'
 import { sidebarDataHome } from '../../data/sidebarData'
 import {links} from '../../data/fastLinks'
+import useSlider from '../../hooks/useSlider'
 
 const Home = () => {
 
     const {theme, displaySidebar} = useContext(Context)
+
+    const data = useSlider('https://api.jsonbin.io/v3/b/63a2e4e3dfc68e59d56dc001')
+
+    console.log(data)
 
   return (
     <>
@@ -32,7 +37,7 @@ const Home = () => {
           <Slider title={'newest products'} data={productsData2} />
           <Slider title={'popular products'} data={productsData} />
           <Slider title={'top rated'} data={productsData2} />
-          <Slider title={'highest off'} data={productsData} />             
+          <Slider title={'highest off'} data={useSlider('https://api.jsonbin.io/v3/b/63a2e4e3dfc68e59d56dc001')} />             
         </StyledMain>
         <Footer />
     </StyledContainer>
