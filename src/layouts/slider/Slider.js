@@ -9,6 +9,7 @@ import { nanoid } from 'nanoid'
 import { Link } from 'react-router-dom'
 import useSlider from '../../hooks/useSlider'
 import SkeletonSlider from '../../skeleton/components/SkeletonSlider'
+import Skeleton from 'react-loading-skeleton'
 
 const Slider = ({title, url}) => {
 
@@ -52,47 +53,45 @@ const Slider = ({title, url}) => {
     }
   }
 
-  // useEffect(()=> {
+  useEffect(()=> {
     
-  //   {scrollPosition <=0  ? setLeftItems(false) : setLeftItems(true)}
-  //   {scrollPosition > 200 * data.length  - sliderWidth ? setRightItems(false) : setRightItems(true)}
+    {scrollPosition <=0  ? setLeftItems(false) : setLeftItems(true)}
+    {scrollPosition > 200 * data.length  - sliderWidth ? setRightItems(false) : setRightItems(true)}
 
-  //   setSliderWidth(ref.current.clientWidth)
+    console.log(ref.current)
+    // if(ref.current.clientWidth) {
+    //   setSliderWidth(ref.current.clientWidth)
+    // }
     
-  // },[count])
-
-  console.log(data)
-  console.log(isLoading)
+  },[count])
   
   return (
     <>
-    {
+    {/* {
       isLoading ?
       <SkeletonSlider />
-      :
-    //   <StyledSlider>
-    //     <StyledTitle><h2>{title}</h2> <Link style={{font:'500 .8rem poppins', color:'gray'}} to={title}>see all</Link></StyledTitle>
-    //     <Wrapper ref={ref}>
-    //       {/* left button */}
-    //        {leftItems &&
-    //        <PrevBtn 
-    //        theme={theme}
-    //        onClick={() => scroll('left')}
-    //        ><BiChevronLeft /></PrevBtn>}
+      : */}
+      <StyledSlider>
+        <StyledTitle><h2>{title}</h2> <Link style={{font:'500 .8rem poppins', color:'gray'}} to={title}>see all</Link></StyledTitle>
+        <Wrapper ref={ref}>
+          {/* left button */}
+           {leftItems &&
+           <PrevBtn 
+           theme={theme}
+           onClick={() => scroll('left')}
+           ><BiChevronLeft /></PrevBtn>}
            
-    //       {/* right button */}
-    //       {rightItems &&
-    //       <NextBtn 
-    //       theme={theme}
-    //       onClick={() => scroll('right')}
-    //       ><BiChevronRight /></NextBtn>} 
-    //       {productElements}
-    //     </Wrapper>
-    // </StyledSlider>
-    <SkeletonSlider />
-  }
-  </>
-  )
+          {/* right button */}
+          {rightItems &&
+          <NextBtn 
+          theme={theme}
+          onClick={() => scroll('right')}
+          ><BiChevronRight /></NextBtn>} 
+          {productElements.length ? productElements : <SkeletonSlider />}
+        </Wrapper>
+    </StyledSlider>
+  {/* } */}
+  </>)
 }
 
 export default Slider

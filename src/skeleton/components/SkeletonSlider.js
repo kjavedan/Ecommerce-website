@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { Card, StyledProduct } from '../../components/styles/Product.styled'
 import { ProductInfo } from '../../components/styles/ProductInfo.styled'
@@ -10,8 +10,11 @@ import Wrapper from '../../layouts/slider/Styles/Wrapper.styled'
 
 const SkeletonSlider = () => {
 
+
     const productsElements = Array(10).fill(0).map((_, index) => (
-        <StyledProduct>
+        <StyledProduct
+        key={index}
+        >
         <Card style={{backgroundColor:'transparent'}}>
              <Skeleton height={'100%'} />
         </Card>

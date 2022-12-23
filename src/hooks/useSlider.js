@@ -6,7 +6,6 @@ const useSlider = url => {
 
     const [isLoading, setIsLoading] = useState(true)
 
-    console.log(url)
     
     useEffect(()=> {
         fetch(url)
