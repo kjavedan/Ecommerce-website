@@ -27,9 +27,6 @@ const SkeletonSlider = () => {
    
   return (
     <StyledSlider>
-            <h2>
-                <Skeleton style={{marginLeft:'4%'}} width={'160px'} height={'30px'} />
-            </h2>
         <Wrapper>
             {productsElements}
         </Wrapper>
