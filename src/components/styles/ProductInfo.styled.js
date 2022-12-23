@@ -8,6 +8,7 @@ width: 100%;
 
 h3{
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 `
@@ -15,12 +16,12 @@ h3{
 export const Availability = styled.p`
 color: #E02B2B;
 font: 500 .7rem 'Roboto';
-display: inline-flex;
+display: inline;
 width: 80%;
 `
 
 export const Rate = styled.div`
-display: inline-flex;
+display: flex;
 align-items: center;
 margin-left: auto;
 margin-bottom: .5rem;

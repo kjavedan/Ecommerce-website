@@ -6,7 +6,6 @@ height: 40px;
 border-radius: 50%;
 background-color: ${({theme})=> theme === '#fff' ? '#EAE6FC' : '#2E2E2E'};
 font-size: 2rem;
-display: flex;
 align-items: center;
 justify-content: center;
 position: absolute;

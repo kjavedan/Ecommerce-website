@@ -5,27 +5,11 @@ import { ProductInfo, Availability, RateBlock, BeforeDiscount, Price } from '../
 import {HiStar} from 'react-icons/hi'
 import ProductColors from '../styles/ProductColors.styled'
 import CardContainer from '../styles/CardContainer.styled'
-
+import { getAfterDiscountPrice, getAvailability } from '../../../utils'
 const Product = ({title, discount, isFreeDelivery, availability, rate, raters, price, img, colors}) => {
 
   const {theme} = useContext(Context)
   
-  const getAfterDiscountPrice = () => {
-    const newPrice1 = price / 100;
-    const newPrice2 = newPrice1 * discount;
-    const newPrice3 = price - newPrice2;
-    return newPrice3.toFixed(2)
-    // (price - ((price / 100) * discount)).toFixed(2)
-  }
-
-  const getAvailability = () => {
-    if(availability){
-      if(availability > 10 ) return 'available'
-      else return `only ${availability} remained in stock`
-    }else return 'out of stock'
-  }
-
-
   const productColors = colors.map((color, index) => <span 
     key={index}
     style={{
@@ -51,8 +35,8 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, raters, p
           </ProductColors>
         </CardContainer>
         <ProductInfo>
-          <h3>{title}</h3>
-          <Availability>{getAvailability()}</Availability>
+          <h3 style={{height:'43px'}}>{title}</h3>
+          <Availability>{getAvailability(availability)}</Availability>
           <RateBlock>
             <span>
               <p style={{display:'inline', fontSize:'10px'}}>({raters})</p> {rate}
@@ -60,7 +44,7 @@ const Product = ({title, discount, isFreeDelivery, availability, rate, raters, p
              <HiStar style={{color: '#FFD233', marginLeft:'.2rem'}} />
           </RateBlock>
           {discount ? 
-            <Price>${getAfterDiscountPrice()} <BeforeDiscount>{price}</BeforeDiscount></Price>:
+            <Price>${getAfterDiscountPrice(price, discount)} <BeforeDiscount>{price}</BeforeDiscount></Price>:
             <Price>${price}</Price>
             }
         </ProductInfo>

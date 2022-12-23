@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import StyledContainer from '../../components/styles/Container.styled'
 import {Context} from '../../context/uiContext'
 import Header from '../../layouts/header/Header'
@@ -13,16 +13,16 @@ import { productsData, productsData2 } from '../../data/sliderData'
 import Brands from './components/Brands'
 import { sidebarDataHome } from '../../data/sidebarData'
 import {links} from '../../data/fastLinks'
-import useSlider from '../../hooks/useSlider'
 
 const Home = () => {
 
     const {theme, displaySidebar} = useContext(Context)
 
-    const data = useSlider('https://api.jsonbin.io/v3/b/63a2e4e3dfc68e59d56dc001')
-
-    console.log(data)
-
+    const popularProductsUrl = 'https://api.jsonbin.io/v3/b/63a2e4a701a72b59f2360f18'
+    const hotSailsUrl = 'https://api.jsonbin.io/v3/b/63a2e43cdfc68e59d56dbf91'
+    const newestProductsUrl = 'https://api.jsonbin.io/v3/b/63a2e48601a72b59f2360efd'
+    const heighstOffUrl = 'https://api.jsonbin.io/v3/b/63a2e4e3dfc68e59d56dc001'
+    
   return (
     <>
      <StyledContainer theme={theme}>
@@ -32,11 +32,12 @@ const Home = () => {
           <SidebarToggler /> 
           <PageRoute />
           <FastLinks links={links} isHomePage={true}/>
-          <Slider title={'popular products'} data={useSlider('https://api.jsonbin.io/v3/b/63a2e4a701a72b59f2360f18')} />
+
+          <Slider title={'popular products'} url={popularProductsUrl} />
           <Brands />
-          <Slider title={'hot sails'} data={useSlider('https://api.jsonbin.io/v3/b/63a2e43cdfc68e59d56dbf91')} />
-          <Slider title={'newest products'} data={useSlider('https://api.jsonbin.io/v3/b/63a2e48601a72b59f2360efd')} />
-          <Slider title={'highest off'} data={useSlider('https://api.jsonbin.io/v3/b/63a2e4e3dfc68e59d56dc001')} />             
+          <Slider title={'hot sails'} url={hotSailsUrl} />
+          <Slider title={'newest products'} url={newestProductsUrl} />
+          <Slider title={'highest off'} url={heighstOffUrl} />    
         </StyledMain>
         <Footer />
     </StyledContainer>

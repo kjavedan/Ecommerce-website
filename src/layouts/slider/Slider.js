@@ -7,10 +7,14 @@ import {PrevBtn, NextBtn} from './Styles/SliderBtns.styled'
 import { Context } from '../../context/uiContext'
 import { nanoid } from 'nanoid'
 import { Link } from 'react-router-dom'
+import useSlider from '../../hooks/useSlider'
+import SkeletonSlider from '../../skeleton/components/SkeletonSlider'
 
-const Slider = ({title, data}) => {
+const Slider = ({title, url}) => {
 
   const {theme} = useContext(Context)
+
+  const [data, isLoading] = useSlider(url)
 
   const [leftItems, setLeftItems] = useState(false)
 
@@ -24,8 +28,6 @@ const Slider = ({title, data}) => {
 
   const [sliderWidth, setSliderWidth] = useState(0)
 
-  console.log(data)
-
   const productElements = data.map(product => {
     return (
       <Product 
@@ -35,6 +37,7 @@ const Slider = ({title, data}) => {
       isFreeDelivery={product.isFreeDelivery} 
       availability={product.availability} 
       rate={product.rate} 
+      raters={product.raters}
       price={product.price} 
       img={product.img} />)
   })
@@ -49,36 +52,46 @@ const Slider = ({title, data}) => {
     }
   }
 
-  useEffect(()=> {
+  // useEffect(()=> {
     
-    {scrollPosition <=0  ? setLeftItems(false) : setLeftItems(true)}
-    {scrollPosition >= 200 * data.length  - sliderWidth ? setRightItems(false) : setRightItems(true)}
+  //   {scrollPosition <=0  ? setLeftItems(false) : setLeftItems(true)}
+  //   {scrollPosition > 200 * data.length  - sliderWidth ? setRightItems(false) : setRightItems(true)}
 
-    setSliderWidth(ref.current.clientWidth)
+  //   setSliderWidth(ref.current.clientWidth)
     
-  },[count])
+  // },[count])
+
+  console.log(data)
+  console.log(isLoading)
   
   return (
-    <StyledSlider>
-        <StyledTitle><h2>{title}</h2> <Link style={{font:'500 .8rem poppins', color:'gray'}} to={title}>see all</Link></StyledTitle>
-        <Wrapper ref={ref}>
-          {/* left button */}
-           {leftItems &&
-           <PrevBtn 
-           theme={theme}
-           onClick={() => scroll('left')}
-           ><BiChevronLeft /></PrevBtn>}
+    <>
+    {
+      isLoading ?
+      <SkeletonSlider />
+      :
+    //   <StyledSlider>
+    //     <StyledTitle><h2>{title}</h2> <Link style={{font:'500 .8rem poppins', color:'gray'}} to={title}>see all</Link></StyledTitle>
+    //     <Wrapper ref={ref}>
+    //       {/* left button */}
+    //        {leftItems &&
+    //        <PrevBtn 
+    //        theme={theme}
+    //        onClick={() => scroll('left')}
+    //        ><BiChevronLeft /></PrevBtn>}
            
-          {/* right button */}
-          {rightItems &&
-          <NextBtn 
-          theme={theme}
-          onClick={() => scroll('right')}
-          ><BiChevronRight /></NextBtn>}
-          
-          {productElements}
-        </Wrapper>
-    </StyledSlider>
+    //       {/* right button */}
+    //       {rightItems &&
+    //       <NextBtn 
+    //       theme={theme}
+    //       onClick={() => scroll('right')}
+    //       ><BiChevronRight /></NextBtn>} 
+    //       {productElements}
+    //     </Wrapper>
+    // </StyledSlider>
+    <SkeletonSlider />
+  }
+  </>
   )
 }
 
