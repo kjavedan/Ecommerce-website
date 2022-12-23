@@ -58,19 +58,12 @@ const Slider = ({title, url}) => {
     {scrollPosition <=0  ? setLeftItems(false) : setLeftItems(true)}
     {scrollPosition > 200 * data.length  - sliderWidth ? setRightItems(false) : setRightItems(true)}
 
-    console.log(ref.current)
-    // if(ref.current.clientWidth) {
-    //   setSliderWidth(ref.current.clientWidth)
-    // }
+      setSliderWidth(ref.current.clientWidth)
     
   },[count])
   
   return (
-    <>
-    {/* {
-      isLoading ?
-      <SkeletonSlider />
-      : */}
+ 
       <StyledSlider>
         <StyledTitle><h2>{title}</h2> <Link style={{font:'500 .8rem poppins', color:'gray'}} to={title}>see all</Link></StyledTitle>
         <Wrapper ref={ref}>
@@ -90,8 +83,7 @@ const Slider = ({title, url}) => {
           {productElements.length ? productElements : <SkeletonSlider />}
         </Wrapper>
     </StyledSlider>
-  {/* } */}
-  </>)
+  )
 }
 
 export default Slider
