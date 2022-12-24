@@ -44,37 +44,39 @@ const useProducts = (url) => {
         })
     },[selectedPage])
 
-    // useEffect(()=> {
-    //     fetch('https://raw.githubusercontent.com/kjavedan/mockJson/main/.mockend.json')
-    //       .then(res => res.json())
-    //       .then(data => setProductsData(data.Brands.samsung.products.mobile))
-    //       // setIsLoading(false)
-        
-    //   }, [])
-
-        useEffect(()=>{
-      const fetchData = async () => {
-        await fetch(url)
+    useEffect(()=> {
+        fetch(url)
           .then(res => res.json())
-          .then(data => {
-            setProductsData(data.record.products)
-            setSidebarData(data.record.sidebar)
+          .then(res => {
+            setProductsData(res.record.products)
+            setSidebarData(res.record.sidebar)
             setIsLoading(false)
-
           })
-          .catch(e => console.log(e))
+        
+      }, [])
+
+      //   useEffect(()=>{
+      // const fetchData = async () => {
+      //   await fetch(url)
+      //     .then(res => res.json())
+      //     .then(data => {
+      //       setProductsData(data.record.products)
+      //       setSidebarData(data.record.sidebar)
+      //       setIsLoading(false)
+
+      //     })
+      //     .catch(e => console.log(e))
          
-      }
+      // }
 
-      const timer = setTimeout(() => {
-        fetchData();
-      }, 0)
+    //   const timer = setTimeout(() => {
+    //     fetchData();
+    //   }, 0)
 
-      return () => clearTimeout(timer);
-    },[])
+    //   return () => clearTimeout(timer);
+    // },[])
 
       
-    console.log(productsData)
 
 
     return [
