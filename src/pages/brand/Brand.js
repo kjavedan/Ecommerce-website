@@ -8,7 +8,6 @@ import { Container } from './styles/Container.styled'
 import BrandShowcase from './components/BrandShowcase'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { appleHero, appleShowcase, microsoftHero, micorsoftShowcase, dellHero, dellShowcase, hpHero, hpShowcase, samsungHero, samsungShowcase, sonyHero, sonyShowcase, lenovoHero, lenovoShowcase, huaweiHero, huaweiShowcase } from '../../data/brandsData'
-import ProductCategory from '../productCategory/ProductCategory'
 import BrandCategory from './components/BrandCategory'
 
 const Brand = ({brandName}) => {

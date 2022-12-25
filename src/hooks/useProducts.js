@@ -28,7 +28,6 @@ const useProducts = (url) => {
         '& .Mui-selected':{
             backgroundColor: theme === '#fff' ? '' : 'black'
         }
-
     }
   
     useEffect(()=> {
@@ -52,7 +51,7 @@ const useProducts = (url) => {
             setSidebarData(res.record.sidebar)
             setIsLoading(false)
           })
-        
+          .catch(e => console.log(e))
       }, [])
 
       //   useEffect(()=>{
