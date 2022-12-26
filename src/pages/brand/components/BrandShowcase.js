@@ -39,8 +39,8 @@ const BrandShowcase = ({showcaseData}) => {
               <Item8 url={showcaseData[8].url}></Item8>
             </Grid>
         </Grid>
-        <Slider title={'newest products'} data={productsData2} />
-        <Slider title={'popular products'} data={productsData} />
+        <Slider title={'newest products'} url={'https://api.jsonbin.io/v3/b/63a2e48601a72b59f2360efd'} />
+        <Slider title={'popular products'} url={'https://api.jsonbin.io/v3/b/63a2e4a701a72b59f2360f18'} />
         </ShowcaseContainer>
   )
 }
