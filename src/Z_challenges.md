@@ -280,4 +280,4 @@ it on the screen
 * challenge 
 
 1. how to fetch data in the brand component
-2.
+2. how data flow will work
