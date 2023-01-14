@@ -4,14 +4,13 @@ const StyledFooter = styled.footer`
 background-color: ${({theme})=> theme === '#fff' ? '#F4F4F4' : '#2E2E2E'};
 height: 500px;
 width: 100%;
-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 z-index: 2;
 position: relative;
 display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 10px;
 padding: 1rem;
-margin-bottom: 80px;
+margin-bottom: 40px;
 
 @media (min-width: 800px){
     grid-template-columns: 1fr 1fr 1fr;
