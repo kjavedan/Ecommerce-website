@@ -6,7 +6,7 @@ width: 100%;
 min-height: 100vh;
 
 @media (min-width: 900px){
-    width: calc(100% - 300px);
+    width: calc(100% - 330px);
     margin-left: auto;
 }
 `

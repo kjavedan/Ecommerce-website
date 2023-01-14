@@ -20,9 +20,9 @@ background-color: ${({theme})=> theme === '#fff' ? '#F1F1F1' : '#2E2E2E'};
 @media (min-width: 900px) {
     width: 300px;
     position: sticky;
+    bottom: 50px;
     position: -webkit-sticky; /* Safari */
     height: auto;
-    bottom: 50px;
     z-index: 2;
     border-radius: 20px;
     overflow-y: unset;

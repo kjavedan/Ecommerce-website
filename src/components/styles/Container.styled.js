@@ -1,10 +1,13 @@
 import styled from 'styled-components'
 
 const StyledContainer = styled.div`
-width: 100%;
+width: 150%;
 min-height : 100vh;
 background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
-overflow-x: hidden;
+
+@media (min-width: 400px) {
+    width: 100%;
+}
 `
 
 export default StyledContainer
