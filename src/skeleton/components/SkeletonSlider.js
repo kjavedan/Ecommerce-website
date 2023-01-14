@@ -26,11 +26,9 @@ const SkeletonSlider = () => {
     ))
    
   return (
-    <StyledSlider>
-        <Wrapper>
+    <>
             {productsElements}
-        </Wrapper>
-    </StyledSlider>
+    </>
   )
 }
 

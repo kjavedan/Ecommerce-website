@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.header`
 width: 100%;
-height: 80px;
+height: 60px;
 position: fixed;
 z-index: 10;
 top: 0;
@@ -20,6 +20,7 @@ h1{
 }
 
 @media (min-width: 800px){
+    height: 80px;
     padding: 0 1rem;
     border-bottom: 2px solid ${({theme})=> theme === '#fff' ? '#E8E6E6' : '#2E2E2E'};
 }

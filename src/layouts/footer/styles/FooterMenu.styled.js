@@ -5,7 +5,7 @@ background-color: ${({theme})=> theme === '#fff' ? '#fff' : '#212121'};
 position: fixed;
 bottom: 0;
 left: 0;
-height: 80px;
+height: 50px;
 width: 100%;
 display: flex;
 align-items: center;
